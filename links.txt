@@ -1,0 +1,67 @@
+## software
+
+ # statistical framework
+root et al.
+https://root.cern.ch/
+
+CMSSW
+https://github.com/cms-sw/cmssw
+
+higgs combine tool
+https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit
+
+atgcroostats
+https://twiki.cern.ch/twiki/bin/viewauth/CMS/ATGCRooStats
+https://github.com/senka/CombinedEWKAnalysis_1D2D3D
+
+ # event generation
+
+dim-8 EFT model:
+( cms internal?
+used: SM_LS_LM_LT_UFO
+alternatively: AQGC_ALL_UFO_new.tar.gz -> sign-flip?
+https://cms-project-generators.web.cern.ch/cms-project-generators/
+)
+public on feynrules:
+http://feynrules.irmp.ucl.ac.be/wiki/AnomalousGaugeCoupling
+
+MG5_aMCatNLO (v.2.6.1)
+https://cp3.irmp.ucl.ac.be/projects/madgraph/
+
+reweighting tool in MG
+https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/Reweight
+
+Pythia8 (v8.230)
+http://home.thep.lu.se/~torbjorn/pythia8/pythia8230.tgz
+
+Delphes to study detector effects? (version?)
+https://cp3.irmp.ucl.ac.be/projects/delphes
+
+## channels  
+
+ # CMS ssWW
+https://cds.cern.ch/record/2284582/
+https://www.hepdata.net/record/81935
+ 
+ # CMS ZZ  
+https://cds.cern.ch/record/2278242/
+https://www.hepdata.net/record/ins1615207
+
+ # ATLAS ssWW  
+https://cds.cern.ch/record/2629411
+
+ # ATLAS WZ  
+https://cds.cern.ch/record/2630183
+
+ # CMS WZ  
+https://cds.cern.ch/record/2653586/
+
+ # CMS WWW
+https://cds.cern.ch/record/2674128 
+
+ # CMS WV semileptonic
+http://cds.cern.ch/record/2665482
+
+ # more?
+w#gamma, ...
+

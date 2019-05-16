@@ -2,28 +2,33 @@
 
 combination of limits on EFT dim-8 operators
 
-## channels to combine:  
-CMS ssWW  
-CMS ZZ  
-ATLAS ssWW  
-ATLAS WZ  
-CMS WZ  
-CMS WV semileptonic ?  
-more?  
 
-## public information  
+## required tools
+
+mg5+pythia8
+root
+CMSSW
+higgs combine tool
+atgcroostats
+
+## setup
+
+see setup_instructions.txt
+
+## channels to combine && available info:  
+
+see links.txt
 
 ## tools 
-MG5aMCNLO (LO)  
-dim-8 UFO model  
-ME LO reweighting  
-Pythia8  
-root  
-CMSSW (public?)  
-combine (public?)  
-Delphes for detector effects?  
+
+see links.txt
 
 ## Outline:  
+
+see outline.txt
+
+
+
 For each analysis:  
 * sample generation (MG+Pythia)  
 * rwgt to discrete parameter values  

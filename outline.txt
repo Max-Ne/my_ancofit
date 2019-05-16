@@ -1,0 +1,42 @@
+## Outline:  
+
+sample generation: (already done)
+
+ # MG_aMC:
+* generate lhe file
+   -> use given cards
+* rwgt to discrete parameter values
+   -> script to generate rwgt cards
+* madspin to decay Z bosons when generating events in the ZZ channel
+   -> madspin_card.dat
+
+ # pythia8
+* copy .lhe to folder "examples". name: unweighted_events.lhe
+* copy "Makefile" && mymain01.c
+* run mymain01.c -> unweighted_events_wPythia.root
+
+ # run event cuts:
+* run provided script for each channel. Event selection form the paper is implemented
+* output is .root with one ttree whcih contains m_ll or m_4l, weights, and parameter_value
+
+
+statstical framework:
+
+ # signal scaling: qdr. fit
+
+ # HEPData preparation: (signal, background, unc.)
+
+ # buildWorkspace
+
+ # run combine tool
+
+ # interprete results
+
+
+
+
+
+* validation of reweighting procedure  
+* quadratic fit for interpolation  
+* statistical analysis with available information -> 1D limits (2D later)  
+* compare with official results  
