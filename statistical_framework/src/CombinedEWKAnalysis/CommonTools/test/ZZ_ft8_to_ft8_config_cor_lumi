@@ -1,0 +1,33 @@
+[Global]
+model=par1_TF1
+par1Name = ft8
+par1Low = -2.
+par1High = 2.
+NlnN=4
+lnN1_name=integrated_luminosity
+lnN1_value=1.025,1.025,1.025,1.025,1.025
+lnN1_for=ZZ_ft8_to_ft8_signal,ZZ_ft8_to_ft8_ppZZ,ZZ_ft8_to_ft8_ggZZ,ZZ_ft8_to_ft8_WWZ,ZZ_ft8_to_ft8_ttZ
+
+lnN2_name=norm_QCD
+lnN2_value=1.4
+lnN2_for=ZZ_ft8_to_ft8_ggZZ
+
+lnN3_name=norm_red
+lnN3_value=1.4
+lnN3_for=ZZ_ft8_to_ft8_ZX
+
+lnN4_name=reweight_uncertainty
+lnN4_value=1.150
+lnN4_for=ZZ_ft8_to_ft8_signal
+
+[ZZ_ft8_to_ft8]
+Nbkg=4
+signal_shape_syst=diboson_other_shape,diboson_JES_shape,diboson_QCD_shape,diboson_PDF_shape,diboson_Leff_shape
+bkg1_name=ppZZ
+bkg1_shape_syst=ppZZ_other_shape,ppZZ_JES_shape,ppZZ_QCD_shape,ppZZ_PDF_shape,ppZZ_Leff_shape
+bkg2_name=ggZZ
+bkg2_shape_syst=ggZZ_other_shape,ggZZ_JES_shape,ggZZ_Leff_shape
+bkg3_name=WWZ
+bkg3_shape_syst=WWZ_other_shape,WWZ_QCD_shape,WWZ_PDF_shape
+bkg4_name=ttZ
+bkg4_shape_syst=ttZ_other_shape,ttZ_Leff_shape,ttZ_JES_shape,ttZ_QCD_shape,ttZ_PDF_shape

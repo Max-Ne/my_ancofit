@@ -1,0 +1,12 @@
+rwgt to		nominal
+
+fs0		ft8=2.TeV^-4
+fs1		ft8=10TeV^-4
+fm0		fm0=10TeV^-4
+fm1		fm0=10TeV^-4
+fm7		fm0=10TeV^-4
+ft0		ft0=.5TeV^-4
+ft1		ft1=.5TeV^-4
+ft2		ft2=1.TeV^-4
+ft8		ft8=2.TeV^-4
+ft9		ft8=2.TeV^-4

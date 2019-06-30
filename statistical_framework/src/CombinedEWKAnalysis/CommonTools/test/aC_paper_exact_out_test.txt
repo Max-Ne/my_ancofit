@@ -1,0 +1,27 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 8  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_paper_exact_out  paper_exact_out ./paper_exact_out_ws.root proc_paper_exact_out:$PROCESS proc_paper_exact_out:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_paper_exact_out  paper_exact_out ./paper_exact_out_ws.root proc_paper_exact_out:$PROCESS proc_paper_exact_out:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_paper_exact_out  paper_exact_out ./paper_exact_out_ws.root proc_paper_exact_out:$PROCESS proc_paper_exact_out:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_paper_exact_out  paper_exact_out ./paper_exact_out_ws.root proc_paper_exact_out:$PROCESS proc_paper_exact_out:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_paper_exact_out  paper_exact_out ./paper_exact_out_ws.root proc_paper_exact_out:$PROCESS proc_paper_exact_out:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg6_paper_exact_out  paper_exact_out ./paper_exact_out_ws.root proc_paper_exact_out:$PROCESS proc_paper_exact_out:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg7_paper_exact_out  paper_exact_out ./paper_exact_out_ws.root proc_paper_exact_out:$PROCESS proc_paper_exact_out:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg8_paper_exact_out  paper_exact_out ./paper_exact_out_ws.root proc_paper_exact_out:$PROCESS proc_paper_exact_out:$PROCESS_$SYSTEMATIC
+shapes data_obs                paper_exact_out ./paper_exact_out_ws.root proc_paper_exact_out:$PROCESS    
+shapes anoCoupl_process_paper_exact_out paper_exact_out ./paper_exact_out_ws.root proc_paper_exact_out:ATGCPdf_$PROCESS proc_paper_exact_out:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin paper_exact_out 
+observation 201.0
+------------
+bin                         paper_exact_out					paper_exact_out			paper_exact_out			paper_exact_out			paper_exact_out			paper_exact_out			paper_exact_out			paper_exact_out			paper_exact_out       
+process			    anoCoupl_process_paper_exact_out    	anomalousCoupling_bkg1_paper_exact_out	anomalousCoupling_bkg2_paper_exact_out	anomalousCoupling_bkg3_paper_exact_out	anomalousCoupling_bkg4_paper_exact_out	anomalousCoupling_bkg5_paper_exact_out	anomalousCoupling_bkg6_paper_exact_out	anomalousCoupling_bkg7_paper_exact_out	anomalousCoupling_bkg8_paper_exact_out       
+process                     0	  	       				1 				2 				3 				4 				5 				6 				7 				8       
+rate                        79.5110011101	 			5.05099999905 			26.7419992983 			0.165000000037 			5.89500010014 			5.340999946 			8.65500020981 			0.681000022218 			85.5860005617           
+------------
+
+diboson_shape        shape1  1.0          				-				-				-				-				-				-				-				-

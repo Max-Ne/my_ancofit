@@ -1,0 +1,37 @@
+[Global]
+NlnN=0
+model=par1_TF1
+par1Name = ft0
+par1Low = -10.
+par1High = 10.
+NlnN=1
+lnN1_name=integrated_luminosity
+lnN1_value=1.025,1.025,1.025,1.025,1.025,1.025,1.025
+lnN1_for=ssWW_smallGrid_ft0_0_signal,ssWW_smallGrid_ft0_0_WW_QCD,ssWW_smallGrid_ft0_0_ZZ,ssWW_smallGrid_ft0_0_Triboson,ssWW_smallGrid_ft0_0_Wrong_Sign,ssWW_smallGrid_ft0_0_W_Gamma,ssWW_smallGrid_ft0_0_WW_DPS
+
+[ssWW_smallGrid_ft0_0]
+Nbkg=8
+signal_shape_syst=diboson_shape,diboson_PDF_shape,diboson_JES_shape,diboson_LEF_shape
+bkg1_name=WW_QCD
+bkg1_shape_syst=WW_QCD_shape,WW_QCD_PDF_shape,WW_QCD_JES_shape,WW_QCD_LEF_shape
+bkg2_name=WZ
+bkg2_shape_syst=WZ_shape
+bkg3_name=ZZ
+bkg3_shape_syst=ZZ_shape,ZZ_PDF_shape,ZZ_JES_shape,ZZ_LEF_shape,QCDzz_shape
+bkg4_name=Triboson
+bkg4_shape_syst=Triboson_shape,Triboson_PDF_shape,Triboson_JES_shape,Triboson_LEF_shape,QCDvvv_shape
+bkg5_name=Wrong_Sign
+bkg5_shape_syst=Wrong_Sign_shape,Wrong_Sign_PDF_shape,Wrong_Sign_JES_shape,Wrong_Sign_LEF_shape
+bkg6_name=W_Gamma
+bkg6_shape_syst=W_Gamma_shape,W_Gamma_PDF_shape,W_Gamma_JES_shape,W_Gamma_LEF_shape
+bkg7_name=WW_DPS
+bkg7_shape_syst=WW_DPS_shape,WW_DPS_PDF_shape,WW_DPS_JES_shape,WW_DPS_LEF_shape
+bkg8_name=Non_Prompt
+bkg8_shape_syst=Non_Prompt_shape
+NSigBkg_corr_unc=3
+correlated_SigBkg_unc1_name=JES
+correlated_SigBkg_unc1=diboson_JES_shape,WW_QCD_JES_shape,ZZ_JES_shape,Triboson_JES_shape,Wrong_Sign_JES_shape,W_Gamma_JES_shape,WW_DPS_JES_shape
+correlated_SigBkg_unc2_name=PDF
+correlated_SigBkg_unc2=diboson_PDF_shape,WW_QCD_PDF_shape,ZZ_PDF_shape,Triboson_PDF_shape,Wrong_Sign_PDF_shape,W_Gamma_PDF_shape,WW_DPS_PDF_shape
+correlated_SigBkg_unc3_name=LEF
+correlated_SigBkg_unc3=diboson_LEF_shape,WW_QCD_LEF_shape,ZZ_LEF_shape,Triboson_LEF_shape,Wrong_Sign_LEF_shape,W_Gamma_LEF_shape,WW_DPS_LEF_shape

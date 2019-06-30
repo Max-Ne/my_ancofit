@@ -1,0 +1,20 @@
+[Global]
+model=TF123
+par1name = haha1
+par1High=3
+par2name = oho2
+nlnn=2
+par1low=-3
+lnN1_name=aaln1
+lnN1_value=0.1
+lnN1_for=not_Golabel
+lnN2_name=aaln2
+lnN2_value=0.2
+lnN2_for=not_Golabel
+
+[not_Golabel]
+Nbkg=2
+bkg1_name=background1
+bkg1_shape_syst=background1_shapeU,background1_shapeD
+bkg2_name=background2
+bkg2_shape_syst=background2_shape

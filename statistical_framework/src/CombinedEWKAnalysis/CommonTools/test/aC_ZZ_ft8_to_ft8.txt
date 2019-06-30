@@ -1,0 +1,35 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 4  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_ZZ_ft8_to_ft8  ZZ_ft8_to_ft8 ./ZZ_ft8_to_ft8_ws.root proc_ZZ_ft8_to_ft8:$PROCESS proc_ZZ_ft8_to_ft8:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_ZZ_ft8_to_ft8  ZZ_ft8_to_ft8 ./ZZ_ft8_to_ft8_ws.root proc_ZZ_ft8_to_ft8:$PROCESS proc_ZZ_ft8_to_ft8:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_ZZ_ft8_to_ft8  ZZ_ft8_to_ft8 ./ZZ_ft8_to_ft8_ws.root proc_ZZ_ft8_to_ft8:$PROCESS proc_ZZ_ft8_to_ft8:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_ZZ_ft8_to_ft8  ZZ_ft8_to_ft8 ./ZZ_ft8_to_ft8_ws.root proc_ZZ_ft8_to_ft8:$PROCESS proc_ZZ_ft8_to_ft8:$PROCESS_$SYSTEMATIC
+shapes data_obs                ZZ_ft8_to_ft8 ./ZZ_ft8_to_ft8_ws.root proc_ZZ_ft8_to_ft8:$PROCESS    
+shapes anoCoupl_process_ZZ_ft8_to_ft8 ZZ_ft8_to_ft8 ./ZZ_ft8_to_ft8_ws.root proc_ZZ_ft8_to_ft8:ATGCPdf_$PROCESS proc_ZZ_ft8_to_ft8:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin ZZ_ft8_to_ft8 
+observation 99.0
+------------
+bin                         ZZ_ft8_to_ft8					ZZ_ft8_to_ft8			ZZ_ft8_to_ft8			ZZ_ft8_to_ft8			ZZ_ft8_to_ft8       
+process			    anoCoupl_process_ZZ_ft8_to_ft8    	anomalousCoupling_bkg1_ZZ_ft8_to_ft8	anomalousCoupling_bkg2_ZZ_ft8_to_ft8	anomalousCoupling_bkg3_ZZ_ft8_to_ft8	anomalousCoupling_bkg4_ZZ_ft8_to_ft8       
+process                     0	  	       				1 				2 				3 				4       
+rate                        6.20999999344	 			78.3020008504 			19.023000041 			0.437999993563 			6.60800012015           
+------------
+
+integrated_luminosity         lnN  1.025      				1.025				1.025				1.025				1.025
+trigger         lnN  1.02      				1.02				1.02				1.02				1.02
+norm_QCD         lnN  -      				-				1.4				-				-
+norm_red         lnN  -      				-				-				-				-
+ppZZ_QCD_shape shape1  -				1.0 				-				-				-
+WWZ_QCD_shape shape1  -				-				-				1.0 				-
+ttZ_QCD_shape shape1  -				-				-				-				1.0 
+Leff        shape1  1.0          				-				-				-				-
+JES        shape1  1.0          				-				-				-				-
+JER        shape1  1.0          				-				-				-				-
+Pileup        shape1  1.0          				-				-				-				-
+diboson_QCD_shape        shape1  1.0          				-				-				-				-
+PDF        shape1  1.0          				-				-				-				-

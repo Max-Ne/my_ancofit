@@ -1,0 +1,35 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 8  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_miniaod_to_fit  miniaod_to_fit ./miniaod_to_fit_ws.root proc_miniaod_to_fit:$PROCESS proc_miniaod_to_fit:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_miniaod_to_fit  miniaod_to_fit ./miniaod_to_fit_ws.root proc_miniaod_to_fit:$PROCESS proc_miniaod_to_fit:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_miniaod_to_fit  miniaod_to_fit ./miniaod_to_fit_ws.root proc_miniaod_to_fit:$PROCESS proc_miniaod_to_fit:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_miniaod_to_fit  miniaod_to_fit ./miniaod_to_fit_ws.root proc_miniaod_to_fit:$PROCESS proc_miniaod_to_fit:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_miniaod_to_fit  miniaod_to_fit ./miniaod_to_fit_ws.root proc_miniaod_to_fit:$PROCESS proc_miniaod_to_fit:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg6_miniaod_to_fit  miniaod_to_fit ./miniaod_to_fit_ws.root proc_miniaod_to_fit:$PROCESS proc_miniaod_to_fit:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg7_miniaod_to_fit  miniaod_to_fit ./miniaod_to_fit_ws.root proc_miniaod_to_fit:$PROCESS proc_miniaod_to_fit:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg8_miniaod_to_fit  miniaod_to_fit ./miniaod_to_fit_ws.root proc_miniaod_to_fit:$PROCESS proc_miniaod_to_fit:$PROCESS_$SYSTEMATIC
+shapes data_obs                miniaod_to_fit ./miniaod_to_fit_ws.root proc_miniaod_to_fit:$PROCESS    
+shapes anoCoupl_process_miniaod_to_fit miniaod_to_fit ./miniaod_to_fit_ws.root proc_miniaod_to_fit:ATGCPdf_$PROCESS proc_miniaod_to_fit:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin miniaod_to_fit 
+observation 201.0
+------------
+bin                         miniaod_to_fit					miniaod_to_fit			miniaod_to_fit			miniaod_to_fit			miniaod_to_fit			miniaod_to_fit			miniaod_to_fit			miniaod_to_fit			miniaod_to_fit       
+process			    anoCoupl_process_miniaod_to_fit    	anomalousCoupling_bkg1_miniaod_to_fit	anomalousCoupling_bkg2_miniaod_to_fit	anomalousCoupling_bkg3_miniaod_to_fit	anomalousCoupling_bkg4_miniaod_to_fit	anomalousCoupling_bkg5_miniaod_to_fit	anomalousCoupling_bkg6_miniaod_to_fit	anomalousCoupling_bkg7_miniaod_to_fit	anomalousCoupling_bkg8_miniaod_to_fit       
+process                     0	  	       				1 				2 				3 				4 				5 				6 				7 				8       
+rate                        79.5110011101	 			5.05099999905 			26.7419992983 			0.165000000037 			5.89500010014 			5.340999946 			8.65500020981 			0.681000022218 			85.5860005617           
+------------
+
+WW_QCD_shape shape1  -				1.0 				-				-				-				-				-				-				-
+WZ_shape shape1  -				-				1.0 				-				-				-				-				-				-
+ZZ_shape shape1  -				-				-				1.0 				-				-				-				-				-
+Triboson_shape shape1  -				-				-				-				1.0 				-				-				-				-
+Wrong_Sign_shape shape1  -				-				-				-				-				1.0 				-				-				-
+W_Gamma_shape shape1  -				-				-				-				-				-				1.0 				-				-
+WW_DPS_shape shape1  -				-				-				-				-				-				-				1.0 				-
+Non_Prompt_shape shape1  -				-				-				-				-				-				-				-				1.0 
+diboson_shape        shape1  1.0          				-				-				-				-				-				-				-				-

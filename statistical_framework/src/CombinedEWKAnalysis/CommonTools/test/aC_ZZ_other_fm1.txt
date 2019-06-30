@@ -1,0 +1,47 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 5  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_ZZ_other_fm1  ZZ_other_fm1 ./ZZ_other_fm1_ws.root proc_ZZ_other_fm1:$PROCESS proc_ZZ_other_fm1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_ZZ_other_fm1  ZZ_other_fm1 ./ZZ_other_fm1_ws.root proc_ZZ_other_fm1:$PROCESS proc_ZZ_other_fm1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_ZZ_other_fm1  ZZ_other_fm1 ./ZZ_other_fm1_ws.root proc_ZZ_other_fm1:$PROCESS proc_ZZ_other_fm1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_ZZ_other_fm1  ZZ_other_fm1 ./ZZ_other_fm1_ws.root proc_ZZ_other_fm1:$PROCESS proc_ZZ_other_fm1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_ZZ_other_fm1  ZZ_other_fm1 ./ZZ_other_fm1_ws.root proc_ZZ_other_fm1:$PROCESS proc_ZZ_other_fm1:$PROCESS_$SYSTEMATIC
+shapes data_obs                ZZ_other_fm1 ./ZZ_other_fm1_ws.root proc_ZZ_other_fm1:$PROCESS    
+shapes anoCoupl_process_ZZ_other_fm1 ZZ_other_fm1 ./ZZ_other_fm1_ws.root proc_ZZ_other_fm1:ATGCPdf_$PROCESS proc_ZZ_other_fm1:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin ZZ_other_fm1 
+observation 99.0
+------------
+bin                         ZZ_other_fm1					ZZ_other_fm1			ZZ_other_fm1			ZZ_other_fm1			ZZ_other_fm1			ZZ_other_fm1       
+process			    anoCoupl_process_ZZ_other_fm1    	anomalousCoupling_bkg1_ZZ_other_fm1	anomalousCoupling_bkg2_ZZ_other_fm1	anomalousCoupling_bkg3_ZZ_other_fm1	anomalousCoupling_bkg4_ZZ_other_fm1	anomalousCoupling_bkg5_ZZ_other_fm1       
+process                     0	  	       				1 				2 				3 				4 				5       
+rate                        6.20999999344	 			78.3020008504 			19.023000041 			0.437999993563 			6.60800012015 			6.72999998927           
+------------
+
+integrated_luminosity         lnN  1.025      				1.025				1.025				1.025				1.025				1.025
+norm_QCD         lnN  -      				-				1.4				-				-				-
+norm_red         lnN  -      				-				-				-				-				1.4
+ppZZ_other_shape shape1  -				1.0 				-				-				-				-
+ppZZ_JES_shape shape1  -				1.0 				-				-				-				-
+ppZZ_QCD_shape shape1  -				1.0 				-				-				-				-
+ppZZ_PDF_shape shape1  -				1.0 				-				-				-				-
+ppZZ_Leff_shape shape1  -				1.0 				-				-				-				-
+ggZZ_other_shape shape1  -				-				1.0 				-				-				-
+ggZZ_JES_shape shape1  -				-				1.0 				-				-				-
+ggZZ_Leff_shape shape1  -				-				1.0 				-				-				-
+WWZ_other_shape shape1  -				-				-				1.0 				-				-
+WWZ_QCD_shape shape1  -				-				-				1.0 				-				-
+WWZ_PDF_shape shape1  -				-				-				1.0 				-				-
+ttZ_other_shape shape1  -				-				-				-				1.0 				-
+ttZ_Leff_shape shape1  -				-				-				-				1.0 				-
+ttZ_JES_shape shape1  -				-				-				-				1.0 				-
+ttZ_QCD_shape shape1  -				-				-				-				1.0 				-
+ttZ_PDF_shape shape1  -				-				-				-				1.0 				-
+diboson_other_shape        shape1  1.0          				-				-				-				-				-
+diboson_JES_shape        shape1  1.0          				-				-				-				-				-
+diboson_QCD_shape        shape1  1.0          				-				-				-				-				-
+diboson_PDF_shape        shape1  1.0          				-				-				-				-				-
+diboson_Leff_shape        shape1  1.0          				-				-				-				-				-

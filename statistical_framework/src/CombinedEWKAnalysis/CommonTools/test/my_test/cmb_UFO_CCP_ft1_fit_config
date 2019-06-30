@@ -1,0 +1,39 @@
+[Global]
+# name of observable branch in input TTree
+obsVar = m_ll
+# bins of observable you want to use for the fit
+obsBins = 20.,100.,200.,300.,400.,2000000.
+# name of weight branch in input TTree
+signal_weight_var=weight
+# number of generated grid points in input TTree
+nGridPar1Bins = 11
+#nGridPar2Bins = 5
+#nGridPar3Bins = 5
+#nGridPar3Bins = 5
+# min and max values of generated grid points in input TTree
+par1GridMin = -25.
+par1GridMax = 25.
+#par2GridMin = -100.
+#par2GridMax = 100.
+#par3GridMin = -10.
+#par3GridMax = 10.
+# function you want to fit on yield in every observable bin
+#function= [0]+[1]*x+[2]*y+[3]*x*x+[4]*y*y+[5]*x*y+[6]*z+[7]*z*z+[8]*x*z+[9]*y*z
+#function=[0] + [1]*x + [2]*y + [3]*x*x + [4]*y*y + [5]*x*y
+function=[0] + [1]*x + [2]*x*x
+# model you want to use
+model=par1_TF1
+#model=par1par2_TF2
+# if you use "TH" model then define the number of points in each axis in output TH object
+outputgridpoints=11
+# name of parameter branches in input TTree
+par1Name = fs0
+#par2Name = fs1
+#par3Name = fs2
+
+# channels
+[cmb_UFO_CCP_ft1_out]
+obsVar = m_ll
+obsBins = 20.,100.,200.,300.,400.,2000000.
+# input root file and TTree name
+signal_model = cmb_UFO_CCP_ft1_out.root:ww

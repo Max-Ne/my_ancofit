@@ -1,0 +1,193 @@
+adding RooFit ... done
+end of pyroot_logon
+modelName=  par1_TF1
+
+		=============================================> lnN:  []
+lnN value:  []
+lnN for:  []
+/storage/9/mneukum/CMSSW_7_1_9/src/CombinedEWKAnalysis/CommonTools/data/anomalousCoupling/complete_ws_11_06_1D.root
+Nbkg=  8
+bis hier ok
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+data integral: RooDataHist::data_obs[observable_complete_ws_11_06_1D] = 5 bins (201 weights)
+ None
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg1_complete_ws_11_06_1D): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg2_complete_ws_11_06_1D): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg3_complete_ws_11_06_1D): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg4_complete_ws_11_06_1D): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg5_complete_ws_11_06_1D): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg6_complete_ws_11_06_1D): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg7_complete_ws_11_06_1D): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg8_complete_ws_11_06_1D): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg1_complete_ws_11_06_1D_WW_QCD_shapeUp): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg1_complete_ws_11_06_1D_WW_QCD_shapeDown): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg2_complete_ws_11_06_1D_WZ_shapeUp): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg2_complete_ws_11_06_1D_WZ_shapeDown): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg3_complete_ws_11_06_1D_ZZ_shapeUp): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg3_complete_ws_11_06_1D_ZZ_shapeDown): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg4_complete_ws_11_06_1D_Triboson_shapeUp): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg4_complete_ws_11_06_1D_Triboson_shapeDown): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg5_complete_ws_11_06_1D_Wrong_Sign_shapeUp): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg5_complete_ws_11_06_1D_Wrong_Sign_shapeDown): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg6_complete_ws_11_06_1D_W_Gamma_shapeUp): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg6_complete_ws_11_06_1D_W_Gamma_shapeDown): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg7_complete_ws_11_06_1D_WW_DPS_shapeUp): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg7_complete_ws_11_06_1D_WW_DPS_shapeDown): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg8_complete_ws_11_06_1D_Non_Prompt_shapeUp): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg8_complete_ws_11_06_1D_Non_Prompt_shapeDown): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_SM_complete_ws_11_06_1D_rawshape): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_SM_complete_ws_11_06_1D_rawshape_diboson_shapeUp): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_SM_complete_ws_11_06_1D_rawshape_diboson_shapeDown): fit range of variable observable_complete_ws_11_06_1D expanded to nearest bin boundaries: [0,5] --> [0,5]
+$$$$$$$$$$$$$ 	 $$$$$$$$$  setting up for par1_TF1 plane!  limitType:  1  Ndim: %s  1
+1: RooACSemiAnalyticPdf_1D(ATGCPdf_anoCoupl_process_%s%codename,
+[#1] INFO:Eval -- RooRealVar::setRange(observable_complete_ws_11_06_1D) new range named 'integRange' created with bounds [0,1]
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+done 1: RooACSemiAnalyticPdf_1D(ATGCPdf_anoCoupl_process_%s%codename,
+oooooooooooooooooooooooooooook
+2: RooACSemiAnalyticPdf_1D(ATGCPdf_anoCoupl_process_%s%codename,
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeUp_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeUp_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeUp_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeUp_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeUp_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+3: RooACSemiAnalyticPdf_1D(ATGCPdf_anoCoupl_process_%s%codename,
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeDown_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeDown_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeDown_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeDown_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeDown_Int[observable_complete_ws_11_06_1D|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_complete_ws_11_06_1D)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset data_obs
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg1_complete_ws_11_06_1D
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg2_complete_ws_11_06_1D
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg3_complete_ws_11_06_1D
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg4_complete_ws_11_06_1D
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg5_complete_ws_11_06_1D
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg6_complete_ws_11_06_1D
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg7_complete_ws_11_06_1D
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg8_complete_ws_11_06_1D
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg1_complete_ws_11_06_1D_WW_QCD_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg1_complete_ws_11_06_1D_WW_QCD_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg2_complete_ws_11_06_1D_WZ_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg2_complete_ws_11_06_1D_WZ_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg3_complete_ws_11_06_1D_ZZ_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg3_complete_ws_11_06_1D_ZZ_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg4_complete_ws_11_06_1D_Triboson_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg4_complete_ws_11_06_1D_Triboson_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg5_complete_ws_11_06_1D_Wrong_Sign_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg5_complete_ws_11_06_1D_Wrong_Sign_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg6_complete_ws_11_06_1D_W_Gamma_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg6_complete_ws_11_06_1D_W_Gamma_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg7_complete_ws_11_06_1D_WW_DPS_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg7_complete_ws_11_06_1D_WW_DPS_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg8_complete_ws_11_06_1D_Non_Prompt_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_bkg8_complete_ws_11_06_1D_Non_Prompt_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_SM_complete_ws_11_06_1D_rawshape
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_complete_ws_11_06_1D
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing RooHistFunc::anomalousCoupling_SM_complete_ws_11_06_1D_shape
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_SM_complete_ws_11_06_1D_rawshape_diboson_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_complete_ws_11_06_1D_diboson_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing RooHistFunc::anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing dataset anomalousCoupling_SM_complete_ws_11_06_1D_rawshape_diboson_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_complete_ws_11_06_1D_diboson_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing RooHistFunc::anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing AsymPow::ATGCPdf_anoCoupl_process_complete_ws_11_06_1D_norm
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing RooRealVar::kappaL_1_complete_ws_11_06_1D
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_complete_ws_11_06_1D) importing RooRealVar::kappaH_1_complete_ws_11_06_1D
+
+RooWorkspace(proc_complete_ws_11_06_1D) proc_complete_ws_11_06_1D contents
+
+variables
+---------
+(diboson_shape,fs0,kappaH_1_complete_ws_11_06_1D,kappaL_1_complete_ws_11_06_1D,observable_complete_ws_11_06_1D)
+
+p.d.f.s
+-------
+RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_complete_ws_11_06_1D[ observable=observable_complete_ws_11_06_1D par1=fs0 SM_shape=anomalousCoupling_SM_complete_ws_11_06_1D_shape ] = 12.412
+RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_complete_ws_11_06_1D_diboson_shapeDown[ observable=observable_complete_ws_11_06_1D par1=fs0 SM_shape=anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeDown ] = 9.25699
+RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_complete_ws_11_06_1D_diboson_shapeUp[ observable=observable_complete_ws_11_06_1D par1=fs0 SM_shape=anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeUp ] = 15.567
+
+functions
+--------
+AsymPow::ATGCPdf_anoCoupl_process_complete_ws_11_06_1D_norm[ kappaLow=kappaL_1_complete_ws_11_06_1D kappaHigh=kappaH_1_complete_ws_11_06_1D theta=diboson_shape ] = 1
+RooHistFunc::anomalousCoupling_SM_complete_ws_11_06_1D_shape[ depList=(observable_complete_ws_11_06_1D) ] = 12.412
+RooHistFunc::anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeDown[ depList=(observable_complete_ws_11_06_1D) ] = 9.257
+RooHistFunc::anomalousCoupling_SM_complete_ws_11_06_1D_shape_diboson_shapeUp[ depList=(observable_complete_ws_11_06_1D) ] = 15.567
+
+datasets
+--------
+RooDataHist::data_obs(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg1_complete_ws_11_06_1D(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg2_complete_ws_11_06_1D(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg3_complete_ws_11_06_1D(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg4_complete_ws_11_06_1D(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg5_complete_ws_11_06_1D(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg6_complete_ws_11_06_1D(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg7_complete_ws_11_06_1D(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg8_complete_ws_11_06_1D(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg1_complete_ws_11_06_1D_WW_QCD_shapeUp(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg1_complete_ws_11_06_1D_WW_QCD_shapeDown(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg2_complete_ws_11_06_1D_WZ_shapeUp(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg2_complete_ws_11_06_1D_WZ_shapeDown(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg3_complete_ws_11_06_1D_ZZ_shapeUp(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg3_complete_ws_11_06_1D_ZZ_shapeDown(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg4_complete_ws_11_06_1D_Triboson_shapeUp(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg4_complete_ws_11_06_1D_Triboson_shapeDown(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg5_complete_ws_11_06_1D_Wrong_Sign_shapeUp(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg5_complete_ws_11_06_1D_Wrong_Sign_shapeDown(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg6_complete_ws_11_06_1D_W_Gamma_shapeUp(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg6_complete_ws_11_06_1D_W_Gamma_shapeDown(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg7_complete_ws_11_06_1D_WW_DPS_shapeUp(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg7_complete_ws_11_06_1D_WW_DPS_shapeDown(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg8_complete_ws_11_06_1D_Non_Prompt_shapeUp(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_bkg8_complete_ws_11_06_1D_Non_Prompt_shapeDown(observable_complete_ws_11_06_1D)
+
+embedded datasets (in pdfs and functions)
+-----------------------------------------
+RooDataHist::anomalousCoupling_SM_complete_ws_11_06_1D_rawshape(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_SM_complete_ws_11_06_1D_rawshape_diboson_shapeUp(observable_complete_ws_11_06_1D)
+RooDataHist::anomalousCoupling_SM_complete_ws_11_06_1D_rawshape_diboson_shapeDown(observable_complete_ws_11_06_1D)
+
+
+
+
+############# name_forCorr=  diboson_shape
+ loop over Nbkg...
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 8  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_complete_ws_11_06_1D  complete_ws_11_06_1D ./complete_ws_11_06_1D_ws.root proc_complete_ws_11_06_1D:$PROCESS proc_complete_ws_11_06_1D:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_complete_ws_11_06_1D  complete_ws_11_06_1D ./complete_ws_11_06_1D_ws.root proc_complete_ws_11_06_1D:$PROCESS proc_complete_ws_11_06_1D:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_complete_ws_11_06_1D  complete_ws_11_06_1D ./complete_ws_11_06_1D_ws.root proc_complete_ws_11_06_1D:$PROCESS proc_complete_ws_11_06_1D:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_complete_ws_11_06_1D  complete_ws_11_06_1D ./complete_ws_11_06_1D_ws.root proc_complete_ws_11_06_1D:$PROCESS proc_complete_ws_11_06_1D:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_complete_ws_11_06_1D  complete_ws_11_06_1D ./complete_ws_11_06_1D_ws.root proc_complete_ws_11_06_1D:$PROCESS proc_complete_ws_11_06_1D:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg6_complete_ws_11_06_1D  complete_ws_11_06_1D ./complete_ws_11_06_1D_ws.root proc_complete_ws_11_06_1D:$PROCESS proc_complete_ws_11_06_1D:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg7_complete_ws_11_06_1D  complete_ws_11_06_1D ./complete_ws_11_06_1D_ws.root proc_complete_ws_11_06_1D:$PROCESS proc_complete_ws_11_06_1D:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg8_complete_ws_11_06_1D  complete_ws_11_06_1D ./complete_ws_11_06_1D_ws.root proc_complete_ws_11_06_1D:$PROCESS proc_complete_ws_11_06_1D:$PROCESS_$SYSTEMATIC
+shapes data_obs                complete_ws_11_06_1D ./complete_ws_11_06_1D_ws.root proc_complete_ws_11_06_1D:$PROCESS    
+shapes anoCoupl_process_complete_ws_11_06_1D complete_ws_11_06_1D ./complete_ws_11_06_1D_ws.root proc_complete_ws_11_06_1D:ATGCPdf_$PROCESS proc_complete_ws_11_06_1D:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin complete_ws_11_06_1D 
+observation 201.0
+------------
+bin                         complete_ws_11_06_1D					complete_ws_11_06_1D			complete_ws_11_06_1D			complete_ws_11_06_1D			complete_ws_11_06_1D			complete_ws_11_06_1D			complete_ws_11_06_1D			complete_ws_11_06_1D			complete_ws_11_06_1D       
+process			    anoCoupl_process_complete_ws_11_06_1D    	anomalousCoupling_bkg1_complete_ws_11_06_1D	anomalousCoupling_bkg2_complete_ws_11_06_1D	anomalousCoupling_bkg3_complete_ws_11_06_1D	anomalousCoupling_bkg4_complete_ws_11_06_1D	anomalousCoupling_bkg5_complete_ws_11_06_1D	anomalousCoupling_bkg6_complete_ws_11_06_1D	anomalousCoupling_bkg7_complete_ws_11_06_1D	anomalousCoupling_bkg8_complete_ws_11_06_1D       
+process                     0	  	       				1 				2 				3 				4 				5 				6 				7 				8       
+rate                        79.5110011101	 			5.05099999905 			26.7419992983 			0.165000000037 			5.89500010014 			5.340999946 			8.65500020981 			0.681000022218 			85.5860005617           
+------------
+
+WW_QCD_shape shape1  -				1.0 				-				-				-				-				-				-				-
+WZ_shape shape1  -				-				1.0 				-				-				-				-				-				-
+ZZ_shape shape1  -				-				-				1.0 				-				-				-				-				-
+Triboson_shape shape1  -				-				-				-				1.0 				-				-				-				-
+Wrong_Sign_shape shape1  -				-				-				-				-				1.0 				-				-				-
+W_Gamma_shape shape1  -				-				-				-				-				-				1.0 				-				-
+WW_DPS_shape shape1  -				-				-				-				-				-				-				1.0 				-
+Non_Prompt_shape shape1  -				-				-				-				-				-				-				-				1.0 
+diboson_shape        shape1  1.0          				-				-				-				-				-				-				-				-

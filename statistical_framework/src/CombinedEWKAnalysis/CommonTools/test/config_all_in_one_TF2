@@ -1,0 +1,13 @@
+[Global]
+model=par1par2_TF2
+par1Name = fs0
+par1Low = -1.5
+par1High = 1.5
+par2Name = fs1
+par2Low = -3.0
+par2High = 3.0
+
+[ch_all_in_one]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_shape

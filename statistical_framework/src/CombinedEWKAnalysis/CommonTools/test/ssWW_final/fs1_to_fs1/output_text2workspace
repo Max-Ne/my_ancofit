@@ -1,0 +1,57 @@
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+Setting physics options in new model: 
+channels=ssWW_fs1_to_fs1
+changing channels:  ['ssWW_fs1_to_fs1']
+par1 {'par1': ['-1.', '1.']}
+poi=fs1
+poi=fs1
+['fs1']
+fs1 {'par1': ['-1.', '1.']}
+range_fs1=-30.5,30.5
+fs1 {'par1': ['-1.', '1.']}
+ reading in range fs1
+  range ['-30.5', '30.5']
+reading /storage/9/mneukum/CMSSW_7_1_9/src/CombinedEWKAnalysis/CommonTools/data/anomalousCoupling/signal_proc_ssWW_fs1_to_fs1.root for ssWW_fs1_to_fs1
+	 @@@@@@@@@@@ can't find biining! (RooATGCProcessScaling file)
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ print out ...
+
+RooWorkspace(w) w contents
+
+variables
+---------
+(CMS_channel,diboson_shape,fs1,kappaH_1_ssWW_fs1_to_fs1,kappaL_1_ssWW_fs1_to_fs1,observable_ssWW_fs1_to_fs1)
+
+functions
+--------
+RooACProcessScaling_1D::Scaling_anoCoupl_process_ssWW_fs1_to_fs1[ par1=fs1 ] = ret/SM_integral= 79.5107/79.511 = 0.999996
+0.999996
+RooHistFunc::Scaling_base_pdf_anoCoupl_process_ssWW_fs1_to_fs1[ depList=(observable_ssWW_fs1_to_fs1) ] = 4.584
+AsymPow::shapeSig_anoCoupl_process_ssWW_fs1_to_fs1_ssWW_fs1_to_fs1__norm[ kappaLow=kappaL_1_ssWW_fs1_to_fs1 kappaHigh=kappaH_1_ssWW_fs1_to_fs1 theta=diboson_shape ] = 1
+
+datasets
+--------
+RooDataHist::data_obs(CMS_channel,observable_ssWW_fs1_to_fs1)
+RooDataHist::DHIST_SM_aC_ssWW_fs1_to_fs1_shape_for_scale(observable_ssWW_fs1_to_fs1)
+
+embedded datasets (in pdfs and functions)
+-----------------------------------------
+RooDataHist::DHIST_SM_aC_ssWW_fs1_to_fs1_shape_for_scale(observable_ssWW_fs1_to_fs1)
+
+named sets
+----------
+POI:(fs1)
+observables:(observable_ssWW_fs1_to_fs1,CMS_channel)
+
+generic objects
+---------------
+TH1D::SM_aC_ssWW_fs1_to_fs1_shape_for_scale
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ printed out ...
+{'anoCoupl_process_ssWW_fs1_to_fs1': 'anoCoupl_process_ssWW_fs1_to_fs1'}

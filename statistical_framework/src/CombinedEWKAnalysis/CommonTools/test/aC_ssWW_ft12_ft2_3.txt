@@ -1,0 +1,43 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 8  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_ssWW_ft12_ft2_3  ssWW_ft12_ft2_3 ./ssWW_ft12_ft2_3_ws.root proc_ssWW_ft12_ft2_3:$PROCESS proc_ssWW_ft12_ft2_3:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_ssWW_ft12_ft2_3  ssWW_ft12_ft2_3 ./ssWW_ft12_ft2_3_ws.root proc_ssWW_ft12_ft2_3:$PROCESS proc_ssWW_ft12_ft2_3:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_ssWW_ft12_ft2_3  ssWW_ft12_ft2_3 ./ssWW_ft12_ft2_3_ws.root proc_ssWW_ft12_ft2_3:$PROCESS proc_ssWW_ft12_ft2_3:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_ssWW_ft12_ft2_3  ssWW_ft12_ft2_3 ./ssWW_ft12_ft2_3_ws.root proc_ssWW_ft12_ft2_3:$PROCESS proc_ssWW_ft12_ft2_3:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_ssWW_ft12_ft2_3  ssWW_ft12_ft2_3 ./ssWW_ft12_ft2_3_ws.root proc_ssWW_ft12_ft2_3:$PROCESS proc_ssWW_ft12_ft2_3:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg6_ssWW_ft12_ft2_3  ssWW_ft12_ft2_3 ./ssWW_ft12_ft2_3_ws.root proc_ssWW_ft12_ft2_3:$PROCESS proc_ssWW_ft12_ft2_3:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg7_ssWW_ft12_ft2_3  ssWW_ft12_ft2_3 ./ssWW_ft12_ft2_3_ws.root proc_ssWW_ft12_ft2_3:$PROCESS proc_ssWW_ft12_ft2_3:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg8_ssWW_ft12_ft2_3  ssWW_ft12_ft2_3 ./ssWW_ft12_ft2_3_ws.root proc_ssWW_ft12_ft2_3:$PROCESS proc_ssWW_ft12_ft2_3:$PROCESS_$SYSTEMATIC
+shapes data_obs                ssWW_ft12_ft2_3 ./ssWW_ft12_ft2_3_ws.root proc_ssWW_ft12_ft2_3:$PROCESS    
+shapes anoCoupl_process_ssWW_ft12_ft2_3 ssWW_ft12_ft2_3 ./ssWW_ft12_ft2_3_ws.root proc_ssWW_ft12_ft2_3:ATGCPdf_$PROCESS proc_ssWW_ft12_ft2_3:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin ssWW_ft12_ft2_3 
+observation 12.0
+------------
+bin                         ssWW_ft12_ft2_3					ssWW_ft12_ft2_3			ssWW_ft12_ft2_3			ssWW_ft12_ft2_3			ssWW_ft12_ft2_3			ssWW_ft12_ft2_3			ssWW_ft12_ft2_3			ssWW_ft12_ft2_3			ssWW_ft12_ft2_3       
+process			    anoCoupl_process_ssWW_ft12_ft2_3    	anomalousCoupling_bkg1_ssWW_ft12_ft2_3	anomalousCoupling_bkg2_ssWW_ft12_ft2_3	anomalousCoupling_bkg3_ssWW_ft12_ft2_3	anomalousCoupling_bkg4_ssWW_ft12_ft2_3	anomalousCoupling_bkg5_ssWW_ft12_ft2_3	anomalousCoupling_bkg6_ssWW_ft12_ft2_3	anomalousCoupling_bkg7_ssWW_ft12_ft2_3	anomalousCoupling_bkg8_ssWW_ft12_ft2_3       
+process                     0	  	       				1 				2 				3 				4 				5 				6 				7 				8       
+rate                        5.27400016785	 			0.597000002861 			1.09500002861 			0.00999999977648 			0.335000008345 			0.321999996901 			0.232999995351 			0.0170000009239 			0.990000009537           
+------------
+
+integrated_luminosity         lnN  1.025      				1.025				-				1.025				1.025				1.025				1.025				1.025				-
+muon_selection         lnN  1.02      				1.02				-				1.02				1.02				1.02				1.02				1.02				-
+electron_selection         lnN  1.02      				1.02				-				1.02				1.02				1.02				1.02				1.02				-
+JES         lnN  1.03      				1.03				-				1.03				1.03				1.03				1.03				1.03				-
+PDFs         lnN  1.04      				1.04				-				1.04				1.04				1.04				1.04				1.04				-
+QCDscale_EWK         lnN  1.1      				-				-				-				-				-				-				-				-
+QCDscale_ZZ         lnN  -      				-				-				1.1				-				-				-				-				-
+QCDscale_VVV         lnN  -      				-				-				-				1.1				-				-				-				-
+WW_QCD_shape shape1  -				1.0 				-				-				-				-				-				-				-
+WZ_shape shape1  -				-				1.0 				-				-				-				-				-				-
+ZZ_shape shape1  -				-				-				1.0 				-				-				-				-				-
+Triboson_shape shape1  -				-				-				-				1.0 				-				-				-				-
+Wrong_Sign_shape shape1  -				-				-				-				-				1.0 				-				-				-
+W_Gamma_shape shape1  -				-				-				-				-				-				1.0 				-				-
+WW_DPS_shape shape1  -				-				-				-				-				-				-				1.0 				-
+Non_Prompt_shape shape1  -				-				-				-				-				-				-				-				1.0 
+diboson_shape        shape1  1.0          				-				-				-				-				-				-				-				-

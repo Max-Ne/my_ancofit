@@ -1,0 +1,8 @@
+# Instructions on how to set up your own MC generation instead of using the pre generated files in CERNBox (yet to be uploaded)
+# mainly straight forward, only config files/pythia script is given
+
+
+
+yet to come
+
+

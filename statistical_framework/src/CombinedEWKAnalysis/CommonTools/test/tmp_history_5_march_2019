@@ -1,0 +1,1000 @@
+ 1014  diff ./ssWW_smallGrid/fs1/output_buildWorkspace_AC ./ssWW_smallGrid/fs0/output_buildWorkspace_AC
+ 1015  vi ./ssWW_smallGrid/fs1/output_text2workspace 
+ 1016  diff ./ssWW_smallGrid/fs1/output_text2workspace ./ssWW_smallGrid/fs0/output_text2workspace
+ 1017  vi ./ssWW_smallGrid/fs1/output_combine 
+ 1018  vi ./ssWW_smallGrid/fs0/output_combine 
+ 1019  python buildWorkspace_AC.py --config=ssWW_smallGrid_fs0_config > ./ssWW_smallGrid/fs0/output_buildWorkspace_AC
+ 1020  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-24.5,25.0 > ./ssWW_smallGrid/fs0/output_text2workspace
+ 1021  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs0/output_combine
+ 1022  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0 > ./ssWW_smallGrid/fs0/output_build1DInterval
+ 1023  ls
+ 1024  vi ssWW_smallGrid_fs0_config 
+ 1025  python buildWorkspace_AC.py --config=ssWW_smallGrid_fs0_config
+ 1026  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-8.,8.
+ 1027  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1028  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-8.,8.5
+ 1029  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1030  python buildWorkspace_AC.py --config=ssWW_smallGrid_fs0_config > ./ssWW_smallGrid/fs0/output_buildWorkspace_AC
+ 1031  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-24.5,25.0 > ./ssWW_smallGrid/fs0/output_text2workspace
+ 1032  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs0/output_combine
+ 1033  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-8.,8.5python buildWorkspace_AC.py --config=ssWW_smallGrid_fs0_config > ./ssWW_smallGrid/fs0/output_buildWorkspace_AC
+ 1034  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-8.,8.5 > ./ssWW_smallGrid/fs0/output_text2workspace
+ 1035  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs0/output_combine
+ 1036  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0 > ./ssWW_smallGrid/fs0/output_build1DInterval
+ 1037  vi ./ssWW_smallGrid/fs0/output_build1DInterval
+ 1038  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-10.,10. > ./ssWW_smallGrid/fs0/output_text2workspace
+ 1039  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs0/output_combine
+ 1040  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-9.,9. > ./ssWW_smallGrid/fs0/output_text2workspace
+ 1041  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs0/output_combine
+ 1042  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-8.5,8.5 > ./ssWW_smallGrid/fs0/output_text2workspace
+ 1043  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs0/output_combine
+ 1044  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-8.,8.5 > ./ssWW_smallGrid/fs0/output_text2workspace
+ 1045  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs0/output_combine
+ 1046  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0 > ./ssWW_smallGrid/fs0/output_build1DInterval
+ 1047  vi ./ssWW_smallGrid/fs0/output_build1DInterval
+ 1048  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs0/output_combine
+ 1049  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0 > ./ssWW_smallGrid/fs0/output_build1DInterval
+ 1050  vi ./ssWW_smallGrid/fs0/output_build1DInterval
+ 1051  python buildWorkspace_AC.py --config=ssWW_smallGrid_fs0_config > ./ssWW_smallGrid/fs0/output_buildWorkspace_AC
+ 1052  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-8.,8.5 > ./ssWW_smallGrid/fs0/output_text2workspace
+ 1053  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs0/output_combine
+ 1054  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1055  sed ./ssWW_smallGrid/fs0/output_build1DInterval 
+ 1056  cat ./ssWW_smallGrid/fs0/output_build1DInterval 
+ 1057  python buildWorkspace_AC.py --config=ssWW_smallGrid_fs0_config > ./ssWW_smallGrid/fs0/output_buildWorkspace_AC
+ 1058  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-8.,8.5 > ./ssWW_smallGrid/fs0/output_text2workspace
+ 1059  combine aC_ssWW_smallGrid_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs0/output_combine
+ 1060  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0 > ./ssWW_smallGrid/fs0/output_build1DInterval
+ 1061  cat ./ssWW_smallGrid/fs0/output_build1DInterval
+ 1062  python buildWorkspace_AC.py --config=ssWW_smallGrid_fs1_config > ./ssWW_smallGrid/fs1/output_buildWorkspace_AC
+ 1063  text2workspace.py -m 125 aC_ssWW_smallGrid_fs1.txt -o aC_ssWW_smallGrid_fs1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs1 --PO poi=fs1 --PO range_fs1=-24.5,25.0 > ./ssWW_smallGrid/fs1/output_text2workspace
+ 1064  combine aC_ssWW_smallGrid_fs1_stat.root -M MultiDimFit -P fs1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs1/output_combine
+ 1065  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs1 > ./ssWW_smallGrid/fs1/output_build1DInterval
+ 1066  cat ./ssWW_smallGrid/fs1output_build1DInterval
+ 1067  python buildWorkspace_AC.py --config=ssWW_smallGrid_fs1_config > ./ssWW_smallGrid/fs1/output_buildWorkspace_AC
+ 1068  text2workspace.py -m 125 aC_ssWW_smallGrid_fs1.txt -o aC_ssWW_smallGrid_fs1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs1 --PO poi=fs1 --PO range_fs1=-24.5,25.0 > ./ssWW_smallGrid/fs1/output_text2workspace
+ 1069  combine aC_ssWW_smallGrid_fs1_stat.root -M MultiDimFit -P fs1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fs1/output_combine
+ 1070  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs1 > ./ssWW_smallGrid/fs1/output_build1DInterval
+ 1071  cat ./ssWW_smallGrid/fs1/output_build1DInterval
+ 1072  python buildWorkspace_AC.py --config=ssWW_smallGrid_fm0_config > ./ssWW_smallGrid/fm0/output_buildWorkspace_AC
+ 1073  text2workspace.py -m 125 aC_ssWW_smallGrid_fm0.txt -o aC_ssWW_smallGrid_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm0 --PO poi=fm0 --PO range_fm0=-8.0,8.0 > ./ssWW_smallGrid/fm0/output_text2workspace
+ 1074  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fm0/output_combine
+ 1075  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm0 > ./ssWW_smallGrid/fm0/output_build1DInterval
+ 1076  cat ./ssWW_smallGrid/fm0/output_build1DInterval
+ 1077  text2workspace.py -m 125 aC_ssWW_smallGrid_fm0.txt -o aC_ssWW_smallGrid_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm0 --PO poi=fm0 --PO range_fm0=-7.0,7.0 > ./ssWW_smallGrid/fm0/output_text2workspace
+ 1078  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fm0/output_combine
+ 1079  python buildWorkspace_AC.py --config=ssWW_smallGrid_fm0_config
+ 1080  text2workspace.py -m 125 aC_ssWW_smallGrid_fm0.txt -o aC_ssWW_smallGrid_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm0 --PO poi=fm0 --PO range_fm0=-6.5,6.5 > ./ssWW_smallGrid/fm0/output_text2workspace
+ 1081  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fm0/output_combine
+ 1082  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1083  text2workspace.py -m 125 aC_ssWW_smallGrid_fm0.txt -o aC_ssWW_smallGrid_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm0 --PO poi=fm0 --PO range_fm0=-6.0,6.0 > ./ssWW_smallGrid/fm0/output_text2workspace
+ 1084  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1085  text2workspace.py -m 125 aC_ssWW_smallGrid_fm0.txt -o aC_ssWW_smallGrid_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm0 --PO poi=fm0 --PO range_fm0=-6.0,5.9 > ./ssWW_smallGrid/fm0/output_text2workspace
+ 1086  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1087  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm0
+ 1088  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1089  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm0
+ 1090  text2workspace.py -m 125 aC_ssWW_smallGrid_fm0.txt -o aC_ssWW_smallGrid_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm0 --PO poi=fm0 --PO range_fm0=-6.0,5.82 > ./ssWW_smallGrid/fm0/output_text2workspace
+ 1091  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1092  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm0
+ 1093  ls -t
+ 1094  cp ssWW_smallGrid_fm0_config ssWW_smallGrid_fm0_confign6 
+ 1095  vi ssWW_smallGrid_fm0_config
+ 1096  text2workspace.py -m 125 aC_ssWW_smallGrid_fm0.txt -o aC_ssWW_smallGrid_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm0 --PO poi=fm0 --PO range_fm0=-6.0,5.82 > ./ssWW_smallGrid/fm0/output_text2workspace
+ 1097  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1098  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm0
+ 1099  cp ssWW_smallGrid_fm0_confign6 ssWW_smallGrid_fm0_config
+ 1100  text2workspace.py -m 125 aC_ssWW_smallGrid_fm0.txt -o aC_ssWW_smallGrid_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm0 --PO poi=fm0 --PO range_fm0=-6.0,5.82 > ./ssWW_smallGrid/fm0/output_text2workspace
+ 1101  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1102  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm0
+ 1103  cp ssWW_smallGrid_fm0_confign6 ssWW_smallGrid_fm0_confign1
+ 1104  vi ssWW_smallGrid_fm0_confign1
+ 1105  python buildWorkspace_AC.py --config=ssWW_smallGrid_fm0_config > ./ssWW_smallGrid/fm0/output_buildWorkspace_AC
+ 1106  text2workspace.py -m 125 aC_ssWW_smallGrid_fm0.txt -o aC_ssWW_smallGrid_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm0 --PO poi=fm0 --PO range_fm0=-6.0,5.82 > ./ssWW_smallGrid/fm0/output_text2workspace
+ 1107  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fm0/output_combine
+ 1108  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm0
+ 1109  vi ssWW_smallGrid_fm0_config
+ 1110  cp ssWW_smallGrid_fm0_confign1 ssWW_smallGrid_fm0_config
+ 1111  python buildWorkspace_AC.py --config=ssWW_smallGrid_fm0_config > ./ssWW_smallGrid/fm0/output_buildWorkspace_AC
+ 1112  text2workspace.py -m 125 aC_ssWW_smallGrid_fm0.txt -o aC_ssWW_smallGrid_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm0 --PO poi=fm0 --PO range_fm0=-6.0,5.82 > ./ssWW_smallGrid/fm0/output_text2workspace
+ 1113  combine aC_ssWW_smallGrid_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_smallGrid/fm0/output_combine
+ 1114  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm0
+ 1115  ls -t
+ 1116  cp ssWW_smallGrid_fm0_confign6 ssWW_smallGrid_fm0_config
+ 1117  python buildWorkspace_AC.py --config=ssWW_smallGrid_fm1_config > ./ssWW_smallGrid/fm1/output_buildWorkspace_AC
+ 1118  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-9.5,9.5 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1119  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1120  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-9.1,9.1 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1121  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1122  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-9.0,9.1 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1123  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1124  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-8.9,9.1 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1125  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1126  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-8.7,9.1 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1127  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1128  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-8.6,9.1 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1129  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1130  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1131  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-8.5,9.1 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1132  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1133  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-8.4,9.0 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1134  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1135  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-8.45,9.0 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1136  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1137  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-8.42,9.0 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1138  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1139  text2workspace.py -m 125 aC_ssWW_smallGrid_fm1.txt -o aC_ssWW_smallGrid_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm1 --PO poi=fm1 --PO range_fm1=-8.4,9.0 > ./ssWW_smallGrid/fm1/output_text2workspace
+ 1140  combine aC_ssWW_smallGrid_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1141  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm1
+ 1142  python buildWorkspace_AC.py --config=ssWW_smallGrid_fm7_config > ./ssWW_smallGrid/fm7/output_buildWorkspace_AC
+ 1143  text2workspace.py -m 125 aC_ssWW_smallGrid_fm7.txt -o aC_ssWW_smallGrid_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm7 --PO poi=fm7 --PO range_fm7=-10,10
+ 1144  combine aC_ssWW_smallGrid_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/fm7/output_combine
+ 1145  text2workspace.py -m 125 aC_ssWW_smallGrid_fm7.txt -o aC_ssWW_smallGrid_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm7 --PO poi=fm7 --PO range_fm7=-16,16
+ 1146  combine aC_ssWW_smallGrid_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/fm7/output_combine
+ 1147  text2workspace.py -m 125 aC_ssWW_smallGrid_fm7.txt -o aC_ssWW_smallGrid_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm7 --PO poi=fm7 --PO range_fm7=-16,16
+ 1148  combine aC_ssWW_smallGrid_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/fm7/output_combine
+ 1149  text2workspace.py -m 125 aC_ssWW_smallGrid_fm7.txt -o aC_ssWW_smallGrid_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm7 --PO poi=fm7 --PO range_fm7=-12,12
+ 1150  combine aC_ssWW_smallGrid_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/fm7/output_combine
+ 1151  text2workspace.py -m 125 aC_ssWW_smallGrid_fm7.txt -o aC_ssWW_smallGrid_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm7 --PO poi=fm7 --PO range_fm7=-14,13
+ 1152  combine aC_ssWW_smallGrid_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/fm7/output_combine
+ 1153  text2workspace.py -m 125 aC_ssWW_smallGrid_fm7.txt -o aC_ssWW_smallGrid_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm7 --PO poi=fm7 --PO range_fm7=-13.5,12.5
+ 1154  combine aC_ssWW_smallGrid_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/fm7/output_combine
+ 1155  text2workspace.py -m 125 aC_ssWW_smallGrid_fm7.txt -o aC_ssWW_smallGrid_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm7 --PO poi=fm7 --PO range_fm7=-13.4,12.5
+ 1156  combine aC_ssWW_smallGrid_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/fm7/output_combine
+ 1157  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm7
+ 1158  combine aC_ssWW_smallGrid_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/fm7/output_combine
+ 1159  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm7
+ 1160  text2workspace.py -m 125 aC_ssWW_smallGrid_fm7.txt -o aC_ssWW_smallGrid_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm7 --PO poi=fm7 --PO range_fm7=-13.3,12.5
+ 1161  combine aC_ssWW_smallGrid_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/fm7/output_combine
+ 1162  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm7
+ 1163  python buildWorkspace_AC.py --config=ssWW_smallGrid_fm7_config > ./ssWW_smallGrid/fm7/output_buildWorkspace_AC
+ 1164  text2workspace.py -m 125 aC_ssWW_smallGrid_fm7.txt -o aC_ssWW_smallGrid_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fm7 --PO poi=fm7 --PO range_fm7=-13.3,12.5 >> ./ssWW_smallGrid/fm7/output_text2workspace
+ 1165  combine aC_ssWW_smallGrid_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/fm7/output_combine
+ 1166  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm7 >> ./ssWW_smallGrid/fm7/output_build1DInterval
+ 1167  cat ./ssWW_smallGrid/fm7/output_build1DInterval 
+ 1168  python buildWorkspace_AC.py --config=ssWW_smallGrid_ft0_config > ./ssWW_smallGrid/ft0/output_buildWorkspace_AC
+ 1169  text2workspace.py -m 125 aC_ssWW_smallGrid_ft0.txt -o aC_ssWW_smallGrid_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft0 --PO poi=ft0 --PO range_ft0=-0.7,0.7
+ 1170  combine aC_ssWW_smallGrid_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1171  text2workspace.py -m 125 aC_ssWW_smallGrid_ft0.txt -o aC_ssWW_smallGrid_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft0 --PO poi=ft0 --PO range_ft0=-0.685,0.685
+ 1172  combine aC_ssWW_smallGrid_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1173  text2workspace.py -m 125 aC_ssWW_smallGrid_ft0.txt -o aC_ssWW_smallGrid_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft0 --PO poi=ft0 --PO range_ft0=-0.63,0.63
+ 1174  combine aC_ssWW_smallGrid_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1175  text2workspace.py -m 125 aC_ssWW_smallGrid_ft0.txt -o aC_ssWW_smallGrid_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft0 --PO poi=ft0 --PO range_ft0=-0.6,0.6
+ 1176  combine aC_ssWW_smallGrid_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1177  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1178  ls -t
+ 1179  cp ssWW_smallGrid_ft0_config ssWW_smallGrid_ft0_confign1
+ 1180  cp ssWW_smallGrid_ft0_config ssWW_smallGrid_ft0_confign6
+ 1181  vi ssWW_smallGrid_ft0_confign1
+ 1182  cp ssWW_smallGrid_ft0_confign1 ssWW_smallGrid_ft0_config
+ 1183  text2workspace.py -m 125 aC_ssWW_smallGrid_ft0.txt -o aC_ssWW_smallGrid_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft0 --PO poi=ft0 --PO range_ft0=-0.6,0.6
+ 1184  combine aC_ssWW_smallGrid_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1185  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1186  combine aC_ssWW_smallGrid_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1187  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1188  python buildWorkspace_AC.py --config=ssWW_smallGrid_ft0_config > ./ssWW_smallGrid/ft0/output_buildWorkspace_AC
+ 1189  text2workspace.py -m 125 aC_ssWW_smallGrid_ft0.txt -o aC_ssWW_smallGrid_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft0 --PO poi=ft0 --PO range_ft0=-0.6,0.6 >> ./ssWW_smallGrid/ft0/output_text2workspace
+ 1190  combine aC_ssWW_smallGrid_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft0/output_combine
+ 1191  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0 >> ./ssWW_smallGrid/ft0/output_build1DInterval
+ 1192  cat ./ssWW_smallGrid/ft0/output_build1DInterval
+ 1193  python buildWorkspace_AC.py --config=ssWW_smallGrid_ft1_config > ./ssWW_smallGrid/ft1/output_buildWorkspace_AC
+ 1194  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.3,0.3
+ 1195  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1196  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.2,0.2
+ 1197  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1198  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.25,0.25
+ 1199  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1200  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.28,0.28
+ 1201  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1202  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.275,0.29
+ 1203  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1204  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.27,0.29
+ 1205  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1206  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.266,0.29
+ 1207  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1208  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.268,0.29
+ 1209  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1210  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.268,0.285
+ 1211  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1212  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.2675,0.285
+ 1213  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1214  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.2674,0.285
+ 1215  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1216  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.2673,0.285
+ 1217  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1218  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.2672,0.285
+ 1219  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1220  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.267,0.285
+ 1221  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1222  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1223  vi build1DInterval.py
+ 1224  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.2671,0.285
+ 1225  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1226  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1227  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.267,0.285
+ 1228  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1229  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1230  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.2675,0.28
+ 1231  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1232  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1233  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.268,0.285
+ 1234  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1235  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.2665,0.285
+ 1236  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1237  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1238  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.32,0.32
+ 1239  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1240  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1241  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.26,0.26
+ 1242  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1243  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.27,0.28
+ 1244  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1245  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1246  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.27,0.29
+ 1247  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1248  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.27,0.285
+ 1249  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1250  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.27,0.28
+ 1251  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1252  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.27,0.281
+ 1253  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1254  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.27,0.282
+ 1255  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1256  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.269,0.282
+ 1257  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1258  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1259  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.27,0.285
+ 1260  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1261  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1262  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.27,0.285
+ 1263  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1264  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.27,0.286
+ 1265  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b >> ./ssWW_smallGrid/ft1/output_combine
+ 1266  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1267  python buildWorkspace_AC.py --config=ssWW_smallGrid_ft2_config > ./ssWW_smallGrid/ft2/output_buildWorkspace_AC
+ 1268  text2workspace.py -m 125 aC_ssWW_smallGrid_ft2.txt -o aC_ssWW_smallGrid_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft2 --PO poi=ft2 --PO range_ft2=--0.9,1.0
+ 1269  text2workspace.py -m 125 aC_ssWW_smallGrid_ft2.txt -o aC_ssWW_smallGrid_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft2 --PO poi=ft2 --PO range_ft2=-0.9,1.0
+ 1270  combine aC_ssWW_smallGrid_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1271  text2workspace.py -m 125 aC_ssWW_smallGrid_ft2.txt -o aC_ssWW_smallGrid_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft2 --PO poi=ft2 --PO range_ft2=-0.84,1.0
+ 1272  combine aC_ssWW_smallGrid_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1273  text2workspace.py -m 125 aC_ssWW_smallGrid_ft2.txt -o aC_ssWW_smallGrid_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft2 --PO poi=ft2 --PO range_ft2=-0.838,0.99
+ 1274  combine aC_ssWW_smallGrid_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1275* text2workspace.py -m 125 aC_ssWW_smallGrid_ft2.txt -o aC_ssWW_smallGrid_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft2 --PO poi=ft2 --PO range_ft2=-0.835,0.98
+ 1276  combine aC_ssWW_smallGrid_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1277  text2workspace.py -m 125 aC_ssWW_smallGrid_ft2.txt -o aC_ssWW_smallGrid_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft2 --PO poi=ft2 --PO range_ft2=-0.837,0.98
+ 1278  combine aC_ssWW_smallGrid_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1279  text2workspace.py -m 125 aC_ssWW_smallGrid_ft2.txt -o aC_ssWW_smallGrid_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft2 --PO poi=ft2 --PO range_ft2=-0.8365,0.98
+ 1280  combine aC_ssWW_smallGrid_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1281  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1282  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1283  ls -t
+ 1284  cp ssWW_smallGrid_ft1_config ssWW_smallGrid_ft1_confign1
+ 1285  cp ssWW_smallGrid_ft1_config ssWW_smallGrid_ft1_confign6
+ 1286  cp ssWW_smallGrid_ft2_config ssWW_smallGrid_ft2_confign6
+ 1287  cp ssWW_smallGrid_ft2_config ssWW_smallGrid_ft2_confign1
+ 1288  vi ssWW_smallGrid_ft1_confign1
+ 1289  vi ssWW_smallGrid_ft2_confign1
+ 1290  cp ssWW_smallGrid_ft2_confign1 ssWW_smallGrid_ft2_config
+ 1291  cp ssWW_smallGrid_ft1_confign1 ssWW_smallGrid_ft1_config
+ 1292  python buildWorkspace_AC.py --config=ssWW_smallGrid_ft2_config > ./ssWW_smallGrid/ft2/output_buildWorkspace_AC
+ 1293  text2workspace.py -m 125 aC_ssWW_smallGrid_ft2.txt -o aC_ssWW_smallGrid_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft2 --PO poi=ft2 --PO range_ft2=-0.84,0.98
+ 1294  combine aC_ssWW_smallGrid_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1295  text2workspace.py -m 125 aC_ssWW_smallGrid_ft2.txt -o aC_ssWW_smallGrid_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft2 --PO poi=ft2 --PO range_ft2=-0.85,0.98
+ 1296  combine aC_ssWW_smallGrid_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1297  text2workspace.py -m 125 aC_ssWW_smallGrid_ft2.txt -o aC_ssWW_smallGrid_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft2 --PO poi=ft2 --PO range_ft2=-0.87,0.98
+ 1298  combine aC_ssWW_smallGrid_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1299  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1300  cp ssWW_smallGrid_ft1_confign1 ssWW_smallGrid_ft1_config
+ 1301  vi ssWW_smallGrid_ft1_config
+ 1302  python buildWorkspace_AC.py --config=ssWW_smallGrid_ft1_config > ./ssWW_smallGrid/ft1/output_buildWorkspace_AC
+ 1303  text2workspace.py -m 125 aC_ssWW_smallGrid_ft1.txt -o aC_ssWW_smallGrid_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_ft1 --PO poi=ft1 --PO range_ft1=-0.28,0.31
+ 1304  combine aC_ssWW_smallGrid_ft2_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1305  combine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1306  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1307  ls
+ 1308  vi aC_ZZ_ft0_bin9.txt
+ 1309  ls
+ 1310  vi aC_ZZ_ft0_bin9.txt
+ 1311  ls
+ 1312  vi aC_complete_ws_11_06.txt
+ 1313  ls
+ 1314  aacombine aC_ssWW_smallGrid_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1315  ls
+ 1316  combine aC_ZZ_ft0_bin9_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1317  ls -t *.root
+ 1318  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1319  combine aC_ZZ_ft1_bin9_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1320  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1321  combine aC_ZZ_ft2_bin9_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1322  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1323  combine aC_ZZ_ft2_bin9_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1324  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1325  combine aC_ZZ_ft8_bin9_stat.root -M MultiDimFit -P ft8 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1326  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft8
+ 1327  combine aC_ZZ_ft9_bin9_stat.root -M MultiDimFit -P ft9 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1328  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft9
+ 1329  ls 
+ 1330  ls -t *_config
+ 1331  vi ssWW_ft12_fs0_config
+ 1332  ls -t *_config
+ 1333  ls -t *_config*
+ 1334  cp ssWW_ft12_ft2_config ssWW_ft12_ft2_confign1
+ 1335  cp ssWW_ft12_ft2_config ssWW_ft12_ft2_confign6
+ 1336  cp ssWW_ft12_ft1_config ssWW_ft12_ft1_confign1
+ 1337  cp ssWW_ft12_ft1_config ssWW_ft12_ft1_confign6
+ 1338  cp ssWW_ft12_ft0_config ssWW_ft12_ft0_confign1
+ 1339  cp ssWW_ft12_ft0_config ssWW_ft12_ft0_confign6
+ 1340  cp ssWW_ft12_fm0_config ssWW_ft12_fm0_confign1
+ 1341  cp ssWW_ft12_fm0_config ssWW_ft12_fm0_confign6
+ 1342  cp ssWW_ft12_fm1_config ssWW_ft12_fm1_confign6
+ 1343  cp ssWW_ft12_fm1_config ssWW_ft12_fm1_confign1
+ 1344  cp ssWW_ft12_fm7_config ssWW_ft12_fm7_confign1
+ 1345  cp ssWW_ft12_fm7_config ssWW_ft12_fm7_confign6
+ 1346  cp ssWW_ft12_fs0_config ssWW_ft12_fs0_confign1
+ 1347  cp ssWW_ft12_fs1_config ssWW_ft12_fs1_confign1
+ 1348  cp ssWW_ft12_fs0_config ssWW_ft12_fs0_confign6
+ 1349  cp ssWW_ft12_fs1_config ssWW_ft12_fs1_confign6
+ 1350  vi ssWW_ft12_ft2_config
+ 1351  python buildWorkspace_AC.py --config=ssWW_ft12_ft2_config > ./ssWW_ft12/ft2/output_buildWorkspace_AC
+ 1352  text2workspace.py -m 125 aC_ssWW_ft12_ft2.txt -o aC_ssWW_ft12_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_ft2 --PO poi=ft2 --PO range_ft2=-0.82,.945 > ./ssWW_ft12/ft2/output_text2workspace
+ 1353  combine aC_ssWW_ft12_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/ft2/output_combine
+ 1354  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2 > ./ssWW_ft12/ft2/output_build1DInterval
+ 1355  cat ./ssWW_ft12/ft2/output_build1DInterval
+ 1356  vi ssWW_ft12_ft2_config
+ 1357  python buildWorkspace_AC.py --config=ssWW_ft12_ft2_config > ./ssWW_ft12/ft2/output_buildWorkspace_AC
+ 1358  text2workspace.py -m 125 aC_ssWW_ft12_ft2.txt -o aC_ssWW_ft12_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_ft2 --PO poi=ft2 --PO range_ft2=-0.82,.945 > ./ssWW_ft12/ft2/output_text2workspace
+ 1359  combine aC_ssWW_ft12_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/ft2/output_combine
+ 1360  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2 > ./ssWW_ft12/ft2/output_build1DInterval
+ 1361  cat ./ssWW_ft12/ft2/output_build1DInterval
+ 1362  cp ssWW_ft12_ft2_confign6 ssWW_ft12_ft2_config
+ 1363  python buildWorkspace_AC.py --config=ssWW_ft12_ft2_config > ./ssWW_ft12/ft2/output_buildWorkspace_AC
+ 1364  text2workspace.py -m 125 aC_ssWW_ft12_ft2.txt -o aC_ssWW_ft12_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_ft2 --PO poi=ft2 --PO range_ft2=-0.82,.945 > ./ssWW_ft12/ft2/output_text2workspace
+ 1365  combine aC_ssWW_ft12_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/ft2/output_combine
+ 1366  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2 > ./ssWW_ft12/ft2/output_build1DInterval
+ 1367  cat ./ssWW_ft12/ft2/output_build1DInterval
+ 1368  ls
+ 1369  vi ./ssWW_ft12_ft0_config
+ 1370  vi ./vi config_WZ_B50_noSignalUnc_TF1_chName
+ 1371  vi ./config_WZ_8TeV_dg0_final_B50 
+ 1372  vi ./ssWW_ft12_ft0_config
+ 1373  vi ./config_WZ_8TeV_dg0_final_B50 
+ 1374  vi ./ssWW_ft12_ft0_config
+ 1375  vi ./config_WZ_8TeV_dg0_final_B50 
+ 1376  ls 
+ 1377  vi ./config_WZ_8TeV_dg0_final_B50 
+ 1378  vi ./config_WZ_B50_noSignalUnc_TF1_chName
+ 1379  ls -t
+ 1380  vi ssWW_ft12_ft2_config
+ 1381  ls
+ 1382  vi bkg_only1_config
+ 1383  vi bkg_only1_config_b 
+ 1384  ls
+ 1385  vi x_exact_LS0_config
+ 1386  ls
+ 1387  vi ssWW_smallGrid_ft0_confign6
+ 1388  ls
+ 1389  vi get_yields
+ 1390  ls
+ 1391  vi config_AIO_TF1
+ 1392  ls
+ 1393  vi complete_ws_11_06_config
+ 1394  ls
+ 1395* vi caper
+ 1396  vi paper_exact_out_config_cor
+ 1397  :Q
+ 1398  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1399  ls
+ 1400  ls -t
+ 1401  vi aC_paper_exact_out.txt
+ 1402  ls
+ 1403  ls -t
+ 1404  vi paper_exact_out_config_cor
+ 1405  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1406  vi aC_paper_exact_out.txt
+ 1407  vi paper_exact_out_config_cor
+ 1408  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1409  vi aC_paper_exact_out.txt
+ 1410  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.txt -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 -PO range_fs0=-10,10
+ 1411  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1412  ls -t
+ 1413  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1414  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1415  vi paper_exact_out_config_cor
+ 1416  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1417  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1418  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1419  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1420  vi paper_exact_out_config_cor
+ 1421  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1422  vi paper_exact_out_config_cor
+ 1423  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1424  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1425  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1426  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1427  vi paper_exact_out_config_cor
+ 1428  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1429  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1430  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1431  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1432  vi paper_exact_out_config_cor
+ 1433  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1434  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1435  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1436  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1437  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1438  vi paper_exact_out_config_cor
+ 1439  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1440  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1441  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1442  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1443  vi paper_exact_out_config_cor
+ 1444  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1445  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1446  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1447  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1448  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1449  vi paper_exact_out_config_cor
+ 1450  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1451  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1452  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1453  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1454  vi paper_exact_out_config_cor
+ 1455  ls -t
+ 1456  vi aC_paper_exact_out.txt
+ 1457  cp aC_paper_exact_out.txt aC_paper_exact_out_test.txt
+ 1458  vi paper_exact_out_config_cor
+ 1459  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1460  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1461  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1462  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1463  diff aC_paper_exact_out.txt aC_paper_exact_out_test.txt
+ 1464  ls -t
+ 1465  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1466  ls -t
+ 1467  vi paper_exact_out_config_cor
+ 1468  ls -t
+ 1469  vi aC_paper_exact_out.txt
+ 1470  vi paper_exact_out_config_cor
+ 1471  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1472  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1473  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1474  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1475  vi paper_exact_out_config_cor
+ 1476  python buildWorkspace_AC.py --config=paper_exact_out_config_cor
+ 1477  text2workspace.py -m 125 aC_paper_exact_out.txt -o aC_paper_exact_out_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=paper_exact_out --PO poi=fs0 --PO range_fs0=-10,10.0
+ 1478  combine aC_paper_exact_out_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1479  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1480  vi paper_exact_out_config_cor
+ 1481  vi aC_paper_exact_out.txt
+ 1482  vi paper_exact_out_config_cor
+ 1483  vi aC_paper_exact_out.txt
+ 1484  which buildWorkspace_AC.py
+ 1485  ls buildWorkspace_AC.py
+ 1486  vi buildWorkspace_AC.py
+ 1487  ls
+ 1488  cp /storage/9/mneukum/master_18/ZZ_paper/ZZ_make_bkg_signal/output/ZZ_HEPData_input_t_uniformBins.root ../data/anomalousCoupling/ZZ_other_all.root
+ 1489  cp ./../data/anomalousCoupling/ZZ_other_all.root ../data/anomalousCoupling/ZZ_other_ft0.root 
+ 1490  cp /storage/9/mneukum/CMSSW_7_1_9/src/CombinedEWKAnalysis/CommonTools/test/my_test/ZZ_ft2/signal_proc_ZZ_ft82_ft0.root ../data/anomalousCoupling/signal_proc_ZZ_other_ft0.root
+ 1491  ls ../data/anomalousCoupling/*ZZ*.root
+ 1492  ls -t ../data/anomalousCoupling/*ZZ*.root
+ 1493  ls -t
+ 1494  vi ssWW_ft12_ft1_config
+ 1495  aacp ssWW_ft12_ft1_config ./
+ 1496  ls -t ../data/anomalousCoupling/*ZZ*.root
+ 1497  cp ssWW_ft12_ft1_config ./ZZ_other_ft0_config
+ 1498  vi ZZ_other_ft0_config 
+ 1499  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1500  vi ZZ_other_ft0_config 
+ 1501  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1502  vi ZZ_other_ft0_config 
+ 1503  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1504  vi ZZ_other_ft0_config 
+ 1505  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1506  vi ZZ_other_ft0_config 
+ 1507  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1508  vi ZZ_other_ft0_config 
+ 1509  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1510  vi ZZ_other_ft0_config 
+ 1511  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1512  vi ZZ_other_ft0_config 
+ 1513  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1514  vi ZZ_other_ft0_config 
+ 1515  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1516  vi ZZ_other_ft0_config 
+ 1517  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1518  vi ZZ_other_ft0_config 
+ 1519  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1520  vi ZZ_other_ft0_config 
+ 1521  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1522  vi ZZ_other_ft0_config 
+ 1523  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1524  vi ZZ_other_ft0_config 
+ 1525  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1526  vi ZZ_other_ft0_config 
+ 1527  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1528  vi ZZ_other_ft0_config 
+ 1529  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1530  vi buildWorkspace_AC.py
+ 1531  vi ZZ_other_ft0_config 
+ 1532  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1533  vi ZZ_other_ft0_config 
+ 1534  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1535  vi ZZ_other_ft0_config 
+ 1536  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1537  ls -t
+ 1538  vi aC_ZZ_other_ft0.txt
+ 1539  text2workspace.py -m 125 aC_ZZ_other_ft0.txt -o aC_ZZ_other_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1,1
+ 1540  ls -t
+ 1541  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1542  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1543  vi aC_ZZ_other_ft0.txt
+ 1544  vi ZZ_other_ft0_config 
+ 1545  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1546  text2workspace.py -m 125 aC_ZZ_other_ft0.txt -o aC_ZZ_other_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1,1
+ 1547  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1548  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1549  aacp /storage/9/mneukum/master_18/ZZ_paper/ZZ_parabola_from_AN/ft8_bin9.root ../data/anomalousCoupling/signal_proc_ZZ_ft8_bin9.root
+ 1550  cp ../data/anomalousCoupling/signal_proc_ZZ_ft8_bin9.root ../data/anomalousCoupling/signal_proc_ZZ_ft8_bin9_ori.root
+ 1551  cp /storage/9/mneukum/master_18/ZZ_paper/ZZ_parabola_from_AN/ft8_bin9.root ../data/anomalousCoupling/signal_proc_ZZ_ft8_bin9.root
+ 1552  ls 
+ 1553  python buildWorkspace_AC.py --config=ZZ_ft0_bin9_config
+ 1554  atext2workspace.py -m 125 aC_ZZ_other_ft0.txt -o aC_ZZ_other_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1,1
+ 1555  ls -lt
+ 1556  aatext2workspace.py -m 125 aC_ZZ_ft0_bin9.txt -o aC_ZZ_ft0_bin9_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1,1
+ 1557  vi ZZ_ft0_bin9_config
+ 1558  text2workspace.py -m 125 aC_ZZ_ft0_bin9.txt -o aC_ZZ_ft0_bin9_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_ft0_bin9 --PO poi=ft0 --PO range_ft0=-1,1
+ 1559  combine aC_ZZ_ft0_bin9_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1560  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1561  vi ZZ_ft0_bin9_config
+ 1562  cp ../data/anomalousCoupling/signal_proc_ZZ_ft0_bin9.root ../data/anomalousCoupling/signal_proc_ZZ_ft0_bin9_ori.root
+ 1563  cp /storage/9/mneukum/master_18/ZZ_paper/ZZ_parabola_from_AN/ft0_bin9.root ../data/anomalousCoupling/signal_proc_ZZ_ft0_bin9.root
+ 1564  python buildWorkspace_AC.py --config=ZZ_ft0_bin9_config
+ 1565  text2workspace.py -m 125 aC_ZZ_ft0_bin9.txt -o aC_ZZ_ft0_bin9_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_ft0_bin9 --PO poi=ft0 --PO range_ft0=-1,1
+ 1566  combine aC_ZZ_ft0_bin9_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1567  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1568  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1569  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1570  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1571  text2workspace.py -m 125 aC_ZZ_other_ft0.txt -o aC_ZZ_other_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1,1
+ 1572  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1573  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1574  vi ZZ_other_ft0_config 
+ 1575  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1576  text2workspace.py -m 125 aC_ZZ_other_ft0.txt -o aC_ZZ_other_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1,1
+ 1577  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1578  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1579  ls ../data/anomalousCoupling/
+ 1580  cp ../data/anomalousCoupling/signal_proc_ZZ_ft8_bin9.root ../data/anomalousCoupling/signal_proc_ZZ_ft8_bin9_mine.root
+ 1581  cp ../data/anomalousCoupling/signal_proc_ZZ_ft8_bin9_ori.root ../data/anomalousCoupling/signal_proc_ZZ_ft8_bin9.root
+ 1582  cp /storage/9/mneukum/CMSSW_7_1_9/src/CombinedEWKAnalysis/CommonTools/test/my_test/ZZ_ft2/signal_proc_ZZ_ft82_ft1.root ../data/anomalousCoupling/signal_proc_ZZ_other_ft1.root 
+ 1583* cp /storage/9/mneukum/CMSSW_7_1_9/src/CombinedEWKAnalysis/CommonTools/test/my_test/ZZ_ft2/signal_proc_ZZ_ft82_f ../data/anomalousCoupling/signal_proc_ZZ_other_ft2.root 
+ 1584  ls
+ 1585  ls -t
+ 1586  ls -t ../data/anomalousCoupling/
+ 1587  ls -t *config
+ 1588  cp ZZ_other_ft0_config ZZ_other_ft1_config
+ 1589  cp ZZ_other_ft0_config ZZ_other_ft2_config
+ 1590  vi ZZ_other_ft1_config
+ 1591  cp ../data/anomalousCoupling/ZZ_other_ft0.root ../data/anomalousCoupling/ZZ_other_ft1.root 
+ 1592  cp ../data/anomalousCoupling/ZZ_other_ft0.root ../data/anomalousCoupling/ZZ_other_ft2.root 
+ 1593  vi ZZ_other_ft2_config
+ 1594  python buildWorkspace_AC.py --config=ZZ_other_ft1_config 
+ 1595  text2workspace.py -m 125 aC_ZZ_other_ft1.txt -o aC_ZZ_other_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft1 --PO poi=ft0 --PO range_ft0=-1,1
+ 1596  combine aC_ZZ_other_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1597  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1598  vi ZZ_other_ft1_config 
+ 1599  python buildWorkspace_AC.py --config=ZZ_other_ft2_config 
+ 1600  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft1 --PO poi=ft2 --PO range_ft0=-1,1
+ 1601  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft1 --PO poi=ft2 --PO range_ft2=-1,1
+ 1602  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft0=-1,1
+ 1603  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft2=-1,1
+ 1604  combine aC_ZZ_other_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1605  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1606  vi ZZ_other_ft2_config 
+ 1607  python buildWorkspace_AC.py --config=ZZ_other_ft2_config 
+ 1608  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft2=-1,1
+ 1609  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft2=-1.5,1.5
+ 1610  combine aC_ZZ_other_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1611  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1612  combine aC_ZZ_other_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1613  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1614  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1615  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1616  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1617  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1618  ls -t
+ 1619  cat ./ssWW_ft12/ft0/output_build1DInterval
+ 1620  cat ./ssWW_ft12/fst0/output_build1DInterval
+ 1621  cat ./ssWW_ft12/fs0/output_build1DInterval
+ 1622  cat ./ssWW_ft12/fs1/output_build1DInterval
+ 1623  cat ./ssWW_ft12/f*/output_build1DInterval
+ 1624  cat ./ssWW_ft12/fm0/output_build1DInterval
+ 1625  cat ./ssWW_ft12/fm1/output_build1DInterval
+ 1626  cat ./ssWW_ft12/fm7/output_build1DInterval
+ 1627  cat ./ssWW_ft12/ft0/output_build1DInterval
+ 1628  cat ./ssWW_ft12/ft1/output_build1DInterval
+ 1629  cat ./ssWW_ft12/ft2/output_build1DInterval
+ 1630  ls
+ 1631  ls -t
+ 1632  vi ZZ_other_ft0_config
+ 1633  ls -t
+ 1634  vi ZZ_other_ft2_config
+ 1635  ls -t
+ 1636  vi aC_ssWW_ft12_ft0.txt
+ 1637  ls -t
+ 1638  vi aC_ZZ_other_ft0.txt
+ 1639  ls
+ 1640  cp ZZ_other_ft0_config ./ssWW_ZZ_combine_first_config
+ 1641  vi ./ssWW_ZZ_combine_first_config 
+ 1642  vi ZZ_other_ft0_config
+ 1643  vi ssWW_ft12_ft0_config
+ 1644  vi ./ssWW_ZZ_combine_first_config 
+ 1645  python buildWorkspace_AC.py --config=ssWW_ZZ_combine_first_config 
+ 1646  vi ssWW_ZZ_combine_first_config 
+ 1647  python buildWorkspace_AC.py --config=ssWW_ZZ_combine_first_config 
+ 1648  ls -t
+ 1649  vi aC_ssWW_ft12_ft0.txt
+ 1650  ls -t aC*
+ 1651  combineCards.py aC_ssWW_ft12_ft0.txt aC_ZZ_other_ft0.txt > aC_ssWW_ZZ_combine_first_try.txt
+ 1652  vi aC_ssWW_ZZ_combine_first_try.txt
+ 1653  :q
+ 1654  text2workspace.py -m 125 aC_ssWW_ZZ_combine_first_try.txt -o aC_ssWW_ZZ_combine_first_try_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=sWW_ft12_ft0,ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1.,1.
+ 1655  text2workspace.py -m 125 aC_ssWW_ZZ_combine_first_try.txt -o aC_ssWW_ZZ_combine_first_try_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_ft0,ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1.,1.
+ 1656  ls -t
+ 1657  combine aC_ssWW_ZZ_combine_first_try_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1658  text2workspace.py -m 125 aC_ssWW_ZZ_combine_first_try.txt -o aC_ssWW_ZZ_combine_first_try_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_ft0,ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-.5,.5
+ 1659  combine aC_ssWW_ZZ_combine_first_try_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1660  ls-t
+ 1661  ls -t
+ 1662  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1663  text2workspace.py -m 125 aC_ssWW_ZZ_combine_first_try.txt -o aC_ssWW_ZZ_combine_first_try_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_ft0,ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-.49,.5
+ 1664  combine aC_ssWW_ZZ_combine_first_try_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=500 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1665  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1666  vi aC_ssWW_ZZ_combine_first_try.txt
+ 1667  combine aC_ssWW_ZZ_combine_first_try_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1668  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1669  vi aC_ssWW_ZZ_combine_first_try.txt
+ 1670  ls
+ 1671  ls -t
+ 1672  vi aC_ssWW_ft12_ft0.txt
+ 1673  ls -t
+ 1674  vi ssWW_ft12_ft1_config
+ 1675  ls -t
+ 1676  vi ZZ_other_ft2_config
+ 1677  python buildWorkspace_AC.py --config=ZZ_other_ft2_config 
+ 1678  aa text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft2=-1.5,1.5
+ 1679  vi ZZ_other_ft2_config
+ 1680  python buildWorkspace_AC.py --config=ZZ_other_ft2_config 
+ 1681  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft2=-1.5,1.5
+ 1682  combine aC_ZZ_other_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1683  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1684  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1685  vi ZZ_other_ft2_config
+ 1686  python buildWorkspace_AC.py --config=ZZ_other_ft2_config 
+ 1687  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft2=-1.5,1.5
+ 1688  combine aC_ZZ_other_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1689  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1690  vi ZZ_other_ft1_config
+ 1691  python buildWorkspace_AC.py --config=ZZ_other_ft1_config 
+ 1692  text2workspace.py -m 125 aC_ZZ_other_ft1.txt -o aC_ZZ_other_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft1 --PO poi=ft1 --PO range_ft1=-1.,1.
+ 1693  combine aC_ZZ_other_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1694  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1695  vi ZZ_other_ft1_config
+ 1696  python buildWorkspace_AC.py --config=ZZ_other_ft1_config 
+ 1697  text2workspace.py -m 125 aC_ZZ_other_ft1.txt -o aC_ZZ_other_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft1 --PO poi=ft1 --PO range_ft1=-1.,1.
+ 1698  combine aC_ZZ_other_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1699  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1700  vi ZZ_other_ft1_config
+ 1701  python buildWorkspace_AC.py --config=ZZ_other_ft0_config 
+ 1702  text2workspace.py -m 125 aC_ZZ_other_ft0.txt -o aC_ZZ_other_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft0 --PO poi=ft1 --PO range_ft0=-1.,1.
+ 1703  text2workspace.py -m 125 aC_ZZ_other_ft0.txt -o aC_ZZ_other_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1.,1.
+ 1704  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1705  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1706  combine aC_ssWW_ZZ_combine_first_try_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1707  combine aC_ssWW_ZZ_combine_first_try_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=100 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1708  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1709  ls -t
+ 1710  cat ./ssWW_ft12/ft2/output_build1DInterval
+ 1711  cat ./ssWW_ft12/fs0/output_build1DInterval
+ 1712  cat ./ssWW_ft12/fs1/output_build1DInterval
+ 1713  cat ./ssWW_ft12/fm0/output_build1DInterval
+ 1714  cat ./ssWW_ft12/fm1/output_build1DInterval
+ 1715  cat ./ssWW_ft12/fm6/output_build1DInterval
+ 1716  cat ./ssWW_ft12/fm7/output_build1DInterval
+ 1717  vi ssWW_ft12_ft2_config
+ 1718  python buildWorkspace_AC.py --config=ssWW_ft12_ft2_config > ./ssWW_ft12/ft2/output_buildWorkspace_AC
+ 1719  text2workspace.py -m 125 aC_ssWW_ft12_ft2.txt -o aC_ssWW_ft12_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_ft2 --PO poi=ft2 --PO range_ft2=-0.82,.945 > ./ssWW_ft12/ft2/output_text2workspace
+ 1720  combine aC_ssWW_ft12_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/ft2/output_combine
+ 1721  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft2 > ./ssWW_ft12/ft2/output_build1DInterval
+ 1722  cat ./ssWW_ft12/ft2/output_build1DInterval
+ 1723  vi --config=ssWW_ft12_ft2_config
+ 1724  vi ssWW_ft12_ft2_config
+ 1725  vi ssWW_ft12_fs0_config
+ 1726  python buildWorkspace_AC.py --config=ssWW_ft12_fs0_config > ./ssWW_ft12/fs0/output_buildWorkspace_AC
+ 1727  text2workspace.py -m 125 aC_ssWW_ft12_fs0.txt -o aC_ssWW_ft12_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_fs0 --PO poi=fs0 --PO range_fs0=-7.5,8.0 > ./ssWW_ft12/fs0/output_text2workspace
+ 1728  combine aC_ssWW_ft12_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/fs0/output_combine
+ 1729  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0 > ./ssWW_ft12/fs0/output_build1DInterval
+ 1730  cat ./ssWW_ft12/fs0/output_build1DInterval
+ 1731  vi ssWW_ft12_fs1_config
+ 1732  vi ssWW_ft12_fm0_config
+ 1733  vi ssWW_ft12_fm1_config
+ 1734  vi ssWW_ft12_fm7_config
+ 1735  vi ssWW_ft12_fm0_config
+ 1736  vi ssWW_ft12_fm1_config
+ 1737  vi ssWW_ft12_fm7_config
+ 1738  vi ssWW_ft12_ft0_config
+ 1739  vi ssWW_ft12_ft1_config
+ 1740  vi ssWW_ft12_ft2_config
+ 1741  python buildWorkspace_AC.py --config=ssWW_ft12_fs0_config > ./ssWW_ft12/fs0/output_buildWorkspace_AC
+ 1742  text2workspace.py -m 125 aC_ssWW_ft12_fs0.txt -o aC_ssWW_ft12_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_fs0 --PO poi=fs0 --PO range_fs0=-7.5,8.0 > ./ssWW_ft12/fs0/output_text2workspace
+ 1743  combine aC_ssWW_ft12_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/fs0/output_combine
+ 1744  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs0 > ./ssWW_ft12/fs0/output_build1DInterval
+ 1745  cat ./ssWW_ft12/fs0/output_build1DInterval
+ 1746  python buildWorkspace_AC.py --config=ssWW_ft12_fs1_config > ./ssWW_ft12/fs1/output_buildWorkspace_AC
+ 1747  text2workspace.py -m 125 aC_ssWW_ft12_fs1.txt -o aC_ssWW_ft12_fs1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_fs1 --PO poi=fs1 --PO range_fs1=-22.8,23.5 > ./ssWW_ft12/fs1/output_text2workspace
+ 1748  combine aC_ssWW_ft12_fs1_stat.root -M MultiDimFit -P fs1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/fs1/output_combine
+ 1749  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fs1 > ./ssWW_ft12/fs1/output_build1DInterval
+ 1750  cat ./ssWW_ft12/fs1/output_build1DInterval
+ 1751  python buildWorkspace_AC.py --config=ssWW_ft12_fm0_config > ./ssWW_ft12/fm0/output_buildWorkspace_AC
+ 1752  text2workspace.py -m 125 aC_ssWW_ft12_fm0.txt -o aC_ssWW_ft12_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_fm0 --PO poi=fm0 --PO range_fm0=-5.7,5.76 > ./ssWW_ft12/fm0/output_text2workspace
+ 1753  combine aC_ssWW_ft12_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/fm0/output_combine
+ 1754  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm0 > ./ssWW_ft12/fm0/output_build1DInterval
+ 1755  cat ./ssWW_ft12/fm0/output_build1DInterval
+ 1756  python buildWorkspace_AC.py --config=ssWW_ft12_fm1_config > ./ssWW_ft12/fm1/output_buildWorkspace_AC
+ 1757  text2workspace.py -m 125 aC_ssWW_ft12_fm1.txt -o aC_ssWW_ft12_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_fm1 --PO poi=fm1 --PO range_fm1=-8.25,8.40 > ./ssWW_ft12/fm1/output_text2workspace
+ 1758  combine aC_ssWW_ft12_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/fm1/output_combine
+ 1759  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm1 > ./ssWW_ft12/fm1/output_build1DInterval
+ 1760  cat ./ssWW_ft12/fm1/output_build1DInterval
+ 1761  python buildWorkspace_AC.py --config=ssWW_ft12_fm7_config > ./ssWW_ft12/fm7/output_buildWorkspace_AC
+ 1762  text2workspace.py -m 125 aC_ssWW_ft12_fm7.txt -o aC_ssWW_ft12_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_fm7 --PO poi=fm7 --PO range_fm7=-12.3,11.9 > ./ssWW_ft12/fm7/output_text2workspace
+ 1763  combine aC_ssWW_ft12_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/fm7/output_combine
+ 1764  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root fm7 > ./ssWW_ft12/fm7/output_build1DInterval
+ 1765  cat ./ssWW_ft12/fm7/output_build1DInterval
+ 1766  python buildWorkspace_AC.py --config=ssWW_ft12_ft0_config > ./ssWW_ft12/ft0/output_buildWorkspace_AC
+ 1767  text2workspace.py -m 125 aC_ssWW_ft12_ft0.txt -o aC_ssWW_ft12_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_ft0 --PO poi=ft0 --PO range_ft0=-0.55,0.58 > ./ssWW_ft12/ft0/output_text2workspace
+ 1768  combine aC_ssWW_ft12_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/ft0/output_combine
+ 1769  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft0 > ./ssWW_ft12/ft0/output_build1DInterval
+ 1770  cat ./ssWW_ft12/ft0/output_build1DInterval
+ 1771  python buildWorkspace_AC.py --config=ssWW_ft12_ft1_config > ./ssWW_ft12/ft1/output_buildWorkspace_AC
+ 1772  text2workspace.py -m 125 aC_ssWW_ft12_ft1.txt -o aC_ssWW_ft12_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_ft12_ft1 --PO poi=ft1 --PO range_ft1=-0.26,0.28 > ./ssWW_ft12/ft1/output_text2workspace
+ 1773  combine aC_ssWW_ft12_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b > ./ssWW_ft12/ft1/output_combine
+ 1774  python build1DInterval.py -25.0 25.0 higgsCombineTest.MultiDimFit.mH120.root ft1 > ./ssWW_ft12/ft1/output_build1DInterval
+ 1775  cat ./ssWW_ft12/ft1/output_build1DInterval
+ 1776                                                                                                                                                                  122,1         92%
+ 1777  cat ./ssWW_smallGrid/fs0/output_build1DInterval
+ 1778  ls -t
+ 1779  vi ZZ_other_ft1_config
+ 1780  ls
+ 1781  ls -t
+ 1782  ls ../data/anomalousCoupling/
+ 1783  diff ../data/anomalousCoupling/ZZ_other_all.root ../data/anomalousCoupling/ZZ_other_ft0.root 
+ 1784  diff ../data/anomalousCoupling/ZZ_other_all.root ../data/anomalousCoupling/ZZ_other_ft1.root 
+ 1785  diff ../data/anomalousCoupling/ZZ_other_all.root ../data/anomalousCoupling/ZZ_other_ft2.root 
+ 1786  cp ../data/anomalousCoupling/ZZ_other_all.root ../data/anomalousCoupling/ZZ_other_fs0.root 
+ 1787  cp ../data/anomalousCoupling/ZZ_other_all.root ../data/anomalousCoupling/ZZ_other_fs1.root 
+ 1788  cp ../data/anomalousCoupling/ZZ_other_all.root ../data/anomalousCoupling/ZZ_other_fm0.root 
+ 1789  cp ../data/anomalousCoupling/ZZ_other_all.root ../data/anomalousCoupling/ZZ_other_fm1.root 
+ 1790  cp ../data/anomalousCoupling/ZZ_other_all.root ../data/anomalousCoupling/ZZ_other_fm7.root 
+ 1791  ls ../data/anomalousCoupling/
+ 1792  diff ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_fs0.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_fs0.root
+ 1793  diff ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_ft0.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_ft0.root
+ 1794  diff ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_ft1.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_ft1.root
+ 1795  diff ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_ft2.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_ft2.root
+ 1796  cp ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_fs0.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_fs0.root
+ 1797  cp ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_fs1.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_fs1.root
+ 1798  cp ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_fm0.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_fm0.root
+ 1799  cp ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_fm1.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_fm1.root
+ 1800  cp ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_fm7.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_fm7.root
+ 1801  cp ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_ft0.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_ft0.root
+ 1802  cp ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_ft1.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_ft1.root
+ 1803  cp ./my_test/ssWW_smallGrid/signal_proc_ssWW_smallGrid_ft2.root ../data/anomalousCoupling/signal_proc_ssWW_smallGrid_ft2.root
+ 1804  ls *_config
+ 1805  diff ZZ_other_ft0_config ZZ_other_ft1_config
+ 1806  vi ZZ_other_ft0_config
+ 1807  ls
+ 1808  ls *_config
+ 1809  cp ZZ_other_ft0_config ZZ_other_fs0_config
+ 1810  cp ZZ_other_ft0_config ZZ_other_fs1_config
+ 1811  cp ZZ_other_ft0_config ZZ_other_fm0_config
+ 1812  cp ZZ_other_ft0_config ZZ_other_fm1_config
+ 1813  cp ZZ_other_ft0_config ZZ_other_fm7_config
+ 1814  vi ZZ_other_fs0_config
+ 1815  ls *_fs0_config
+ 1816  vi ssWW_smallGrid_fs0_config
+ 1817  vi ZZ_other_fs0_config
+ 1818  python buildWorkspace_AC.py --config=ZZ_other_fs0_config
+ 1819  ls ../data/anomalousCoupling/
+ 1820  cp ./my_test/ZZ_ft2/signal_proc_ZZ_ft82_fs0.root ../data/anomalousCoupling/signal_proc_ZZ_other_fs0.root
+ 1821  cp ./my_test/ZZ_ft2/signal_proc_ZZ_ft82_fs1.root ../data/anomalousCoupling/signal_proc_ZZ_other_fs1.root
+ 1822  cp ./my_test/ZZ_ft2/signal_proc_ZZ_ft82_fm0.root ../data/anomalousCoupling/signal_proc_ZZ_other_fm0.root
+ 1823  cp ./my_test/ZZ_ft2/signal_proc_ZZ_ft82_fm1.root ../data/anomalousCoupling/signal_proc_ZZ_other_fm1.root
+ 1824  cp ./my_test/ZZ_ft2/signal_proc_ZZ_ft82_fm7.root ../data/anomalousCoupling/signal_proc_ZZ_other_fm7.root
+ 1825  cp ./my_test/ZZ_ft2/signal_proc_ZZ_ft82_ft0.root ../data/anomalousCoupling/signal_proc_ZZ_other_ft0.root
+ 1826  cp ./my_test/ZZ_ft2/signal_proc_ZZ_ft82_ft1.root ../data/anomalousCoupling/signal_proc_ZZ_other_ft1.root
+ 1827  cp ./my_test/ZZ_ft2/signal_proc_ZZ_ft82_ft2.root ../data/anomalousCoupling/signal_proc_ZZ_other_ft2.root
+ 1828  python buildWorkspace_AC.py --config=ZZ_other_fs0_config
+ 1829  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 -PO poi=fs0 --PO range_fs0=-8.,8.5
+ 1830  vi ZZ_other_fs0_config
+ 1831  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 -PO poi=fs0 --PO range_fs0=-8.,8.5
+ 1832  vi /storage/9/mneukum/CMSSW_7_1_9/bin/slc6_amd64_gcc481/text2workspace.py
+ 1833  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 -PO poi=fs0 --PO range_fs0=-8.,8.5
+ 1834  text2workspace.py -m 125 aC_ssWW_smallGrid_fs0.txt -o aC_ssWW_smallGrid_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ssWW_smallGrid_fs0 --PO poi=fs0 --PO range_fs0=-8.,8.5
+ 1835  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 -PO poi=fs0 --PO range_fs0=-8.,8.5
+ 1836  ls ../data/anomalousCoupling/*ZZ_other*
+ 1837  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 --PO poi=fs0 --PO range_fs0=-8.,8.5
+ 1838  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 -PO poi=fs0 --PO range_fs0=-8.,8.5
+ 1839  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 --PO poi=fs0 --PO range_fs0=-8.,8.5
+ 1840  ls -t
+ 1841  combine aC_ZZ_other_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1842  vi ZZ_other_fs0_config
+ 1843  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 --PO poi=fs0 --PO range_fs0=-10.,10
+ 1844  combine aC_ZZ_other_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=1000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1845  vi ZZ_other_fs0_config
+ 1846  python buildWorkspace_AC.py --config=ZZ_other_fs0_config
+ 1847  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 --PO poi=fs0 --PO range_fs0=-100.,100
+ 1848  combine aC_ZZ_other_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1849  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fs0
+ 1850  vi ZZ_other_fs1_config
+ 1851  python buildWorkspace_AC.py --config=ZZ_other_fs1_config
+ 1852  text2workspace.py -m 125 aC_ZZ_other_fs1.txt -o aC_ZZ_other_fs1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 --PO poi=fs0 --PO range_fs0=-100.,100
+ 1853  text2workspace.py -m 125 aC_ZZ_other_fs1.txt -o aC_ZZ_other_fs1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs1 --PO poi=fs1 --PO range_fs0=-100.,100
+ 1854  text2workspace.py -m 125 aC_ZZ_other_fs1.txt -o aC_ZZ_other_fs1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs1 --PO poi=fs1 --PO range_fs1=-100.,100
+ 1855  combine aC_ZZ_other_fs1_stat.root -M MultiDimFit -P fs1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1856  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fs1
+ 1857  vi ZZ_other_fs1_config
+ 1858  vi ZZ_other_fm0_config
+ 1859  python buildWorkspace_AC.py --config=ZZ_other_fm0_config
+ 1860  text2workspace.py -m 125 aC_ZZ_other_fm0.txt -o aC_ZZ_other_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fm0 --PO poi=fm0 --PO range_fm0=-100.,100
+ 1861  combine aC_ZZ_other_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1862  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fm0
+ 1863  vi ZZ_other_fm1_config
+ 1864  python buildWorkspace_AC.py --config=ZZ_other_fm1_config
+ 1865  text2workspace.py -m 125 aC_ZZ_other_fm1.txt -o aC_ZZ_other_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fm1 --PO poi=fm1 --PO range_fm1=-100.,100
+ 1866  combine aC_ZZ_other_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1867  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fm0
+ 1868  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fm1
+ 1869  vi ZZ_other_fm7_config
+ 1870  python buildWorkspace_AC.py --config=ZZ_other_fm7_config
+ 1871  text2workspace.py -m 125 aC_ZZ_other_fm7.txt -o aC_ZZ_other_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fm7 --PO poi=fm7 --PO range_fm1=-100.,100
+ 1872  text2workspace.py -m 125 aC_ZZ_other_fm7.txt -o aC_ZZ_other_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fm7 --PO poi=fm7 --PO range_fm7=-100.,100
+ 1873  combine aC_ZZ_other_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1874  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fm7
+ 1875  vi ZZ_other_fm7_config
+ 1876  vi ZZ_other_ft0_config
+ 1877  python buildWorkspace_AC.py --config=ZZ_other_ft0_config
+ 1878  text2workspace.py -m 125 aC_ZZ_other_ft0.txt -o aC_ZZ_other_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1.,1.
+ 1879  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1880  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1881  vi ZZ_other_ft1_config
+ 1882  python buildWorkspace_AC.py --config=ZZ_other_ft1_config
+ 1883  text2workspace.py -m 125 aC_ZZ_other_ft1.txt -o aC_ZZ_other_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft1 --PO poi=ft1 --PO range_ft1=-1.,1.
+ 1884  combine aC_ZZ_other_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1885  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1886  python buildWorkspace_AC.py --config=ZZ_other_ft2_config
+ 1887  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft2=-1.5,1.5
+ 1888  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1889  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1890  combine aC_ZZ_other_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1891  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1892  combine aC_ZZ_other_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1893  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1894  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1895  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1896  ls
+ 1897  mkdir ZZ_ft82
+ 1898  cd ZZ_ft82/
+ 1899  ls
+ 1900  mkdir limits
+ 1901  python buildWorkspace_AC.py --config=ZZ_other_fs0_config
+ 1902  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 --PO poi=fs0 --PO range_fs0=-100.,100
+ 1903  combine aC_ZZ_other_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1904  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fs0 > ./ZZ_ft82/limits/fs0
+ 1905  ls
+ 1906  rm higgsCombineTest.MultiDimFit.mH120.root 
+ 1907  ls
+ 1908  cd ..
+ 1909  ls
+ 1910  python buildWorkspace_AC.py --config=ZZ_other_fs0_config
+ 1911  text2workspace.py -m 125 aC_ZZ_other_fs0.txt -o aC_ZZ_other_fs0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs0 --PO poi=fs0 --PO range_fs0=-100.,100
+ 1912  combine aC_ZZ_other_fs0_stat.root -M MultiDimFit -P fs0 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1913  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fs0 > ./ZZ_ft82/limits/fs0
+ 1914  cat ./ZZ_ft82/limits/fs0 
+ 1915  python buildWorkspace_AC.py --config=ZZ_other_fs1_config
+ 1916  text2workspace.py -m 125 aC_ZZ_other_fs1.txt -o aC_ZZ_other_fs1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fs1 --PO poi=fs1 --PO range_fs1=-100.,100
+ 1917  combine aC_ZZ_other_fs1_stat.root -M MultiDimFit -P fs1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1918  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fs1 > ./ZZ_ft82/limits/fs1
+ 1919  python buildWorkspace_AC.py --config=ZZ_other_fm0_config
+ 1920  text2workspace.py -m 125 aC_ZZ_other_fm0.txt -o aC_ZZ_other_fm0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fm0 --PO poi=fm0 --PO range_fm0=-100.,100
+ 1921  combine aC_ZZ_other_fm0_stat.root -M MultiDimFit -P fm0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1922  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fm0 > ./ZZ_ft82/limits/fm0
+ 1923  python buildWorkspace_AC.py --config=ZZ_other_fm1_config
+ 1924  text2workspace.py -m 125 aC_ZZ_other_fm1.txt -o aC_ZZ_other_fm1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fm1 --PO poi=fm1 --PO range_fm1=-100.,100
+ 1925  combine aC_ZZ_other_fm1_stat.root -M MultiDimFit -P fm1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1926  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fm1 > ./ZZ_ft82/limits/fm1
+ 1927  python buildWorkspace_AC.py --config=ZZ_other_fm7_config
+ 1928  text2workspace.py -m 125 aC_ZZ_other_fm7.txt -o aC_ZZ_other_fm7_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_fm7 --PO poi=fm7 --PO range_fm7=-100.,100
+ 1929  combine aC_ZZ_other_fm7_stat.root -M MultiDimFit -P fm7 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1930  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root fm7 > ./ZZ_ft82/limits/fm7
+ 1931  python buildWorkspace_AC.py --config=ZZ_other_ft0_config
+ 1932  text2workspace.py -m 125 aC_ZZ_other_ft0.txt -o aC_ZZ_other_ft0_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft0 --PO poi=ft0 --PO range_ft0=-1.,1.
+ 1933  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1934  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft0 > ./ZZ_ft82/limits/ft0
+ 1935  python buildWorkspace_AC.py --config=ZZ_other_ft1_config
+ 1936  text2workspace.py -m 125 aC_ZZ_other_ft1.txt -o aC_ZZ_other_ft1_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft1 --PO poi=ft1 --PO range_ft1=-1.,1.
+ 1937* combine aC_ZZ_other_ft1_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b[A
+ 1938  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft1 > ./ZZ_ft82/limits/ft1
+ 1939  python buildWorkspace_AC.py --config=ZZ_other_ft2_config
+ 1940  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft2=-1.5,1.5
+ 1941  combine aC_ZZ_other_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1942  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft2 > ./ZZ_ft82/limits/ft2
+ 1943  cat ./ZZ_ft82/limits/fm0 
+ 1944  cat ./ZZ_ft82/limits/fs0 
+ 1945  cat ./ZZ_ft82/limits/fs1 
+ 1946  cat ./ZZ_ft82/limits/fm0
+ 1947  cat ./ZZ_ft82/limits/fm1
+ 1948  cat ./ZZ_ft82/limits/fm7
+ 1949  cat ./ZZ_ft82/limits/ft0
+ 1950  cat ./ZZ_ft82/limits/ft1
+ 1951  cat ./ZZ_ft82/limits/ft2
+ 1952  python buildWorkspace_AC.py --config=ZZ_other_ft2_config
+ 1953  text2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft2=-1.5,1.5
+ 1954  combine aC_ZZ_other_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1955  combine aC_ZZ_other_ft0_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1956  combine aC_ZZ_other_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1957  pwd
+ 1958  ls -t
+ 1959  python buildWorkspace_AC.py --config=ZZ_ft0_bin9_config
+ 1960  aatext2workspace.py -m 125 aC_ZZ_other_ft2.txt -o aC_ZZ_other_ft2_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_other_ft2 --PO poi=ft2 --PO range_ft2=-1.5,1.5
+ 1961  ls -t aC*
+ 1962  text2workspace.py -m 125 aC_ZZ_ft0_bin9.txt -o aC_ZZ_ft0_bin9_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_ft0_bin9 --PO poi=ft0 --PO range_ft0=-.5,.5
+ 1963  ls -t
+ 1964  aacombine aC_ZZ_other_ft2_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1965  combine aC_ZZ_ft0_bin9_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1966  ls -t
+ 1967  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1968  vi ZZ_ft0_bin9_config
+ 1969  python buildWorkspace_AC.py --config=ZZ_ft1_bin9_config
+ 1970  text2workspace.py -m 125 aC_ZZ_ft1_bin9.txt -o aC_ZZ_ft1_bin9_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_ft1_bin9 --PO poi=ft1 --PO range_ft1=-1.,1.
+ 1971  combine aC_ZZ_ft1_bin9_stat.root -M MultiDimFit -P ft1 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1972  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft1
+ 1973  python buildWorkspace_AC.py --config=ZZ_ft2_bin9_config
+ 1974  text2workspace.py -m 125 aC_ZZ_ft2_bin9.txt -o aC_ZZ_ft2_bin9_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_ft2_bin9 --PO poi=ft2 --PO range_ft2=-1.5,1.5
+ 1975  combine aC_ZZ_ft2_bin9_stat.root -M MultiDimFit -P ft2 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1976  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft2
+ 1977  python buildWorkspace_AC.py --config=ZZ_ft8_bin9_config
+ 1978  text2workspace.py -m 125 aC_ZZ_ft8_bin9.txt -o aC_ZZ_ft8_bin9_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_ft8_bin9 --PO poi=ft8 --PO range_ft8=-1.,1.
+ 1979  combine aC_ZZ_ft8_bin9_stat.root -M MultiDimFit -P ft8 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1980  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft8
+ 1981  combine aC_ZZ_ft8_bin9_stat.root -M MultiDimFit -P ft8 --floatOtherPOIs=0 --algo=grid --points=10000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1982  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft8
+ 1983  python buildWorkspace_AC.py --config=ZZ_ft9_bin9_config
+ 1984  text2workspace.py -m 125 aC_ZZ_ft9_bin9.txt -o aC_ZZ_ft9_bin9_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_ft9_bin9 --PO poi=ft9 --PO range_ft9=-2.,2.
+ 1985  combine aC_ZZ_ft9_bin9_stat.root -M MultiDimFit -P ft9 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1986  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft9
+ 1987  python buildWorkspace_AC.py --config=ZZ_ft0_bin9_config
+ 1988  diff ZZ_ft0_bin9_config ZZ_ft1_bin9_config
+ 1989  python buildWorkspace_AC.py --config=ZZ_ft0_bin9_config
+ 1990  text2workspace.py -m 125 aC_ZZ_ft0_bin9.txt -o aC_ZZ_ft0_bin9_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_ft0_bin9 --PO poi=ft0 --PO range_ft0=-.5,.5
+ 1991  combine aC_ZZ_ft0_bin9_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1992  cp ../data/anomalousCoupling/signal_proc_ZZ_ft0_bin9.root ../data/anomalousCoupling/signal_proc_ZZ_ft0_bin9_bak_noidea.root
+ 1993  cp ../data/anomalousCoupling/signal_proc_ZZ_ft0_bin9_ori.root ../data/anomalousCoupling/signal_proc_ZZ_ft0_bin9.root
+ 1994  python buildWorkspace_AC.py --config=ZZ_ft0_bin9_config
+ 1995  text2workspace.py -m 125 aC_ZZ_ft0_bin9.txt -o aC_ZZ_ft0_bin9_stat.root -P CombinedEWKAnalysis.CommonTools.ACModel:par1_TF1_Model --PO channels=ZZ_ft0_bin9 --PO poi=ft0 --PO range_ft0=-.5,.5
+ 1996  combine aC_ZZ_ft0_bin9_stat.root -M MultiDimFit -P ft0 --floatOtherPOIs=0 --algo=grid --points=5000 --minimizerStrategy=2 --saveSpecifiedNuis all --saveSpecifiedFunc model_s,model_b
+ 1997  python build1DInterval.py -50.0 50.0 higgsCombineTest.MultiDimFit.mH120.root ft0
+ 1998  ls -t
+ 1999  vi ssWW_ZZ_combine_first_config
+ 2000  cp ssWW_ZZ_combine_first_config ssWW_ZZ_combine_first_t0_config
+ 2001  cp ssWW_ZZ_combine_first_config ssWW_ZZ_combine_first_t1_config
+ 2002  cp ssWW_ZZ_combine_first_config ssWW_ZZ_combine_first_t2_config
+ 2003  cp ssWW_ZZ_combine_first_config ssWW_ZZ_combine_first_s0_config
+ 2004  cp ssWW_ZZ_combine_first_config ssWW_ZZ_combine_first_s1_config
+ 2005  cp ssWW_ZZ_combine_first_config ssWW_ZZ_combine_first_m0_config
+ 2006  cp ssWW_ZZ_combine_first_config ssWW_ZZ_combine_first_m1_config
+ 2007  cp ssWW_ZZ_combine_first_config ssWW_ZZ_combine_first_m7_config
+ 2008  python buildWorkspace_AC.py --config=ssWW_ZZ_combine_first_t0_config
+ 2009  ls -t
+ 2010  combineCards.py aC_ssWW_ft12_ft0.txt aC_ZZ_other_ft0.txt > aC_ssWW_ZZ_ft0.txt
+ 2011  vi aC_ssWW_ZZ_ft0.txt
+ 2012  history
+ 2013  history > tmp_history_5_march_2019

@@ -1,0 +1,10 @@
+[Global]
+NlnN=0
+model=par1_TF1
+par1Name = fs0
+par1Low = -25.
+par1High = 25.
+
+[bkg_only1]
+Nbkg=1
+bkg1_name=WWB

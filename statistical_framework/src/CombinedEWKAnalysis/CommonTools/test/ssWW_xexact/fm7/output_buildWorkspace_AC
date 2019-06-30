@@ -1,0 +1,205 @@
+end of pyroot_logon
+modelName=  par1_TF1
+
+		=============================================> lnN:  ['integrated_luminosity', 'muon_selection', 'electron_selection', 'JES', 'PDFs', 'QCD_scale_ewk', 'QCD_scale_Triboson', 'QCD_scale_ZZ']
+lnN value:  [['1.025', '1.025', '1.025', '1.025', '1.025', '1.025', '1.025', '1.025', '1.025'], ['1.02', '1.02', '1.02', '1.02', '1.02', '1.02', '1.02', '1.02', '1.02'], ['1.02', '1.02', '1.02', '1.02', '1.02', '1.02', '1.02', '1.02', '1.02'], ['1.03', '1.03', '1.03', '1.03', '1.03', '1.03', '1.03', '1.03', '1.03'], ['1.04', '1.04', '1.04', '1.04', '1.04', '1.04', '1.04', '1.04', '1.04'], ['1.1'], ['1.1'], ['1.1']]
+lnN for:  [['x_exact_LM7_signal', 'x_exact_LM7_WW_QCD', 'x_exact_LM7_WZ', 'x_exact_LM7_ZZ', 'x_exact_LM7_Triboson', 'x_exact_LM7_Wrong_Sign', 'x_exact_LM7_W_Gamma', 'x_exact_LM7_WW_DPS', 'x_exact_LM7_Non_Prompt'], ['x_exact_LM7_signal', 'x_exact_LM7_WW_QCD', 'x_exact_LM7_WZ', 'x_exact_LM7_ZZ', 'x_exact_LM7_Triboson', 'x_exact_LM7_Wrong_Sign', 'x_exact_LM7_W_Gamma', 'x_exact_LM7_WW_DPS', 'x_exact_LM7_Non_Prompt'], ['x_exact_LM7_signal', 'x_exact_LM7_WW_QCD', 'x_exact_LM7_WZ', 'x_exact_LM7_ZZ', 'x_exact_LM7_Triboson', 'x_exact_LM7_Wrong_Sign', 'x_exact_LM7_W_Gamma', 'x_exact_LM7_WW_DPS', 'x_exact_LM7_Non_Prompt'], ['x_exact_LM7_signal', 'x_exact_LM7_WW_QCD', 'x_exact_LM7_WZ', 'x_exact_LM7_ZZ', 'x_exact_LM7_Triboson', 'x_exact_LM7_Wrong_Sign', 'x_exact_LM7_W_Gamma', 'x_exact_LM7_WW_DPS', 'x_exact_LM7_Non_Prompt'], ['x_exact_LM7_signal', 'x_exact_LM7_WW_QCD', 'x_exact_LM7_WZ', 'x_exact_LM7_ZZ', 'x_exact_LM7_Triboson', 'x_exact_LM7_Wrong_Sign', 'x_exact_LM7_W_Gamma', 'x_exact_LM7_WW_DPS', 'x_exact_LM7_Non_Prompt'], ['x_exact_LM7_signal'], ['x_exact_LM7_Triboson'], ['x_exact_LM7_ZZ']]
+/storage/9/mneukum/CMSSW_7_1_9/src/CombinedEWKAnalysis/CommonTools/data/anomalousCoupling/x_exact_LM7.root
+Nbkg=  8
+diboson_shapeUp
+bis hier ok
+wpt: 
+RooRealVar::observable_x_exact_LM7 = 2.5  L(0 - 5) B(5) 
+par1: 
+RooRealVar::fm7 = 0  L(-25 - 25) 
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+data integral: RooDataHist::data_obs[observable_x_exact_LM7] = 5 bins (201 weights)
+ None
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg1_x_exact_LM7): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg2_x_exact_LM7): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg3_x_exact_LM7): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg4_x_exact_LM7): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg5_x_exact_LM7): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg6_x_exact_LM7): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg7_x_exact_LM7): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg8_x_exact_LM7): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg1_x_exact_LM7_WW_QCD_shapeUp): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg1_x_exact_LM7_WW_QCD_shapeDown): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg2_x_exact_LM7_WZ_shapeUp): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg2_x_exact_LM7_WZ_shapeDown): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg3_x_exact_LM7_ZZ_shapeUp): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg3_x_exact_LM7_ZZ_shapeDown): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg4_x_exact_LM7_Triboson_shapeUp): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg4_x_exact_LM7_Triboson_shapeDown): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg5_x_exact_LM7_Wrong_Sign_shapeUp): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg5_x_exact_LM7_Wrong_Sign_shapeDown): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg6_x_exact_LM7_W_Gamma_shapeUp): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg6_x_exact_LM7_W_Gamma_shapeDown): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg7_x_exact_LM7_WW_DPS_shapeUp): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg7_x_exact_LM7_WW_DPS_shapeDown): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg8_x_exact_LM7_Non_Prompt_shapeUp): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_bkg8_x_exact_LM7_Non_Prompt_shapeDown): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_SM_x_exact_LM7_rawshape): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_SM_x_exact_LM7_rawshape_diboson_shapeUp): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(anomalousCoupling_SM_x_exact_LM7_rawshape_diboson_shapeDown): fit range of variable observable_x_exact_LM7 expanded to nearest bin boundaries: [0,5] --> [0,5]
+$$$$$$$$$$$$$ 	 $$$$$$$$$  setting up for par1_TF1 plane!  limitType:  1  Ndim: %s  1
+1: RooACSemiAnalyticPdf_1D(ATGCPdf_anoCoupl_process_%s%codename,
+[#1] INFO:Eval -- RooRealVar::setRange(observable_x_exact_LM7) new range named 'integRange' created with bounds [0,1]
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+done 1: RooACSemiAnalyticPdf_1D(ATGCPdf_anoCoupl_process_%s%codename,
+oooooooooooooooooooooooooooook
+2: RooACSemiAnalyticPdf_1D(ATGCPdf_anoCoupl_process_%s%codename,
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeUp_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeUp_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeUp_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeUp_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeUp_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+3: RooACSemiAnalyticPdf_1D(ATGCPdf_anoCoupl_process_%s%codename,
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeDown_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeDown_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeDown_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeDown_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeDown_Int[observable_x_exact_LM7|integRange]) using numeric integrator RooIntegrator1D to calculate Int(observable_x_exact_LM7)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset data_obs
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg1_x_exact_LM7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg2_x_exact_LM7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg3_x_exact_LM7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg4_x_exact_LM7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg5_x_exact_LM7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg6_x_exact_LM7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg7_x_exact_LM7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg8_x_exact_LM7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg1_x_exact_LM7_WW_QCD_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg1_x_exact_LM7_WW_QCD_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg2_x_exact_LM7_WZ_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg2_x_exact_LM7_WZ_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg3_x_exact_LM7_ZZ_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg3_x_exact_LM7_ZZ_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg4_x_exact_LM7_Triboson_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg4_x_exact_LM7_Triboson_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg5_x_exact_LM7_Wrong_Sign_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg5_x_exact_LM7_Wrong_Sign_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg6_x_exact_LM7_W_Gamma_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg6_x_exact_LM7_W_Gamma_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg7_x_exact_LM7_WW_DPS_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg7_x_exact_LM7_WW_DPS_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg8_x_exact_LM7_Non_Prompt_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_bkg8_x_exact_LM7_Non_Prompt_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_SM_x_exact_LM7_rawshape
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_x_exact_LM7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing RooHistFunc::anomalousCoupling_SM_x_exact_LM7_shape
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_SM_x_exact_LM7_rawshape_diboson_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_x_exact_LM7_diboson_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing RooHistFunc::anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing dataset anomalousCoupling_SM_x_exact_LM7_rawshape_diboson_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_x_exact_LM7_diboson_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing RooHistFunc::anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeDown
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing AsymPow::ATGCPdf_anoCoupl_process_x_exact_LM7_norm
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing RooRealVar::kappaL_1_x_exact_LM7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(proc_x_exact_LM7) importing RooRealVar::kappaH_1_x_exact_LM7
+
+RooWorkspace(proc_x_exact_LM7) proc_x_exact_LM7 contents
+
+variables
+---------
+(diboson_shape,fm7,kappaH_1_x_exact_LM7,kappaL_1_x_exact_LM7,observable_x_exact_LM7)
+
+p.d.f.s
+-------
+RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_x_exact_LM7[ observable=observable_x_exact_LM7 par1=fm7 SM_shape=anomalousCoupling_SM_x_exact_LM7_shape ] = 12.412
+RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_x_exact_LM7_diboson_shapeDown[ observable=observable_x_exact_LM7 par1=fm7 SM_shape=anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeDown ] = 9.257
+RooACSemiAnalyticPdf_1D::ATGCPdf_anoCoupl_process_x_exact_LM7_diboson_shapeUp[ observable=observable_x_exact_LM7 par1=fm7 SM_shape=anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeUp ] = 15.567
+
+functions
+--------
+AsymPow::ATGCPdf_anoCoupl_process_x_exact_LM7_norm[ kappaLow=kappaL_1_x_exact_LM7 kappaHigh=kappaH_1_x_exact_LM7 theta=diboson_shape ] = 1
+RooHistFunc::anomalousCoupling_SM_x_exact_LM7_shape[ depList=(observable_x_exact_LM7) ] = 12.412
+RooHistFunc::anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeDown[ depList=(observable_x_exact_LM7) ] = 9.257
+RooHistFunc::anomalousCoupling_SM_x_exact_LM7_shape_diboson_shapeUp[ depList=(observable_x_exact_LM7) ] = 15.567
+
+datasets
+--------
+RooDataHist::data_obs(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg1_x_exact_LM7(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg2_x_exact_LM7(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg3_x_exact_LM7(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg4_x_exact_LM7(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg5_x_exact_LM7(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg6_x_exact_LM7(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg7_x_exact_LM7(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg8_x_exact_LM7(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg1_x_exact_LM7_WW_QCD_shapeUp(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg1_x_exact_LM7_WW_QCD_shapeDown(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg2_x_exact_LM7_WZ_shapeUp(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg2_x_exact_LM7_WZ_shapeDown(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg3_x_exact_LM7_ZZ_shapeUp(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg3_x_exact_LM7_ZZ_shapeDown(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg4_x_exact_LM7_Triboson_shapeUp(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg4_x_exact_LM7_Triboson_shapeDown(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg5_x_exact_LM7_Wrong_Sign_shapeUp(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg5_x_exact_LM7_Wrong_Sign_shapeDown(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg6_x_exact_LM7_W_Gamma_shapeUp(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg6_x_exact_LM7_W_Gamma_shapeDown(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg7_x_exact_LM7_WW_DPS_shapeUp(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg7_x_exact_LM7_WW_DPS_shapeDown(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg8_x_exact_LM7_Non_Prompt_shapeUp(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_bkg8_x_exact_LM7_Non_Prompt_shapeDown(observable_x_exact_LM7)
+
+embedded datasets (in pdfs and functions)
+-----------------------------------------
+RooDataHist::anomalousCoupling_SM_x_exact_LM7_rawshape(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_SM_x_exact_LM7_rawshape_diboson_shapeUp(observable_x_exact_LM7)
+RooDataHist::anomalousCoupling_SM_x_exact_LM7_rawshape_diboson_shapeDown(observable_x_exact_LM7)
+
+
+
+
+############# name_forCorr=  diboson_shape
+ loop over Nbkg...
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 8  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_x_exact_LM7  x_exact_LM7 ./x_exact_LM7_ws.root proc_x_exact_LM7:$PROCESS proc_x_exact_LM7:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_x_exact_LM7  x_exact_LM7 ./x_exact_LM7_ws.root proc_x_exact_LM7:$PROCESS proc_x_exact_LM7:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_x_exact_LM7  x_exact_LM7 ./x_exact_LM7_ws.root proc_x_exact_LM7:$PROCESS proc_x_exact_LM7:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_x_exact_LM7  x_exact_LM7 ./x_exact_LM7_ws.root proc_x_exact_LM7:$PROCESS proc_x_exact_LM7:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_x_exact_LM7  x_exact_LM7 ./x_exact_LM7_ws.root proc_x_exact_LM7:$PROCESS proc_x_exact_LM7:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg6_x_exact_LM7  x_exact_LM7 ./x_exact_LM7_ws.root proc_x_exact_LM7:$PROCESS proc_x_exact_LM7:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg7_x_exact_LM7  x_exact_LM7 ./x_exact_LM7_ws.root proc_x_exact_LM7:$PROCESS proc_x_exact_LM7:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg8_x_exact_LM7  x_exact_LM7 ./x_exact_LM7_ws.root proc_x_exact_LM7:$PROCESS proc_x_exact_LM7:$PROCESS_$SYSTEMATIC
+shapes data_obs                x_exact_LM7 ./x_exact_LM7_ws.root proc_x_exact_LM7:$PROCESS    
+shapes anoCoupl_process_x_exact_LM7 x_exact_LM7 ./x_exact_LM7_ws.root proc_x_exact_LM7:ATGCPdf_$PROCESS proc_x_exact_LM7:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin x_exact_LM7 
+observation 201.0
+------------
+bin                         x_exact_LM7					x_exact_LM7			x_exact_LM7			x_exact_LM7			x_exact_LM7			x_exact_LM7			x_exact_LM7			x_exact_LM7			x_exact_LM7       
+process			    anoCoupl_process_x_exact_LM7    	anomalousCoupling_bkg1_x_exact_LM7	anomalousCoupling_bkg2_x_exact_LM7	anomalousCoupling_bkg3_x_exact_LM7	anomalousCoupling_bkg4_x_exact_LM7	anomalousCoupling_bkg5_x_exact_LM7	anomalousCoupling_bkg6_x_exact_LM7	anomalousCoupling_bkg7_x_exact_LM7	anomalousCoupling_bkg8_x_exact_LM7       
+process                     0	  	       				1 				2 				3 				4 				5 				6 				7 				8       
+rate                        79.5110011101	 			5.05099999905 			26.7419992983 			0.165000000037 			5.89500010014 			5.340999946 			8.65500020981 			0.681000022218 			85.5860005617           
+------------
+
+integrated_luminosity         lnN  1.025      				1.025				1.025				1.025				1.025				1.025				1.025				1.025				1.025
+muon_selection         lnN  1.02      				1.02				1.02				1.02				1.02				1.02				1.02				1.02				1.02
+electron_selection         lnN  1.02      				1.02				1.02				1.02				1.02				1.02				1.02				1.02				1.02
+JES         lnN  1.03      				1.03				1.03				1.03				1.03				1.03				1.03				1.03				1.03
+PDFs         lnN  1.04      				1.04				1.04				1.04				1.04				1.04				1.04				1.04				1.04
+QCD_scale_ewk         lnN  1.1      				-				-				-				-				-				-				-				-
+QCD_scale_Triboson         lnN  -      				-				-				-				1.1				-				-				-				-
+QCD_scale_ZZ         lnN  -      				-				-				1.1				-				-				-				-				-
+WW_QCD_shape shape1  -				1.0 				-				-				-				-				-				-				-
+WZ_shape shape1  -				-				1.0 				-				-				-				-				-				-
+ZZ_shape shape1  -				-				-				1.0 				-				-				-				-				-
+Triboson_shape shape1  -				-				-				-				1.0 				-				-				-				-
+Wrong_Sign_shape shape1  -				-				-				-				-				1.0 				-				-				-
+W_Gamma_shape shape1  -				-				-				-				-				-				1.0 				-				-
+WW_DPS_shape shape1  -				-				-				-				-				-				-				1.0 				-
+Non_Prompt_shape shape1  -				-				-				-				-				-				-				-				1.0 
+diboson_shape        shape1  1.0          				-				-				-				-				-				-				-				-

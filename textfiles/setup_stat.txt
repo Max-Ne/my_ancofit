@@ -1,0 +1,55 @@
+## requirements
+
+CMSSW 
+ROOT
+
+
+## setup
+# ATGCRooStats
+# see: https://twiki.cern.ch/twiki/bin/viewauth/CMS/ATGCRooStats
+
+setenv SCRAM_ARCH slc6_amd64_gcc481
+cmsrel CMSSW_7_1_5 
+cd CMSSW_7_1_5/src 
+cmsenv
+git clone  --branch v5.0.2 git@github.com:cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
+mkdir CombinedEWKAnalysis
+git clone https://github.com/senka/CombinedEWKAnalysis_1D2D3D CombinedEWKAnalysis
+source CombinedEWKAnalysis/CommonTools/setup/patchToSource.sh
+scram b 
+
+
+## data in 'statistical_framework/src/CombinedEWKAnalysis/CommonTools/data'
+# with e.g. channel = ssWW_ft12_fm0 for ssWW channel with nominal value ft1=2TeV^-4 reweighted to fm0=5TeV^-4
+# values of fs0,fs1,fm0,fm1, etc. given in extra table
+
+# HEPData is given in
+channel.root
+
+# signal scaling is given as
+signal_proc_channel.root
+
+# if split into bins: '_#bin' is added (ssWW channel for convergence), e.g.,
+channel_0.root
+signal_proc_channel_0.root
+
+
+## datacards, configs, output, etc
+## in 'statistical_framework/src/CombinedEWKAnalysis/CommonTools/test/anomalousCoupling'
+
+# config files
+
+# combine workspace
+
+
+
+# combine output in ./combine_output
+# expected and observed limits in
+higgsCombineTest.MultiDimFit.mH120.exp.root
+higgsCombineTest.MultiDimFit.mH120.obs.root
+
+# to extract the limits on e.g. ft0 via Wilk's Theorem run in ./combine_output/ZZ 
+python my_build1DInterval_68_95_99.py -5 5 ./ZZ/ft0/higgsCombineTest.MultiDimFit.mH120.exp.root ft0
+python my_build1DInterval_68_95_99.py -5 5 ./ZZ/ft0/higgsCombineTest.MultiDimFit.mH120.obs.root ft0
+
+

@@ -1,0 +1,26 @@
+{
+//========= Macro generated from object: /deltaNLL:fs0
+//========= by ROOT version5.34/30
+   
+   TH2F *__1 = new TH2F("__1","deltaNLL:fs0",100,-20,20,100,-0.5,1);
+   __1->SetDirectory(0);
+   __1->SetStats(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#000099");
+   __1->SetLineColor(ci);
+   __1->GetXaxis()->SetLabelFont(42);
+   __1->GetXaxis()->SetLabelSize(0.035);
+   __1->GetXaxis()->SetTitleSize(0.035);
+   __1->GetXaxis()->SetTitleFont(42);
+   __1->GetYaxis()->SetLabelFont(42);
+   __1->GetYaxis()->SetLabelSize(0.035);
+   __1->GetYaxis()->SetTitleSize(0.035);
+   __1->GetYaxis()->SetTitleFont(42);
+   __1->GetZaxis()->SetLabelFont(42);
+   __1->GetZaxis()->SetLabelSize(0.035);
+   __1->GetZaxis()->SetTitleSize(0.035);
+   __1->GetZaxis()->SetTitleFont(42);
+   __1->Draw("hi_o");
+}

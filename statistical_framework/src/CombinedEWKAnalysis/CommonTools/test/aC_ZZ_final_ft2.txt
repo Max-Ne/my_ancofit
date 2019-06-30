@@ -1,0 +1,36 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 5  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_ZZ_final_ft2  ZZ_final_ft2 ./ZZ_final_ft2_ws.root proc_ZZ_final_ft2:$PROCESS proc_ZZ_final_ft2:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_ZZ_final_ft2  ZZ_final_ft2 ./ZZ_final_ft2_ws.root proc_ZZ_final_ft2:$PROCESS proc_ZZ_final_ft2:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_ZZ_final_ft2  ZZ_final_ft2 ./ZZ_final_ft2_ws.root proc_ZZ_final_ft2:$PROCESS proc_ZZ_final_ft2:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_ZZ_final_ft2  ZZ_final_ft2 ./ZZ_final_ft2_ws.root proc_ZZ_final_ft2:$PROCESS proc_ZZ_final_ft2:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_ZZ_final_ft2  ZZ_final_ft2 ./ZZ_final_ft2_ws.root proc_ZZ_final_ft2:$PROCESS proc_ZZ_final_ft2:$PROCESS_$SYSTEMATIC
+shapes data_obs                ZZ_final_ft2 ./ZZ_final_ft2_ws.root proc_ZZ_final_ft2:$PROCESS    
+shapes anoCoupl_process_ZZ_final_ft2 ZZ_final_ft2 ./ZZ_final_ft2_ws.root proc_ZZ_final_ft2:ATGCPdf_$PROCESS proc_ZZ_final_ft2:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin ZZ_final_ft2 
+observation 99.0
+------------
+bin                         ZZ_final_ft2					ZZ_final_ft2			ZZ_final_ft2			ZZ_final_ft2			ZZ_final_ft2			ZZ_final_ft2       
+process			    anoCoupl_process_ZZ_final_ft2    	anomalousCoupling_bkg1_ZZ_final_ft2	anomalousCoupling_bkg2_ZZ_final_ft2	anomalousCoupling_bkg3_ZZ_final_ft2	anomalousCoupling_bkg4_ZZ_final_ft2	anomalousCoupling_bkg5_ZZ_final_ft2       
+process                     0	  	       				1 				2 				3 				4 				5       
+rate                        6.20999999344	 			78.3020008504 			19.023000041 			0.437999993563 			6.60800012015 			6.72999998927           
+------------
+
+integrated_luminosity         lnN  1.025      				1.025				1.025				1.025				1.025				-
+trigger         lnN  1.02      				1.02				1.02				1.02				1.02				-
+norm_QCD         lnN  -      				-				1.4				-				-				-
+norm_red         lnN  -      				-				-				-				-				1.4
+ppZZ_QCD_shape shape1  -				1.0 				-				-				-				-
+QCDvvv_shape shape1  -				-				-				1.0 				-				-
+ttZ_QCD_shape shape1  -				-				-				-				1.0 				-
+LEF        shape1  1.0          				-				-				-				-				-
+JES        shape1  1.0          				-				-				-				-				-
+JER        shape1  1.0          				-				-				-				-				-
+Pileup        shape1  1.0          				-				-				-				-				-
+PDF        shape1  1.0          				-				-				-				-				-
+QCDzz_shape        shape1  1.0          				-				-				-				-				-

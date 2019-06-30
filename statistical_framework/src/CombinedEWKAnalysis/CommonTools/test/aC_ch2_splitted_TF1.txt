@@ -1,0 +1,21 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 1  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_ch2_splitted_TF1  ch2_splitted_TF1 ./ch2_splitted_TF1_ws.root proc_ch2_splitted_TF1:$PROCESS proc_ch2_splitted_TF1:$PROCESS_$SYSTEMATIC
+shapes data_obs                ch2_splitted_TF1 ./ch2_splitted_TF1_ws.root proc_ch2_splitted_TF1:$PROCESS    
+shapes anoCoupl_process_ch2_splitted_TF1 ch2_splitted_TF1 ./ch2_splitted_TF1_ws.root proc_ch2_splitted_TF1:ATGCPdf_$PROCESS
+   
+------------
+bin ch2_splitted_TF1 
+observation 400.0
+------------
+bin                         ch2_splitted_TF1					ch2_splitted_TF1       
+process			    anoCoupl_process_ch2_splitted_TF1    	anomalousCoupling_bkg1_ch2_splitted_TF1       
+process                     0	  	       				1       
+rate                        8.0	 			65.9239822328           
+------------
+
+background_ch4boosted_backshape shape1  -				1.0 

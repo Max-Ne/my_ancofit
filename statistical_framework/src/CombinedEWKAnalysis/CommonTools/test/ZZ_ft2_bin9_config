@@ -1,0 +1,20 @@
+[Global]
+NlnN=0
+model=par1_TF1
+par1Name = ft2
+par1Low = -2.
+par1High = 2.
+
+[ZZ_ft2_bin9]
+Nbkg=5
+signal_shape_syst=diboson_shape
+bkg1_name=ppZZ
+bkg1_shape_syst=ppZZ_shape
+bkg2_name=ggZZ
+bkg2_shape_syst=ggZZ_shape
+bkg3_name=WWZ
+bkg3_shape_syst=WWZ_shape
+bkg4_name=ttZ
+bkg4_shape_syst=ttZ_shape
+bkg5_name=ZX
+bkg5_shape_syst=ZX_shape

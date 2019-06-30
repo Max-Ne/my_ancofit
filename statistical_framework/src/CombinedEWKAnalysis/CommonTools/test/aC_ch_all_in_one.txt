@@ -1,0 +1,21 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 1  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_ch_all_in_one  ch_all_in_one ./ch_all_in_one_ws.root proc_ch_all_in_one:$PROCESS proc_ch_all_in_one:$PROCESS_$SYSTEMATIC
+shapes data_obs                ch_all_in_one ./ch_all_in_one_ws.root proc_ch_all_in_one:$PROCESS    
+shapes anoCoupl_process_ch_all_in_one ch_all_in_one ./ch_all_in_one_ws.root proc_ch_all_in_one:ATGCPdf_$PROCESS
+   
+------------
+bin ch_all_in_one 
+observation 202.0
+------------
+bin                         ch_all_in_one					ch_all_in_one       
+process			    anoCoupl_process_ch_all_in_one    	anomalousCoupling_bkg1_ch_all_in_one       
+process                     0	  	       				1       
+rate                        61.0	 			143.0           
+------------
+
+background_shape shape1  -				1.0 

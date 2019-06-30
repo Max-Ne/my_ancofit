@@ -1,0 +1,29 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 5  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_ZZ_ft8_evenly  ZZ_ft8_evenly ./ZZ_ft8_evenly_ws.root proc_ZZ_ft8_evenly:$PROCESS proc_ZZ_ft8_evenly:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_ZZ_ft8_evenly  ZZ_ft8_evenly ./ZZ_ft8_evenly_ws.root proc_ZZ_ft8_evenly:$PROCESS proc_ZZ_ft8_evenly:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_ZZ_ft8_evenly  ZZ_ft8_evenly ./ZZ_ft8_evenly_ws.root proc_ZZ_ft8_evenly:$PROCESS proc_ZZ_ft8_evenly:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_ZZ_ft8_evenly  ZZ_ft8_evenly ./ZZ_ft8_evenly_ws.root proc_ZZ_ft8_evenly:$PROCESS proc_ZZ_ft8_evenly:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_ZZ_ft8_evenly  ZZ_ft8_evenly ./ZZ_ft8_evenly_ws.root proc_ZZ_ft8_evenly:$PROCESS proc_ZZ_ft8_evenly:$PROCESS_$SYSTEMATIC
+shapes data_obs                ZZ_ft8_evenly ./ZZ_ft8_evenly_ws.root proc_ZZ_ft8_evenly:$PROCESS    
+shapes anoCoupl_process_ZZ_ft8_evenly ZZ_ft8_evenly ./ZZ_ft8_evenly_ws.root proc_ZZ_ft8_evenly:ATGCPdf_$PROCESS proc_ZZ_ft8_evenly:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin ZZ_ft8_evenly 
+observation 99.0
+------------
+bin                         ZZ_ft8_evenly					ZZ_ft8_evenly			ZZ_ft8_evenly			ZZ_ft8_evenly			ZZ_ft8_evenly			ZZ_ft8_evenly       
+process			    anoCoupl_process_ZZ_ft8_evenly    	anomalousCoupling_bkg1_ZZ_ft8_evenly	anomalousCoupling_bkg2_ZZ_ft8_evenly	anomalousCoupling_bkg3_ZZ_ft8_evenly	anomalousCoupling_bkg4_ZZ_ft8_evenly	anomalousCoupling_bkg5_ZZ_ft8_evenly       
+process                     0	  	       				1 				2 				3 				4 				5       
+rate                        6.20999999344	 			78.3020008504 			19.023000041 			0.437999993563 			6.60800012015 			6.72999998927           
+------------
+
+ppZZ_shape shape1  -				1.0 				-				-				-				-
+ggZZ_shape shape1  -				-				1.0 				-				-				-
+WWZ_shape shape1  -				-				-				1.0 				-				-
+ttZ_shape shape1  -				-				-				-				1.0 				-
+ZX_shape shape1  -				-				-				-				-				1.0 
+diboson_shape        shape1  1.0          				-				-				-				-				-

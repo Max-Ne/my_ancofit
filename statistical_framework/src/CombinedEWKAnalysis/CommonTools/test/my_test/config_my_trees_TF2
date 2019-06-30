@@ -1,0 +1,38 @@
+[Global]
+model=par1par2_TF2
+par1Name = fs0
+par1Low = -1.5
+par1High = 1.5
+par2Name = fs1
+par2Low = -3.0
+par2High = 3.0
+
+[my_tree_ee_m]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_backshape
+
+[my_tree_ee_p]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_backshape
+
+[my_tree_em_m]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_backshape
+
+[my_tree_em_p]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_backshape
+
+[my_tree_mm_m]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_backshape
+
+[my_tree_mm_p]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_backshape

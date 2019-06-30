@@ -1,0 +1,3 @@
+the tarball contains all files necessary for the calculation of the signal scaling, which is used in the limit setting procedure
+
+the files "signal_scaling_XXX" are also present in /data/anomalousCoupling

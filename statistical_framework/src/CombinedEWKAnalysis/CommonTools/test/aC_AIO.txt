@@ -1,0 +1,37 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 9  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_AIO  AIO ./AIO_ws.root proc_AIO:$PROCESS proc_AIO:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_AIO  AIO ./AIO_ws.root proc_AIO:$PROCESS proc_AIO:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_AIO  AIO ./AIO_ws.root proc_AIO:$PROCESS proc_AIO:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_AIO  AIO ./AIO_ws.root proc_AIO:$PROCESS proc_AIO:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_AIO  AIO ./AIO_ws.root proc_AIO:$PROCESS proc_AIO:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg6_AIO  AIO ./AIO_ws.root proc_AIO:$PROCESS proc_AIO:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg7_AIO  AIO ./AIO_ws.root proc_AIO:$PROCESS proc_AIO:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg8_AIO  AIO ./AIO_ws.root proc_AIO:$PROCESS proc_AIO:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg9_AIO  AIO ./AIO_ws.root proc_AIO:$PROCESS proc_AIO:$PROCESS_$SYSTEMATIC
+shapes data_obs                AIO ./AIO_ws.root proc_AIO:$PROCESS    
+shapes anoCoupl_process_AIO AIO ./AIO_ws.root proc_AIO:ATGCPdf_$PROCESS
+   
+------------
+bin AIO 
+observation 201.0
+------------
+bin                         AIO					AIO			AIO			AIO			AIO			AIO			AIO			AIO			AIO			AIO       
+process			    anoCoupl_process_AIO    	anomalousCoupling_bkg1_AIO	anomalousCoupling_bkg2_AIO	anomalousCoupling_bkg3_AIO	anomalousCoupling_bkg4_AIO	anomalousCoupling_bkg5_AIO	anomalousCoupling_bkg6_AIO	anomalousCoupling_bkg7_AIO	anomalousCoupling_bkg8_AIO	anomalousCoupling_bkg9_AIO       
+process                     0	  	       				1 				2 				3 				4 				5 				6 				7 				8 				9       
+rate                        5.0	 			79.5110011101 			5.05099999905 			26.7419992983 			0.165000000037 			5.89500010014 			5.340999946 			8.65500020981 			0.681000022218 			85.5860005617           
+------------
+
+WW_EWK_shape shape1  -				1.0 				-				-				-				-				-				-				-				-
+WW_QCD_shape shape1  -				-				1.0 				-				-				-				-				-				-				-
+WZ_shape shape1  -				-				-				1.0 				-				-				-				-				-				-
+ZZ_shape shape1  -				-				-				-				1.0 				-				-				-				-				-
+Triboson_shape shape1  -				-				-				-				-				1.0 				-				-				-				-
+Wrong_Sign_shape shape1  -				-				-				-				-				-				1.0 				-				-				-
+W_Gamma_shape shape1  -				-				-				-				-				-				-				1.0 				-				-
+WW_DPS_shape shape1  -				-				-				-				-				-				-				-				1.0 				-
+Non_Prompt_shape shape1  -				-				-				-				-				-				-				-				-				1.0 

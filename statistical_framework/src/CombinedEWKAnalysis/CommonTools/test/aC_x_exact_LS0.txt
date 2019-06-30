@@ -1,0 +1,43 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 8  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_x_exact_LS0  x_exact_LS0 ./x_exact_LS0_ws.root proc_x_exact_LS0:$PROCESS proc_x_exact_LS0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_x_exact_LS0  x_exact_LS0 ./x_exact_LS0_ws.root proc_x_exact_LS0:$PROCESS proc_x_exact_LS0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_x_exact_LS0  x_exact_LS0 ./x_exact_LS0_ws.root proc_x_exact_LS0:$PROCESS proc_x_exact_LS0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_x_exact_LS0  x_exact_LS0 ./x_exact_LS0_ws.root proc_x_exact_LS0:$PROCESS proc_x_exact_LS0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_x_exact_LS0  x_exact_LS0 ./x_exact_LS0_ws.root proc_x_exact_LS0:$PROCESS proc_x_exact_LS0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg6_x_exact_LS0  x_exact_LS0 ./x_exact_LS0_ws.root proc_x_exact_LS0:$PROCESS proc_x_exact_LS0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg7_x_exact_LS0  x_exact_LS0 ./x_exact_LS0_ws.root proc_x_exact_LS0:$PROCESS proc_x_exact_LS0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg8_x_exact_LS0  x_exact_LS0 ./x_exact_LS0_ws.root proc_x_exact_LS0:$PROCESS proc_x_exact_LS0:$PROCESS_$SYSTEMATIC
+shapes data_obs                x_exact_LS0 ./x_exact_LS0_ws.root proc_x_exact_LS0:$PROCESS    
+shapes anoCoupl_process_x_exact_LS0 x_exact_LS0 ./x_exact_LS0_ws.root proc_x_exact_LS0:ATGCPdf_$PROCESS proc_x_exact_LS0:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin x_exact_LS0 
+observation 201.0
+------------
+bin                         x_exact_LS0					x_exact_LS0			x_exact_LS0			x_exact_LS0			x_exact_LS0			x_exact_LS0			x_exact_LS0			x_exact_LS0			x_exact_LS0       
+process			    anoCoupl_process_x_exact_LS0    	anomalousCoupling_bkg1_x_exact_LS0	anomalousCoupling_bkg2_x_exact_LS0	anomalousCoupling_bkg3_x_exact_LS0	anomalousCoupling_bkg4_x_exact_LS0	anomalousCoupling_bkg5_x_exact_LS0	anomalousCoupling_bkg6_x_exact_LS0	anomalousCoupling_bkg7_x_exact_LS0	anomalousCoupling_bkg8_x_exact_LS0       
+process                     0	  	       				1 				2 				3 				4 				5 				6 				7 				8       
+rate                        79.5110011101	 			5.05099999905 			26.7419992983 			0.165000000037 			5.89500010014 			5.340999946 			8.65500020981 			0.681000022218 			85.5860005617           
+------------
+
+integrated_luminosity         lnN  1.025      				1.025				1.025				1.025				1.025				1.025				1.025				1.025				1.025
+muon_selection         lnN  1.02      				1.02				1.02				1.02				1.02				1.02				1.02				1.02				1.02
+electron_selection         lnN  1.02      				1.02				1.02				1.02				1.02				1.02				1.02				1.02				1.02
+JES         lnN  1.03      				1.03				1.03				1.03				1.03				1.03				1.03				1.03				1.03
+PDFs         lnN  1.04      				1.04				1.04				1.04				1.04				1.04				1.04				1.04				1.04
+QCD_scale_ewk         lnN  1.1      				-				-				-				-				-				-				-				-
+QCD_scale_Triboson         lnN  -      				-				-				-				1.1				-				-				-				-
+QCD_scale_ZZ         lnN  -      				-				-				1.1				-				-				-				-				-
+WW_QCD_shape shape1  -				1.0 				-				-				-				-				-				-				-
+WZ_shape shape1  -				-				1.0 				-				-				-				-				-				-
+ZZ_shape shape1  -				-				-				1.0 				-				-				-				-				-
+Triboson_shape shape1  -				-				-				-				1.0 				-				-				-				-
+Wrong_Sign_shape shape1  -				-				-				-				-				1.0 				-				-				-
+W_Gamma_shape shape1  -				-				-				-				-				-				1.0 				-				-
+WW_DPS_shape shape1  -				-				-				-				-				-				-				1.0 				-
+Non_Prompt_shape shape1  -				-				-				-				-				-				-				-				1.0 
+diboson_shape        shape1  1.0          				-				-				-				-				-				-				-				-

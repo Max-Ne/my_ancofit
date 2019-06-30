@@ -1,0 +1,57 @@
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+init AnomalousCouplingModel
+Setting physics options in new model: 
+channels=x_exact_LM1
+changing channels:  ['x_exact_LM1']
+par1 {'par1': ['-1.', '1.']}
+poi=fm1
+poi=fm1
+['fm1']
+fm1 {'par1': ['-1.', '1.']}
+range_fm1=-10,10
+fm1 {'par1': ['-1.', '1.']}
+ reading in range fm1
+  range ['-10', '10']
+reading /storage/9/mneukum/CMSSW_7_1_9/src/CombinedEWKAnalysis/CommonTools/data/anomalousCoupling/signal_proc_x_exact_LM1.root for x_exact_LM1
+	 @@@@@@@@@@@ can't find biining! (RooATGCProcessScaling file)
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ print out ...
+
+RooWorkspace(w) w contents
+
+variables
+---------
+(CMS_channel,diboson_shape,fm1,kappaH_1_x_exact_LM1,kappaL_1_x_exact_LM1,observable_x_exact_LM1)
+
+functions
+--------
+RooACProcessScaling_1D::Scaling_anoCoupl_process_x_exact_LM1[ par1=fm1 ] = ret/SM_integral= 79.5105/79.511 = 0.999994
+0.999994
+RooHistFunc::Scaling_base_pdf_anoCoupl_process_x_exact_LM1[ depList=(observable_x_exact_LM1) ] = 4.584
+AsymPow::shapeSig_anoCoupl_process_x_exact_LM1_x_exact_LM1__norm[ kappaLow=kappaL_1_x_exact_LM1 kappaHigh=kappaH_1_x_exact_LM1 theta=diboson_shape ] = 1
+
+datasets
+--------
+RooDataHist::data_obs(CMS_channel,observable_x_exact_LM1)
+RooDataHist::DHIST_SM_aC_x_exact_LM1_shape_for_scale(observable_x_exact_LM1)
+
+embedded datasets (in pdfs and functions)
+-----------------------------------------
+RooDataHist::DHIST_SM_aC_x_exact_LM1_shape_for_scale(observable_x_exact_LM1)
+
+named sets
+----------
+POI:(fm1)
+observables:(observable_x_exact_LM1,CMS_channel)
+
+generic objects
+---------------
+TH1D::SM_aC_x_exact_LM1_shape_for_scale
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ printed out ...
+{'anoCoupl_process_x_exact_LM1': 'anoCoupl_process_x_exact_LM1'}

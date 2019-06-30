@@ -1,0 +1,24 @@
+[Global]
+model=par1_TH1
+par1Low = -0.03
+par1High = 0.03
+
+[ch1_splitted_TH1]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_ch4boosted_backshape
+
+[ch2_splitted_TH1]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_ch4boosted_backshape
+
+[ch3_splitted_TH1]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_ch4boosted_backshape
+
+[ch4_splitted_TH1]
+Nbkg=1
+bkg1_name=background
+bkg1_shape_syst=background_ch4boosted_backshape

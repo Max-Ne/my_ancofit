@@ -1,0 +1,27 @@
+Combination of aC_ch1_splitted_TF1.txt  aC_ch2_splitted_TF1.txt  aC_ch3_splitted_TF1.txt  aC_ch4_splitted_TF1.txt
+imax 4 number of bins
+jmax 7 number of processes minus 1
+kmax 1 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes anoCoupl_process_ch1_splitted_TF1        ch1                                      ./ch1_splitted_TF1_ws.root proc_ch1_splitted_TF1:ATGCPdf_$PROCESS
+shapes anomalousCoupling_bkg1_ch1_splitted_TF1  ch1                                      ./ch1_splitted_TF1_ws.root proc_ch1_splitted_TF1:$PROCESS proc_ch1_splitted_TF1:$PROCESS_$SYSTEMATIC
+shapes data_obs                                 ch1                                      ./ch1_splitted_TF1_ws.root proc_ch1_splitted_TF1:$PROCESS
+shapes anoCoupl_process_ch2_splitted_TF1        ch2                                      ./ch2_splitted_TF1_ws.root proc_ch2_splitted_TF1:ATGCPdf_$PROCESS
+shapes anomalousCoupling_bkg1_ch2_splitted_TF1  ch2                                      ./ch2_splitted_TF1_ws.root proc_ch2_splitted_TF1:$PROCESS proc_ch2_splitted_TF1:$PROCESS_$SYSTEMATIC
+shapes data_obs                                 ch2                                      ./ch2_splitted_TF1_ws.root proc_ch2_splitted_TF1:$PROCESS
+shapes anoCoupl_process_ch3_splitted_TF1        ch3                                      ./ch3_splitted_TF1_ws.root proc_ch3_splitted_TF1:ATGCPdf_$PROCESS
+shapes anomalousCoupling_bkg1_ch3_splitted_TF1  ch3                                      ./ch3_splitted_TF1_ws.root proc_ch3_splitted_TF1:$PROCESS proc_ch3_splitted_TF1:$PROCESS_$SYSTEMATIC
+shapes data_obs                                 ch3                                      ./ch3_splitted_TF1_ws.root proc_ch3_splitted_TF1:$PROCESS
+shapes anoCoupl_process_ch4_splitted_TF1        ch4                                      ./ch4_splitted_TF1_ws.root proc_ch4_splitted_TF1:ATGCPdf_$PROCESS
+shapes anomalousCoupling_bkg1_ch4_splitted_TF1  ch4                                      ./ch4_splitted_TF1_ws.root proc_ch4_splitted_TF1:$PROCESS proc_ch4_splitted_TF1:$PROCESS_$SYSTEMATIC
+shapes data_obs                                 ch4                                      ./ch4_splitted_TF1_ws.root proc_ch4_splitted_TF1:$PROCESS
+----------------------------------------------------------------------------------------------------------------------------------
+bin          ch1    ch2    ch3    ch4  
+observation  288.0  400.0  235.0  557.0
+----------------------------------------------------------------------------------------------------------------------------------
+bin                                                   ch1                                      ch1                                      ch2                                      ch2                                      ch3                                      ch3                                      ch4                                      ch4                                    
+process                                               anoCoupl_process_ch1_splitted_TF1        anomalousCoupling_bkg1_ch1_splitted_TF1  anoCoupl_process_ch2_splitted_TF1        anomalousCoupling_bkg1_ch2_splitted_TF1  anoCoupl_process_ch3_splitted_TF1        anomalousCoupling_bkg1_ch3_splitted_TF1  anoCoupl_process_ch4_splitted_TF1        anomalousCoupling_bkg1_ch4_splitted_TF1
+process                                               -3                                       1                                        -2                                       2                                        -1                                       3                                        0                                        4                                      
+rate                                                  8.0000                                   37.9327                                  8.0000                                   65.9240                                  8.0000                                   25.4228                                  8.0000                                   80.0779                                
+----------------------------------------------------------------------------------------------------------------------------------
+background_ch4boosted_backshape   shape1              -                                        1.0                                      -                                        1.0                                      -                                        1.0                                      -                                        1.0                                    

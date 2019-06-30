@@ -1,0 +1,673 @@
+starting ...
+section:  ch_ee_m
+ sigFile:  out_tree_ee_m.root  obj:  ww
+=====================> ngrid=  11
+   fitting:  [0] + [1]*x + [2]*y + [3]*x*y + [4]*x*x + [5]*y*y   model:  par1par2_TF2
+ FCN=0.00894842 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=8.20826e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           6.87573e-04   9.43112e-03   1.93559e-06  -9.15763e-04
+   2  p1          -8.14301e-07   3.41145e-03   1.67317e-06  -8.48615e-03
+   3  p2          -1.33939e-06   1.69940e-03   8.33410e-07  -2.97225e-02
+   4  p3           1.29985e-07   1.46868e-03   7.20325e-07   1.88668e-02
+   5  p4          -1.07415e-04   4.50312e-03   1.20995e-06   6.35243e-02
+   6  p5          -2.86319e-05   1.12925e-03   3.01156e-07  -2.47945e-01
+SM yield:  0.00299551710486
+----> checking newframe input:
+  before scaling: read SM yield:  0.000687573333773
+ scaling with SM yield:  0.00299551710486
+par  0  ->  0.000687573333773
+ ->par  0  ->  0.229534103697
+par  1  ->  -8.1430053744e-07
+ ->par  1  ->  -0.000271839722136
+par  2  ->  -1.33939046487e-06
+ ->par  2  ->  -0.00044713163637
+par  3  ->  1.29985480107e-07
+ ->par  3  ->  4.33933359607e-05
+par  4  ->  -0.000107414522118
+ ->par  4  ->  -0.0358584238905
+par  5  ->  -2.86319257153e-05
+ ->par  5  ->  -0.00955825812805
+--->  after scaling: read SM yield:  0.229534103697
+ FCN=0.00511994 FROM MIGRAD    STATUS=CONVERGED     120 CALLS         121 TOTAL
+                     EDM=6.0735e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.93282e-04   7.13539e-03   1.46187e-06  -1.51945e-03
+   2  p1          -7.76311e-07   2.58219e-03   1.26404e-06  -1.95230e-02
+   3  p2          -8.08535e-07   1.28607e-03   6.29498e-07  -5.46346e-02
+   4  p3           1.64516e-07   1.11185e-03   5.44276e-07   4.54706e-02
+   5  p4          -6.12626e-05   3.40763e-03   9.14204e-07   7.06299e-02
+   6  p5          -1.63887e-05   8.54503e-04   2.27480e-07  -2.71242e-01
+SM yield:  0.00171266705729
+----> checking newframe input:
+  before scaling: read SM yield:  0.000393282312301
+ scaling with SM yield:  0.00171266705729
+par  0  ->  0.000393282312301
+ ->par  0  ->  0.229631504049
+par  1  ->  -7.76310747641e-07
+ ->par  1  ->  -0.000453275926769
+par  2  ->  -8.08535486665e-07
+ ->par  2  ->  -0.000472091457136
+par  3  ->  1.64515897583e-07
+ ->par  3  ->  9.60583067693e-05
+par  4  ->  -6.12626384946e-05
+ ->par  4  ->  -0.0357703140455
+par  5  ->  -1.63887008964e-05
+ ->par  5  ->  -0.00956911083602
+--->  after scaling: read SM yield:  0.229631504049
+ FCN=0.00516834 FROM MIGRAD    STATUS=CONVERGED     120 CALLS         121 TOTAL
+                     EDM=1.58544e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.96306e-04   7.17116e-03   1.46996e-06  -6.44833e-03
+   2  p1          -1.71393e-06   2.59813e-03   1.27182e-06  -8.67826e-02
+   3  p2          -1.06740e-06   1.29374e-03   6.33235e-07  -1.93475e-01
+   4  p3           4.60221e-07   1.11935e-03   5.47930e-07   2.15432e-01
+   5  p4          -6.13886e-05   3.42665e-03   9.20067e-07   8.40387e-02
+   6  p5          -1.64934e-05   8.59252e-04   2.28870e-07  -2.80420e-01
+SM yield:  0.00172536179889
+----> checking newframe input:
+  before scaling: read SM yield:  0.000396306154597
+ scaling with SM yield:  0.00172536179889
+par  0  ->  0.000396306154597
+ ->par  0  ->  0.229694522535
+par  1  ->  -1.71393205634e-06
+ ->par  1  ->  -0.00099337545171
+par  2  ->  -1.06739505733e-06
+ ->par  2  ->  -0.000618649988668
+par  3  ->  4.60221435811e-07
+ ->par  3  ->  0.0002667390898
+par  4  ->  -6.13885930982e-05
+ ->par  4  ->  -0.0355801276797
+par  5  ->  -1.64933695206e-05
+ ->par  5  ->  -0.00955936866763
+--->  after scaling: read SM yield:  0.229694522535
+ FCN=0.00245435 FROM MIGRAD    STATUS=CONVERGED     134 CALLS         135 TOTAL
+                     EDM=1.05662e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.95328e-04   5.06102e-03   1.04804e-06  -2.06834e-02
+   2  p1           2.99228e-06   1.88483e-03   9.18923e-07   1.78784e-01
+   3  p2          -9.18725e-07   9.22680e-04   4.49765e-07  -1.50289e-01
+   4  p3           1.79204e-06   8.07624e-04   3.93518e-07  -2.34420e-01
+   5  p4          -2.43919e-05   2.45270e-03   6.68464e-07   4.10058e-01
+   6  p5          -8.90245e-06   6.13203e-04   1.62218e-07  -1.54892e+00
+SM yield:  0.000806768366601
+----> checking newframe input:
+  before scaling: read SM yield:  0.00019532827258
+ scaling with SM yield:  0.000806768366601
+par  0  ->  0.00019532827258
+ ->par  0  ->  0.242111962574
+par  1  ->  2.99228073795e-06
+ ->par  1  ->  0.00370897132538
+par  2  ->  -9.18724902774e-07
+ ->par  2  ->  -0.0011387715989
+par  3  ->  1.79203892671e-06
+ ->par  3  ->  0.00222125581628
+par  4  ->  -2.43918968254e-05
+ ->par  4  ->  -0.0302340768865
+par  5  ->  -8.90245449602e-06
+ ->par  5  ->  -0.0110347094216
+--->  after scaling: read SM yield:  0.242111962574
+section:  ch_ee_p
+ sigFile:  out_tree_ee_p.root  obj:  ww
+=====================> ngrid=  11
+   fitting:  [0] + [1]*x + [2]*y + [3]*x*y + [4]*x*x + [5]*y*y   model:  par1par2_TF2
+ FCN=0.0287619 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=2.86257e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.21074e-03   1.69100e-02   3.50441e-06  -8.98924e-04
+   2  p1          -2.06245e-06   6.11681e-03   3.02936e-06  -6.83020e-03
+   3  p2          -4.18894e-06   3.04678e-03   1.50878e-06  -2.61208e-02
+   4  p3           3.93588e-07   2.63312e-03   1.30406e-06   1.56609e-02
+   5  p4          -3.45109e-04   8.07406e-03   2.19070e-06   6.63547e-02
+   6  p5          -9.21455e-05   2.02471e-03   5.45184e-07  -2.59595e-01
+SM yield:  0.00962937809527
+----> checking newframe input:
+  before scaling: read SM yield:  0.00221073580322
+ scaling with SM yield:  0.00962937809527
+par  0  ->  0.00221073580322
+ ->par  0  ->  0.229582407228
+par  1  ->  -2.06244909571e-06
+ ->par  1  ->  -0.00021418300074
+par  2  ->  -4.18894331173e-06
+ ->par  2  ->  -0.000435017014628
+par  3  ->  3.93588316777e-07
+ ->par  3  ->  4.0873700553e-05
+par  4  ->  -0.00034510897541
+ ->par  4  ->  -0.0358391759048
+par  5  ->  -9.21454642381e-05
+ ->par  5  ->  -0.00956920201144
+--->  after scaling: read SM yield:  0.229582407228
+ FCN=0.0125516 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=2.38773e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           9.64611e-04   1.11791e-02   2.29965e-06  -2.76527e-03
+   2  p1          -2.10319e-06   4.04897e-03   1.98936e-06  -3.36900e-02
+   3  p2          -2.15050e-06   2.01567e-03   9.90245e-07  -9.37924e-02
+   4  p3           7.30946e-07   1.74341e-03   8.56574e-07   9.28326e-02
+   5  p4          -1.49374e-04   5.34095e-03   1.43905e-06   8.59822e-02
+   6  p5          -4.02962e-05   1.33923e-03   3.57837e-07  -3.22264e-01
+SM yield:  0.00419595697895
+----> checking newframe input:
+  before scaling: read SM yield:  0.000964611240249
+ scaling with SM yield:  0.00419595697895
+par  0  ->  0.000964611240249
+ ->par  0  ->  0.229890641179
+par  1  ->  -2.10318803726e-06
+ ->par  1  ->  -0.000501241563679
+par  2  ->  -2.1505045569e-06
+ ->par  2  ->  -0.000512518256904
+par  3  ->  7.30946417515e-07
+ ->par  3  ->  0.000174202552882
+par  4  ->  -0.000149374095007
+ ->par  4  ->  -0.0355995296798
+par  5  ->  -4.02962084782e-05
+ ->par  5  ->  -0.00960357998911
+--->  after scaling: read SM yield:  0.229890641179
+ FCN=0.0110389 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=4.66856e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.51553e-04   1.05026e-02   2.16026e-06  -4.06446e-03
+   2  p1           4.61052e-07   3.80972e-03   1.87040e-06  -1.91778e-02
+   3  p2          -1.75099e-06   1.89359e-03   9.29565e-07  -9.43642e-02
+   4  p3           1.03244e-06   1.63886e-03   8.04596e-07   1.28135e-01
+   5  p4          -1.29770e-04   5.02115e-03   1.35349e-06   1.33377e-01
+   6  p5          -3.60014e-05   1.25877e-03   3.35793e-07  -5.04353e-01
+SM yield:  0.00369092519395
+----> checking newframe input:
+  before scaling: read SM yield:  0.00085155310354
+ scaling with SM yield:  0.00369092519395
+par  0  ->  0.00085155310354
+ ->par  0  ->  0.230715351516
+par  1  ->  4.61052167813e-07
+ ->par  1  ->  0.000124915066978
+par  2  ->  -1.75098591554e-06
+ ->par  2  ->  -0.000474402981238
+par  3  ->  1.03244052361e-06
+ ->par  3  ->  0.000279724044611
+par  4  ->  -0.000129769700099
+ ->par  4  ->  -0.0351591249565
+par  5  ->  -3.60014494558e-05
+ ->par  5  ->  -0.00975404473513
+--->  after scaling: read SM yield:  0.230715351516
+ FCN=0.00444303 FROM MIGRAD    STATUS=CONVERGED     134 CALLS         135 TOTAL
+                     EDM=2.14146e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.46374e-04   6.79174e-03   1.41172e-06  -2.25343e-02
+   2  p1          -1.01024e-06   2.55167e-03   1.24298e-06   1.73791e-01
+   3  p2          -2.74753e-06   1.24860e-03   6.07387e-07  -4.89872e-02
+   4  p3           5.23979e-06   1.10027e-03   5.34172e-07  -1.29750e-02
+   5  p4          -4.10523e-05   3.30855e-03   9.05961e-07   4.40698e-01
+   6  p5          -1.55500e-05   8.25929e-04   2.19323e-07  -1.67241e+00
+SM yield:  0.00142174575012
+----> checking newframe input:
+  before scaling: read SM yield:  0.000346374387011
+ scaling with SM yield:  0.00142174575012
+par  0  ->  0.000346374387011
+ ->par  0  ->  0.243626110351
+par  1  ->  -1.01024228287e-06
+ ->par  1  ->  -0.000710564658124
+par  2  ->  -2.74753034505e-06
+ ->par  2  ->  -0.00193250470052
+par  3  ->  5.23979097286e-06
+ ->par  3  ->  0.00368546272947
+par  4  ->  -4.10523419491e-05
+ ->par  4  ->  -0.0288746014859
+par  5  ->  -1.55499593312e-05
+ ->par  5  ->  -0.0109372293392
+--->  after scaling: read SM yield:  0.243626110351
+section:  ch_em_m
+ sigFile:  out_tree_em_m.root  obj:  ww
+=====================> ngrid=  11
+   fitting:  [0] + [1]*x + [2]*y + [3]*x*y + [4]*x*x + [5]*y*y   model:  par1par2_TF2
+ FCN=0.0181972 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=1.74812e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.39831e-03   1.34491e-02   2.77274e-06  -8.99990e-04
+   2  p1          -1.52580e-06   4.86469e-03   2.39684e-06  -7.56798e-03
+   3  p2          -2.66599e-06   2.42320e-03   1.19381e-06  -2.71844e-02
+   4  p3           2.54540e-07   2.09422e-03   1.03183e-06   1.69972e-02
+   5  p4          -2.18373e-04   6.42139e-03   1.73328e-06   6.51346e-02
+   6  p5          -5.82618e-05   1.61028e-03   4.31377e-07  -2.54627e-01
+SM yield:  0.00609203288332
+----> checking newframe input:
+  before scaling: read SM yield:  0.00139831375502
+ scaling with SM yield:  0.00609203288332
+par  0  ->  0.00139831375502
+ ->par  0  ->  0.229531550765
+par  1  ->  -1.52580033961e-06
+ ->par  1  ->  -0.000250458322998
+par  2  ->  -2.66599449564e-06
+ ->par  2  ->  -0.000437619846561
+par  3  ->  2.5453955212e-07
+ ->par  3  ->  4.17823667395e-05
+par  4  ->  -0.000218373404607
+ ->par  4  ->  -0.035845736356
+par  5  ->  -5.82618495556e-05
+ ->par  5  ->  -0.00956361376761
+--->  after scaling: read SM yield:  0.229531550765
+ FCN=0.010926 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=1.11259e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.38843e-04   1.04219e-02   2.14156e-06  -1.68730e-03
+   2  p1          -1.85317e-06   3.77166e-03   1.85163e-06  -2.43471e-02
+   3  p2          -1.86987e-06   1.87892e-03   9.22333e-07  -6.70596e-02
+   4  p3           3.73527e-07   1.62428e-03   7.97416e-07   5.56398e-02
+   5  p4          -1.30897e-04   4.97753e-03   1.33913e-06   6.35307e-02
+   6  p5          -3.48738e-05   1.24824e-03   3.33327e-07  -2.40870e-01
+SM yield:  0.00365390768275
+----> checking newframe input:
+  before scaling: read SM yield:  0.000838842847665
+ scaling with SM yield:  0.00365390768275
+par  0  ->  0.000838842847665
+ ->par  0  ->  0.229574176607
+par  1  ->  -1.85316543754e-06
+ ->par  1  ->  -0.000507173579204
+par  2  ->  -1.86986575774e-06
+ ->par  2  ->  -0.000511744116187
+par  3  ->  3.73526502279e-07
+ ->par  3  ->  0.000102226584443
+par  4  ->  -0.000130896760645
+ ->par  4  ->  -0.0358237733436
+par  5  ->  -3.48738118937e-05
+ ->par  5  ->  -0.00954425095586
+--->  after scaling: read SM yield:  0.229574176607
+ FCN=0.00966068 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=1.73911e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           7.41764e-04   9.80548e-03   2.01452e-06  -3.76983e-03
+   2  p1          -2.16348e-06   3.55167e-03   1.74251e-06  -5.12244e-02
+   3  p2          -1.90354e-06   1.76890e-03   8.67751e-07  -1.33818e-01
+   4  p3           6.36358e-07   1.52980e-03   7.50544e-07   1.33544e-01
+   5  p4          -1.15231e-04   4.68531e-03   1.26043e-06   7.38056e-02
+   6  p5          -3.08473e-05   1.17493e-03   3.13620e-07  -2.63463e-01
+SM yield:  0.00322772935033
+----> checking newframe input:
+  before scaling: read SM yield:  0.000741763726905
+ scaling with SM yield:  0.00322772935033
+par  0  ->  0.000741763726905
+ ->par  0  ->  0.22980976606
+par  1  ->  -2.16348456053e-06
+ ->par  1  ->  -0.000670280660399
+par  2  ->  -1.90354365977e-06
+ ->par  2  ->  -0.000589746987174
+par  3  ->  6.36357580906e-07
+ ->par  3  ->  0.000197153327258
+par  4  ->  -0.000115231114388
+ ->par  4  ->  -0.0357003645228
+par  5  ->  -3.08473235584e-05
+ ->par  5  ->  -0.00955697340463
+--->  after scaling: read SM yield:  0.22980976606
+ FCN=0.00607263 FROM MIGRAD    STATUS=CONVERGED     160 CALLS         161 TOTAL
+                     EDM=1.50015e-28    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.64278e-04   8.16665e-03   1.73702e-06  -4.99340e-13
+   2  p1          -5.48161e-06   3.42819e-03   1.62202e-06   2.67371e-12
+   3  p2          -9.10338e-06   1.56083e-03   7.36059e-07  -2.94596e-12
+   4  p3           2.76691e-05   1.47571e-03   6.85031e-07  -6.33083e-12
+   5  p4           4.34845e-06   4.22005e-03   1.21590e-06   1.78337e-12
+   6  p5          -2.45374e-05   1.02388e-03   2.63926e-07   4.92957e-12
+SM yield:  0.00160972436424
+----> checking newframe input:
+  before scaling: read SM yield:  0.000464278408554
+ scaling with SM yield:  0.00160972436424
+par  0  ->  0.000464278408554
+ ->par  0  ->  0.28842106069
+par  1  ->  -5.48160957607e-06
+ ->par  1  ->  -0.00340530944169
+par  2  ->  -9.10337768599e-06
+ ->par  2  ->  -0.00565524004495
+par  3  ->  2.76691480223e-05
+ ->par  3  ->  0.0171887489789
+par  4  ->  4.34844764485e-06
+ ->par  4  ->  0.00270136163771
+par  5  ->  -2.45373532491e-05
+ ->par  5  ->  -0.0152432017519
+--->  after scaling: read SM yield:  0.28842106069
+section:  ch_em_p
+ sigFile:  out_tree_em_p.root  obj:  ww
+=====================> ngrid=  11
+   fitting:  [0] + [1]*x + [2]*y + [3]*x*y + [4]*x*x + [5]*y*y   model:  par1par2_TF2
+ FCN=0.0581745 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=5.78441e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.47193e-03   2.40484e-02   5.05411e-06  -8.28439e-04
+   2  p1          -3.61611e-06   8.69780e-03   4.36875e-06  -4.99431e-03
+   3  p2          -8.17140e-06   4.33235e-03   2.17586e-06  -2.11414e-02
+   4  p3           5.62243e-07   3.74394e-03   1.88052e-06   1.13770e-02
+   5  p4          -6.98313e-04   1.14815e-02   3.15922e-06   6.64602e-02
+   6  p5          -1.86457e-04   2.87917e-03   7.86209e-07  -2.60670e-01
+SM yield:  0.0194816961884
+----> checking newframe input:
+  before scaling: read SM yield:  0.00447193120287
+ scaling with SM yield:  0.0194816961884
+par  0  ->  0.00447193120287
+ ->par  0  ->  0.22954526955
+par  1  ->  -3.61611362933e-06
+ ->par  1  ->  -0.000185615954296
+par  2  ->  -8.17139650639e-06
+ ->par  2  ->  -0.000419439684684
+par  3  ->  5.62242815005e-07
+ ->par  3  ->  2.88600545644e-05
+par  4  ->  -0.000698312922745
+ ->par  4  ->  -0.035844564867
+par  5  ->  -0.000186457493067
+ ->par  5  ->  -0.00957090651981
+--->  after scaling: read SM yield:  0.22954526955
+ FCN=0.025859 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=2.84566e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.98535e-03   1.60346e-02   3.31932e-06  -1.90183e-03
+   2  p1          -4.71430e-06   5.80359e-03   2.87013e-06  -2.77356e-02
+   3  p2          -4.48250e-06   2.89105e-03   1.42961e-06  -7.46129e-02
+   4  p3           9.78646e-07   2.49942e-03   1.23607e-06   6.38498e-02
+   5  p4          -3.09594e-04   7.65865e-03   2.07578e-06   6.51945e-02
+   6  p5          -8.25487e-05   1.92058e-03   5.16658e-07  -2.45649e-01
+SM yield:  0.00864668376744
+----> checking newframe input:
+  before scaling: read SM yield:  0.00198535427173
+ scaling with SM yield:  0.00864668376744
+par  0  ->  0.00198535427173
+ ->par  0  ->  0.229608752342
+par  1  ->  -4.71429747343e-06
+ ->par  1  ->  -0.000545214512318
+par  2  ->  -4.48250013111e-06
+ ->par  2  ->  -0.000518406854197
+par  3  ->  9.78646226083e-07
+ ->par  3  ->  0.000113181683568
+par  4  ->  -0.000309594272574
+ ->par  4  ->  -0.0358049722762
+par  5  ->  -8.25486664551e-05
+ ->par  5  ->  -0.00954685850383
+--->  after scaling: read SM yield:  0.229608752342
+ FCN=0.021599 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=8.16659e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.66061e-03   1.46754e-02   3.03376e-06  -6.34553e-03
+   2  p1          -3.63144e-06   5.32068e-03   2.62579e-06  -6.22136e-02
+   3  p2          -4.26290e-06   2.64733e-03   1.30631e-06  -1.82466e-01
+   4  p3           2.41002e-06   2.29087e-03   1.13053e-06   2.30441e-01
+   5  p4          -2.55265e-04   7.01506e-03   1.89986e-06   1.07008e-01
+   6  p5          -6.95578e-05   1.75883e-03   4.72036e-07  -3.75114e-01
+SM yield:  0.00721217878163
+----> checking newframe input:
+  before scaling: read SM yield:  0.00166061265409
+ scaling with SM yield:  0.00721217878163
+par  0  ->  0.00166061265409
+ ->par  0  ->  0.230251177123
+par  1  ->  -3.63143799071e-06
+ ->par  1  ->  -0.000503514693779
+par  2  ->  -4.26290015564e-06
+ ->par  2  ->  -0.000591069673217
+par  3  ->  2.41002401438e-06
+ ->par  3  ->  0.000334160326214
+par  4  ->  -0.000255265392532
+ ->par  4  ->  -0.0353936584576
+par  5  ->  -6.95577547559e-05
+ ->par  5  ->  -0.00964448564879
+--->  after scaling: read SM yield:  0.230251177123
+ FCN=0.0119762 FROM MIGRAD    STATUS=CONVERGED     160 CALLS         161 TOTAL
+                     EDM=3.24331e-27    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           9.15230e-04   1.13770e-02   2.41855e-06   3.58629e-12
+   2  p1           8.35303e-06   4.75160e-03   2.24158e-06   1.93471e-12
+   3  p2          -1.74343e-05   2.17136e-03   1.02291e-06   1.27190e-11
+   4  p3           5.40551e-05   2.03591e-03   9.43416e-07   4.59692e-12
+   5  p4           9.35474e-08   5.85475e-03   1.67427e-06  -5.18054e-13
+   6  p5          -4.85449e-05   1.42475e-03   3.66475e-07  -2.60345e-11
+SM yield:  0.00316699617542
+----> checking newframe input:
+  before scaling: read SM yield:  0.000915229885802
+ scaling with SM yield:  0.00316699617542
+par  0  ->  0.000915229885802
+ ->par  0  ->  0.288989892979
+par  1  ->  8.35302783029e-06
+ ->par  1  ->  0.00263752381361
+par  2  ->  -1.74342780119e-05
+ ->par  2  ->  -0.00550498865367
+par  3  ->  5.40551168965e-05
+ ->par  3  ->  0.01706826087
+par  4  ->  9.35473563898e-08
+ ->par  4  ->  2.95381968301e-05
+par  5  ->  -4.85448791134e-05
+ ->par  5  ->  -0.015328366826
+--->  after scaling: read SM yield:  0.288989892979
+section:  ch_mm_m
+ sigFile:  out_tree_et_m.root  obj:  ww
+=====================> ngrid=  11
+   fitting:  [0] + [1]*x + [2]*y + [3]*x*y + [4]*x*x + [5]*y*y   model:  par1par2_TF2
+ FCN=0.0188982 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=1.83427e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.45224e-03   1.37062e-02   2.82674e-06  -9.12132e-04
+   2  p1          -1.67661e-06   4.95778e-03   2.44355e-06  -7.90301e-03
+   3  p2          -2.76053e-06   2.46956e-03   1.21706e-06  -2.74839e-02
+   4  p3           2.66430e-07   2.13431e-03   1.05194e-06   1.77685e-02
+   5  p4          -2.26769e-04   6.54421e-03   1.76706e-06   6.54515e-02
+   6  p5          -6.05106e-05   1.64108e-03   4.39781e-07  -2.55801e-01
+SM yield:  0.00632662838325
+----> checking newframe input:
+  before scaling: read SM yield:  0.0014522443583
+ scaling with SM yield:  0.00632662838325
+par  0  ->  0.0014522443583
+ ->par  0  ->  0.229544754382
+par  1  ->  -1.67661259279e-06
+ ->par  1  ->  -0.000265008862734
+par  2  ->  -2.76053006534e-06
+ ->par  2  ->  -0.000436335105859
+par  3  ->  2.664300966e-07
+ ->par  3  ->  4.21124934895e-05
+par  4  ->  -0.000226769052593
+ ->par  4  ->  -0.0358435866399
+par  5  ->  -6.05106163661e-05
+ ->par  5  ->  -0.00956443348662
+--->  after scaling: read SM yield:  0.229544754382
+ FCN=0.0104943 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=1.05245e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.06290e-04   1.02143e-02   2.09806e-06  -1.08425e-03
+   2  p1          -1.24306e-06   3.69537e-03   1.81381e-06  -1.20267e-02
+   3  p2          -1.58669e-06   1.84072e-03   9.03398e-07  -3.66696e-02
+   4  p3           2.08380e-07   1.59101e-03   7.80922e-07   2.69622e-02
+   5  p4          -1.25831e-04   4.87744e-03   1.31171e-06   6.60699e-02
+   6  p5          -3.35834e-05   1.22310e-03   3.26451e-07  -2.56725e-01
+SM yield:  0.00351205677725
+----> checking newframe input:
+  before scaling: read SM yield:  0.000806289538633
+ scaling with SM yield:  0.00351205677725
+par  0  ->  0.000806289538633
+ ->par  0  ->  0.229577592212
+par  1  ->  -1.24305932052e-06
+ ->par  1  ->  -0.000353940553743
+par  2  ->  -1.58668976649e-06
+ ->par  2  ->  -0.000451783631963
+par  3  ->  2.08380296394e-07
+ ->par  3  ->  5.93328381659e-05
+par  4  ->  -0.000125830510861
+ ->par  4  ->  -0.0358281539399
+par  5  ->  -3.35834344691e-05
+ ->par  5  ->  -0.00956232675014
+--->  after scaling: read SM yield:  0.229577592212
+ FCN=0.0108503 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=2.07472e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.33946e-04   1.03939e-02   2.13619e-06  -2.79294e-03
+   2  p1          -1.79440e-06   3.76416e-03   1.84787e-06  -3.39327e-02
+   3  p2          -1.82224e-06   1.87391e-03   9.19828e-07  -9.48412e-02
+   4  p3           6.58568e-07   1.62073e-03   7.95626e-07   9.53194e-02
+   5  p4          -1.29184e-04   4.96555e-03   1.33669e-06   8.60149e-02
+   6  p5          -3.48419e-05   1.24507e-03   3.32385e-07  -3.22132e-01
+SM yield:  0.00362705648877
+----> checking newframe input:
+  before scaling: read SM yield:  0.000833945860732
+ scaling with SM yield:  0.00362705648877
+par  0  ->  0.000833945860732
+ ->par  0  ->  0.229923593226
+par  1  ->  -1.79440243868e-06
+ ->par  1  ->  -0.000494726907133
+par  2  ->  -1.82223619142e-06
+ ->par  2  ->  -0.000502400830277
+par  3  ->  6.58567947475e-07
+ ->par  3  ->  0.000181570910052
+par  4  ->  -0.000129184229969
+ ->par  4  ->  -0.035616823275
+par  5  ->  -3.48419254537e-05
+ ->par  5  ->  -0.00960611602318
+--->  after scaling: read SM yield:  0.229923593226
+ FCN=0.00521178 FROM MIGRAD    STATUS=CONVERGED     146 CALLS         147 TOTAL
+                     EDM=5.30289e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.00692e-04   7.34785e-03   1.52929e-06  -6.50558e-03
+   2  p1          -5.14095e-06   2.79842e-03   1.35441e-06   2.85510e-01
+   3  p2          -4.75357e-06   1.36020e-03   6.56876e-07  -4.19237e-01
+   4  p3           1.01255e-05   1.21066e-03   5.81327e-07  -8.28357e-03
+   5  p4          -4.43457e-05   3.60136e-03   9.90025e-07   9.82727e-02
+   6  p5          -1.77023e-05   8.96012e-04   2.37003e-07  -3.68512e-01
+SM yield:  0.00160564412363
+----> checking newframe input:
+  before scaling: read SM yield:  0.000400691523839
+ scaling with SM yield:  0.00160564412363
+par  0  ->  0.000400691523839
+ ->par  0  ->  0.249551888829
+par  1  ->  -5.14094671695e-06
+ ->par  1  ->  -0.00320179711139
+par  2  ->  -4.75356675997e-06
+ ->par  2  ->  -0.00296053570652
+par  3  ->  1.01254549716e-05
+ ->par  3  ->  0.00630616387692
+par  4  ->  -4.43457107002e-05
+ ->par  4  ->  -0.0276186422929
+par  5  ->  -1.77022956834e-05
+ ->par  5  ->  -0.0110250431107
+--->  after scaling: read SM yield:  0.249551888829
+section:  ch_mm_p
+ sigFile:  out_tree_et_p.root  obj:  ww
+=====================> ngrid=  11
+   fitting:  [0] + [1]*x + [2]*y + [3]*x*y + [4]*x*x + [5]*y*y   model:  par1par2_TF2
+ FCN=0.0559194 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=5.65034e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.29822e-03   2.35779e-02   4.95004e-06  -8.68640e-04
+   2  p1          -3.97014e-06   8.52809e-03   4.27894e-06  -6.06439e-03
+   3  p2          -7.93309e-06   4.24776e-03   2.13111e-06  -2.32895e-02
+   4  p3           6.75387e-07   3.67101e-03   1.84192e-06   1.39051e-02
+   5  p4          -6.71012e-04   1.12572e-02   3.09432e-06   6.69404e-02
+   6  p5          -1.79211e-04   2.82290e-03   7.70044e-07  -2.62249e-01
+SM yield:  0.0187241956592
+----> checking newframe input:
+  before scaling: read SM yield:  0.00429821608493
+ scaling with SM yield:  0.0187241956592
+par  0  ->  0.00429821608493
+ ->par  0  ->  0.229554110797
+par  1  ->  -3.97014127868e-06
+ ->par  1  ->  -0.000212032674244
+par  2  ->  -7.93308522494e-06
+ ->par  2  ->  -0.000423680961754
+par  3  ->  6.75386880157e-07
+ ->par  3  ->  3.6070274657e-05
+par  4  ->  -0.000671011731879
+ ->par  4  ->  -0.0358366118414
+par  5  ->  -0.000179210816031
+ ->par  5  ->  -0.00957108221327
+--->  after scaling: read SM yield:  0.229554110797
+ FCN=0.0242446 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=3.06317e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.86252e-03   1.55288e-02   3.21191e-06  -1.66920e-03
+   2  p1          -3.58194e-06   5.62056e-03   2.77744e-06  -2.12344e-02
+   3  p2          -3.91711e-06   2.79916e-03   1.38309e-06  -6.02437e-02
+   4  p3           8.81355e-07   2.42011e-03   1.19592e-06   5.15116e-02
+   5  p4          -2.89877e-04   7.41672e-03   2.00881e-06   7.24998e-02
+   6  p5          -7.76328e-05   1.85983e-03   4.99804e-07  -2.77471e-01
+SM yield:  0.00810914114118
+----> checking newframe input:
+  before scaling: read SM yield:  0.00186252222219
+ scaling with SM yield:  0.00810914114118
+par  0  ->  0.00186252222219
+ ->par  0  ->  0.229681810904
+par  1  ->  -3.58193749456e-06
+ ->par  1  ->  -0.000441716013101
+par  2  ->  -3.91710773856e-06
+ ->par  2  ->  -0.000483048410474
+par  3  ->  8.81355181653e-07
+ ->par  3  ->  0.000108686624922
+par  4  ->  -0.000289876580151
+ ->par  4  ->  -0.0357468904665
+par  5  ->  -7.76327772827e-05
+ ->par  5  ->  -0.00957348946469
+--->  after scaling: read SM yield:  0.229681810904
+ FCN=0.0221907 FROM MIGRAD    STATUS=CONVERGED     133 CALLS         134 TOTAL
+                     EDM=6.19434e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.70782e-03   1.49219e-02   3.09390e-06  -1.34822e-03
+   2  p1          -5.08681e-06   5.44453e-03   2.68707e-06   7.29467e-02
+   3  p2          -4.76923e-06   2.70065e-03   1.33260e-06   1.48838e-01
+   4  p3           5.55394e-06   2.34558e-03   1.15740e-06   1.20463e-01
+   5  p4          -2.54343e-04   7.15490e-03   1.94701e-06   9.01659e-02
+   6  p5          -7.20248e-05   1.79317e-03   4.81577e-07  -3.56092e-01
+SM yield:  0.00735886627808
+----> checking newframe input:
+  before scaling: read SM yield:  0.0017078214583
+ scaling with SM yield:  0.00735886627808
+par  0  ->  0.0017078214583
+ ->par  0  ->  0.23207670771
+par  1  ->  -5.08681111744e-06
+ ->par  1  ->  -0.000691249293739
+par  2  ->  -4.7692311426e-06
+ ->par  2  ->  -0.000648093192942
+par  3  ->  5.55394087457e-06
+ ->par  3  ->  0.00075472778886
+par  4  ->  -0.000254342958619
+ ->par  4  ->  -0.0345627911974
+par  5  ->  -7.20248438348e-05
+ ->par  5  ->  -0.00978749186533
+--->  after scaling: read SM yield:  0.23207670771
+ FCN=0.00913857 FROM MIGRAD    STATUS=CONVERGED     146 CALLS         147 TOTAL
+                     EDM=9.95217e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           7.13127e-04   9.74071e-03   2.03126e-06  -5.45279e-03
+   2  p1          -2.31250e-06   3.66667e-03   1.78785e-06  -3.63505e-02
+   3  p2          -5.79396e-06   1.79603e-03   8.74281e-07   5.58098e-01
+   4  p3           1.25427e-05   1.58198e-03   7.68247e-07   2.11485e-01
+   5  p4          -8.78532e-05   4.75194e-03   1.30290e-06   1.35054e-01
+   6  p5          -3.09664e-05   1.18626e-03   3.15740e-07  -5.24776e-01
+SM yield:  0.0029083294794
+----> checking newframe input:
+  before scaling: read SM yield:  0.000713126922361
+ scaling with SM yield:  0.0029083294794
+par  0  ->  0.000713126922361
+ ->par  0  ->  0.245201558975
+par  1  ->  -2.31249663147e-06
+ ->par  1  ->  -0.00079512883525
+par  2  ->  -5.79396093044e-06
+ ->par  2  ->  -0.00199219551
+par  3  ->  1.25426968438e-05
+ ->par  3  ->  0.00431268084742
+par  4  ->  -8.78532229514e-05
+ ->par  4  ->  -0.030207451932
+par  5  ->  -3.09664245991e-05
+ ->par  5  ->  -0.0106474953469
+--->  after scaling: read SM yield:  0.245201558975

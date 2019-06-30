@@ -1,0 +1,41 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 8  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_ssWW_smallGrid_ft1_1  ssWW_smallGrid_ft1_1 ./ssWW_smallGrid_ft1_1_ws.root proc_ssWW_smallGrid_ft1_1:$PROCESS proc_ssWW_smallGrid_ft1_1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_ssWW_smallGrid_ft1_1  ssWW_smallGrid_ft1_1 ./ssWW_smallGrid_ft1_1_ws.root proc_ssWW_smallGrid_ft1_1:$PROCESS proc_ssWW_smallGrid_ft1_1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_ssWW_smallGrid_ft1_1  ssWW_smallGrid_ft1_1 ./ssWW_smallGrid_ft1_1_ws.root proc_ssWW_smallGrid_ft1_1:$PROCESS proc_ssWW_smallGrid_ft1_1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_ssWW_smallGrid_ft1_1  ssWW_smallGrid_ft1_1 ./ssWW_smallGrid_ft1_1_ws.root proc_ssWW_smallGrid_ft1_1:$PROCESS proc_ssWW_smallGrid_ft1_1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_ssWW_smallGrid_ft1_1  ssWW_smallGrid_ft1_1 ./ssWW_smallGrid_ft1_1_ws.root proc_ssWW_smallGrid_ft1_1:$PROCESS proc_ssWW_smallGrid_ft1_1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg6_ssWW_smallGrid_ft1_1  ssWW_smallGrid_ft1_1 ./ssWW_smallGrid_ft1_1_ws.root proc_ssWW_smallGrid_ft1_1:$PROCESS proc_ssWW_smallGrid_ft1_1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg7_ssWW_smallGrid_ft1_1  ssWW_smallGrid_ft1_1 ./ssWW_smallGrid_ft1_1_ws.root proc_ssWW_smallGrid_ft1_1:$PROCESS proc_ssWW_smallGrid_ft1_1:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg8_ssWW_smallGrid_ft1_1  ssWW_smallGrid_ft1_1 ./ssWW_smallGrid_ft1_1_ws.root proc_ssWW_smallGrid_ft1_1:$PROCESS proc_ssWW_smallGrid_ft1_1:$PROCESS_$SYSTEMATIC
+shapes data_obs                ssWW_smallGrid_ft1_1 ./ssWW_smallGrid_ft1_1_ws.root proc_ssWW_smallGrid_ft1_1:$PROCESS    
+shapes anoCoupl_process_ssWW_smallGrid_ft1_1 ssWW_smallGrid_ft1_1 ./ssWW_smallGrid_ft1_1_ws.root proc_ssWW_smallGrid_ft1_1:ATGCPdf_$PROCESS proc_ssWW_smallGrid_ft1_1:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin ssWW_smallGrid_ft1_1 
+observation 74.0
+------------
+bin                         ssWW_smallGrid_ft1_1					ssWW_smallGrid_ft1_1			ssWW_smallGrid_ft1_1			ssWW_smallGrid_ft1_1			ssWW_smallGrid_ft1_1			ssWW_smallGrid_ft1_1			ssWW_smallGrid_ft1_1			ssWW_smallGrid_ft1_1			ssWW_smallGrid_ft1_1       
+process			    anoCoupl_process_ssWW_smallGrid_ft1_1    	anomalousCoupling_bkg1_ssWW_smallGrid_ft1_1	anomalousCoupling_bkg2_ssWW_smallGrid_ft1_1	anomalousCoupling_bkg3_ssWW_smallGrid_ft1_1	anomalousCoupling_bkg4_ssWW_smallGrid_ft1_1	anomalousCoupling_bkg5_ssWW_smallGrid_ft1_1	anomalousCoupling_bkg6_ssWW_smallGrid_ft1_1	anomalousCoupling_bkg7_ssWW_smallGrid_ft1_1	anomalousCoupling_bkg8_ssWW_smallGrid_ft1_1       
+process                     0	  	       				1 				2 				3 				4 				5 				6 				7 				8       
+rate                        30.6660003662	 			1.90799999237 			11.8339996338 			0.0579999983311 			2.45300006866 			2.34200000763 			4.14900016785 			0.224000006914 			25.7590007782           
+------------
+
+integrated_luminosity         lnN  1.025      				1.025				-				1.025				1.025				1.025				1.025				1.025				-
+WW_QCD_shape shape1  -				1.0 				-				-				-				-				-				-				-
+WZ_shape shape1  -				-				1.0 				-				-				-				-				-				-
+ZZ_shape shape1  -				-				-				1.0 				-				-				-				-				-
+QCDzz_shape shape1  -				-				-				1.0 				-				-				-				-				-
+Triboson_shape shape1  -				-				-				-				1.0 				-				-				-				-
+QCDvvv_shape shape1  -				-				-				-				1.0 				-				-				-				-
+Wrong_Sign_shape shape1  -				-				-				-				-				1.0 				-				-				-
+W_Gamma_shape shape1  -				-				-				-				-				-				1.0 				-				-
+WW_DPS_shape shape1  -				-				-				-				-				-				-				1.0 				-
+Non_Prompt_shape shape1  -				-				-				-				-				-				-				-				1.0 
+diboson_shape        shape1  1.0          				-				-				-				-				-				-				-				-
+PDF        shape1  1.0          				-				-				-				-				-				-				-				-
+JES        shape1  1.0          				-				-				-				-				-				-				-				-
+LEF        shape1  1.0          				-				-				-				-				-				-				-				-

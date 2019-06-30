@@ -1,0 +1,43 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 8  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_ssWW_smallGrid_fm0_last_bin  ssWW_smallGrid_fm0_last_bin ./ssWW_smallGrid_fm0_last_bin_ws.root proc_ssWW_smallGrid_fm0_last_bin:$PROCESS proc_ssWW_smallGrid_fm0_last_bin:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_ssWW_smallGrid_fm0_last_bin  ssWW_smallGrid_fm0_last_bin ./ssWW_smallGrid_fm0_last_bin_ws.root proc_ssWW_smallGrid_fm0_last_bin:$PROCESS proc_ssWW_smallGrid_fm0_last_bin:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_ssWW_smallGrid_fm0_last_bin  ssWW_smallGrid_fm0_last_bin ./ssWW_smallGrid_fm0_last_bin_ws.root proc_ssWW_smallGrid_fm0_last_bin:$PROCESS proc_ssWW_smallGrid_fm0_last_bin:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_ssWW_smallGrid_fm0_last_bin  ssWW_smallGrid_fm0_last_bin ./ssWW_smallGrid_fm0_last_bin_ws.root proc_ssWW_smallGrid_fm0_last_bin:$PROCESS proc_ssWW_smallGrid_fm0_last_bin:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_ssWW_smallGrid_fm0_last_bin  ssWW_smallGrid_fm0_last_bin ./ssWW_smallGrid_fm0_last_bin_ws.root proc_ssWW_smallGrid_fm0_last_bin:$PROCESS proc_ssWW_smallGrid_fm0_last_bin:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg6_ssWW_smallGrid_fm0_last_bin  ssWW_smallGrid_fm0_last_bin ./ssWW_smallGrid_fm0_last_bin_ws.root proc_ssWW_smallGrid_fm0_last_bin:$PROCESS proc_ssWW_smallGrid_fm0_last_bin:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg7_ssWW_smallGrid_fm0_last_bin  ssWW_smallGrid_fm0_last_bin ./ssWW_smallGrid_fm0_last_bin_ws.root proc_ssWW_smallGrid_fm0_last_bin:$PROCESS proc_ssWW_smallGrid_fm0_last_bin:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg8_ssWW_smallGrid_fm0_last_bin  ssWW_smallGrid_fm0_last_bin ./ssWW_smallGrid_fm0_last_bin_ws.root proc_ssWW_smallGrid_fm0_last_bin:$PROCESS proc_ssWW_smallGrid_fm0_last_bin:$PROCESS_$SYSTEMATIC
+shapes data_obs                ssWW_smallGrid_fm0_last_bin ./ssWW_smallGrid_fm0_last_bin_ws.root proc_ssWW_smallGrid_fm0_last_bin:$PROCESS    
+shapes anoCoupl_process_ssWW_smallGrid_fm0_last_bin ssWW_smallGrid_fm0_last_bin ./ssWW_smallGrid_fm0_last_bin_ws.root proc_ssWW_smallGrid_fm0_last_bin:ATGCPdf_$PROCESS proc_ssWW_smallGrid_fm0_last_bin:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin ssWW_smallGrid_fm0_last_bin 
+observation 8.0
+------------
+bin                         ssWW_smallGrid_fm0_last_bin					ssWW_smallGrid_fm0_last_bin			ssWW_smallGrid_fm0_last_bin			ssWW_smallGrid_fm0_last_bin			ssWW_smallGrid_fm0_last_bin			ssWW_smallGrid_fm0_last_bin			ssWW_smallGrid_fm0_last_bin			ssWW_smallGrid_fm0_last_bin			ssWW_smallGrid_fm0_last_bin       
+process			    anoCoupl_process_ssWW_smallGrid_fm0_last_bin    	anomalousCoupling_bkg1_ssWW_smallGrid_fm0_last_bin	anomalousCoupling_bkg2_ssWW_smallGrid_fm0_last_bin	anomalousCoupling_bkg3_ssWW_smallGrid_fm0_last_bin	anomalousCoupling_bkg4_ssWW_smallGrid_fm0_last_bin	anomalousCoupling_bkg5_ssWW_smallGrid_fm0_last_bin	anomalousCoupling_bkg6_ssWW_smallGrid_fm0_last_bin	anomalousCoupling_bkg7_ssWW_smallGrid_fm0_last_bin	anomalousCoupling_bkg8_ssWW_smallGrid_fm0_last_bin       
+process                     0	  	       				1 				2 				3 				4 				5 				6 				7 				8       
+rate                        4.58400011063	 			0.586000025272 			0.340999990702 			0.00700000021607 			0.303999990225 			0.103000000119 			0.202000007033 			0.0189999993891 			1.38699996471           
+------------
+
+integrated_luminosity         lnN  1.025      				1.025				-				1.025				1.025				1.025				1.025				1.025				-
+muon_selection         lnN  1.02      				1.02				-				1.02				1.02				1.02				1.02				1.02				-
+electron_selection         lnN  1.02      				1.02				-				1.02				1.02				1.02				1.02				1.02				-
+JES         lnN  1.03      				1.03				-				1.03				1.03				1.03				1.03				1.03				-
+PDFs         lnN  1.04      				1.04				-				1.04				1.04				1.04				1.04				1.04				-
+QCDscale_EWK         lnN  1.1      				-				-				-				-				-				-				-				-
+QCDscale_ZZ         lnN  -      				-				-				1.1				-				-				-				-				-
+QCDscale_VVV         lnN  -      				-				-				-				1.1				-				-				-				-
+WW_QCD_shape shape1  -				1.0 				-				-				-				-				-				-				-
+WZ_shape shape1  -				-				1.0 				-				-				-				-				-				-
+ZZ_shape shape1  -				-				-				1.0 				-				-				-				-				-
+Triboson_shape shape1  -				-				-				-				1.0 				-				-				-				-
+Wrong_Sign_shape shape1  -				-				-				-				-				1.0 				-				-				-
+W_Gamma_shape shape1  -				-				-				-				-				-				1.0 				-				-
+WW_DPS_shape shape1  -				-				-				-				-				-				-				1.0 				-
+Non_Prompt_shape shape1  -				-				-				-				-				-				-				-				1.0 
+diboson_shape        shape1  1.0          				-				-				-				-				-				-				-				-

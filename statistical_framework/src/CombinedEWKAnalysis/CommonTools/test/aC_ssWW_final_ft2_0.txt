@@ -1,0 +1,41 @@
+
+# Simple counting experiment, with one signal and a few background processes 
+imax 1  number of channels
+jmax 8  number of backgrounds
+kmax *  number of nuisance parameters (sources of systematical uncertainties)
+------------
+shapes anomalousCoupling_bkg1_ssWW_final_ft2_0  ssWW_final_ft2_0 ./ssWW_final_ft2_0_ws.root proc_ssWW_final_ft2_0:$PROCESS proc_ssWW_final_ft2_0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg2_ssWW_final_ft2_0  ssWW_final_ft2_0 ./ssWW_final_ft2_0_ws.root proc_ssWW_final_ft2_0:$PROCESS proc_ssWW_final_ft2_0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg3_ssWW_final_ft2_0  ssWW_final_ft2_0 ./ssWW_final_ft2_0_ws.root proc_ssWW_final_ft2_0:$PROCESS proc_ssWW_final_ft2_0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg4_ssWW_final_ft2_0  ssWW_final_ft2_0 ./ssWW_final_ft2_0_ws.root proc_ssWW_final_ft2_0:$PROCESS proc_ssWW_final_ft2_0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg5_ssWW_final_ft2_0  ssWW_final_ft2_0 ./ssWW_final_ft2_0_ws.root proc_ssWW_final_ft2_0:$PROCESS proc_ssWW_final_ft2_0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg6_ssWW_final_ft2_0  ssWW_final_ft2_0 ./ssWW_final_ft2_0_ws.root proc_ssWW_final_ft2_0:$PROCESS proc_ssWW_final_ft2_0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg7_ssWW_final_ft2_0  ssWW_final_ft2_0 ./ssWW_final_ft2_0_ws.root proc_ssWW_final_ft2_0:$PROCESS proc_ssWW_final_ft2_0:$PROCESS_$SYSTEMATIC
+shapes anomalousCoupling_bkg8_ssWW_final_ft2_0  ssWW_final_ft2_0 ./ssWW_final_ft2_0_ws.root proc_ssWW_final_ft2_0:$PROCESS proc_ssWW_final_ft2_0:$PROCESS_$SYSTEMATIC
+shapes data_obs                ssWW_final_ft2_0 ./ssWW_final_ft2_0_ws.root proc_ssWW_final_ft2_0:$PROCESS    
+shapes anoCoupl_process_ssWW_final_ft2_0 ssWW_final_ft2_0 ./ssWW_final_ft2_0_ws.root proc_ssWW_final_ft2_0:ATGCPdf_$PROCESS proc_ssWW_final_ft2_0:ATGCPdf_$PROCESS_$SYSTEMATIC    
+------------
+bin ssWW_final_ft2_0 
+observation 85.0
+------------
+bin                         ssWW_final_ft2_0					ssWW_final_ft2_0			ssWW_final_ft2_0			ssWW_final_ft2_0			ssWW_final_ft2_0			ssWW_final_ft2_0			ssWW_final_ft2_0			ssWW_final_ft2_0			ssWW_final_ft2_0       
+process			    anoCoupl_process_ssWW_final_ft2_0    	anomalousCoupling_bkg1_ssWW_final_ft2_0	anomalousCoupling_bkg2_ssWW_final_ft2_0	anomalousCoupling_bkg3_ssWW_final_ft2_0	anomalousCoupling_bkg4_ssWW_final_ft2_0	anomalousCoupling_bkg5_ssWW_final_ft2_0	anomalousCoupling_bkg6_ssWW_final_ft2_0	anomalousCoupling_bkg7_ssWW_final_ft2_0	anomalousCoupling_bkg8_ssWW_final_ft2_0       
+process                     0	  	       				1 				2 				3 				4 				5 				6 				7 				8       
+rate                        26.5750007629	 			0.943000018597 			10.3999996185 			0.0710000023246 			1.8370000124 			1.83099997044 			3.68700003624 			0.360000014305 			47.8190002441           
+------------
+
+integrated_luminosity         lnN  1.025      				1.025				1.025				1.025				1.025				1.025				1.025				1.025				1.025
+muon_selection         lnN  1.02      				1.02				1.02				1.02				1.02				1.02				1.02				1.02				1.02
+electron_selection         lnN  1.02      				1.02				1.02				1.02				1.02				1.02				1.02				1.02				1.02
+JES         lnN  1.03      				1.03				1.03				1.03				1.03				1.03				1.03				1.03				1.03
+PDFs         lnN  1.04      				1.04				1.04				1.04				1.04				1.04				1.04				1.04				1.04
+QCD_scale         lnN  1.1      				1.1				1.1				1.1				1.1				1.1				1.1				1.1				1.1
+WW_QCD_shape shape1  -				1.0 				-				-				-				-				-				-				-
+WZ_shape shape1  -				-				1.0 				-				-				-				-				-				-
+ZZ_shape shape1  -				-				-				1.0 				-				-				-				-				-
+Triboson_shape shape1  -				-				-				-				1.0 				-				-				-				-
+Wrong_Sign_shape shape1  -				-				-				-				-				1.0 				-				-				-
+W_Gamma_shape shape1  -				-				-				-				-				-				1.0 				-				-
+WW_DPS_shape shape1  -				-				-				-				-				-				-				1.0 				-
+Non_Prompt_shape shape1  -				-				-				-				-				-				-				-				1.0 
+diboson_shape        shape1  1.0          				-				-				-				-				-				-				-				-

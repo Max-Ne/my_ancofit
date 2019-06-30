@@ -1,0 +1,12 @@
+[Global]
+NlnN=0
+model=par1_TF1
+par1Name = fs0
+par1Low = -25.
+par1High = 25.
+
+[bkg_only1]
+Nbkg=1
+signal_shape_syst=diboson_shape
+bkg1_name=WWB
+bkg1_shape_syst=WWB_shape
